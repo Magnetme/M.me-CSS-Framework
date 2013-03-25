@@ -5,16 +5,16 @@
 
 // Global values
 // --------------------------------------------------
-
+@magnetme_red:			#cc3c3c;
 
 // Grays
 // -------------------------
 @black:                 #000;
-@grayDarker:            #222;
-@grayDark:              #333;
-@gray:                  #555;
-@grayLight:             #999;
-@grayLighter:           #eee;
+@grayDarker:            #292e33;
+@grayDark:              #4b5055;
+@gray:                  #64696e;
+@grayLight:             #c3c8cd;
+@grayLighter:           #edf0f2;
 @white:                 #fff;
 
 
@@ -22,8 +22,8 @@
 // -------------------------
 @blue:                  #049cdb;
 @blueDark:              #0064cd;
-@green:                 #46a546;
-@red:                   #9d261d;
+@green:                 #00a550;
+@red:                   @magnetme_red;
 @yellow:                #ffc40d;
 @orange:                #f89406;
 @pink:                  #c3325f;
@@ -38,17 +38,17 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @red;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@sansFontFamily:        Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serifFontFamily:       Roboto Slab, Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          14px;
+@baseFontSize:          0.813em;
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
@@ -134,7 +134,7 @@
 
 // Z-index master list
 // -------------------------
-// Used for a bird's eye view of components dependent on the z-axis
+// Used for a birds eye view of components dependent on the z-axis
 // Try to avoid customizing these :)
 @zindexDropdown:          1000;
 @zindexPopover:           1010;
