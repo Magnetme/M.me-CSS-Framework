@@ -8,10 +8,53 @@
 	
 //ELEMENT SPECIFIC STYLING
 
-.btn-facebook {
-  background: @blue;
-  color:white;
-}
+
+	//Facebook login/register button
+	
+	.btn-facebook {
+	  background: @blue;
+	  color:white;
+	  position: relative;
+	  padding-left:35px;
+	
+		.fb_icon{
+			width:15%;
+			min-width: 25px;
+			max-width:40px;
+			height:100%;
+			background:rgba(0,0,0,.25);
+			text-align: center;
+			top:0;
+			bottom:0;
+			left:0;
+			position: absolute;
+			.border-radius(2px);
+			
+			span{
+				position: relative;
+				top:25%;
+				font-size:135%;
+				text-transform: lowercase;
+				opacity:0.5;
+			}
+		}
+	}
+	
+	//Navbar login form
+	.navbar{
+		form{
+			
+				
+			input{
+				font-size:0.846153846em;
+				background:@grayLight;
+				color: @magnetme_grey;
+			}
+		
+		}
+	}
+
+
 
 
 //PAGE SPECIFIC STYLING

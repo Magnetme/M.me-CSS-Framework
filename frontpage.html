@@ -27,15 +27,19 @@
 <body class="frontpage">
     <!-- Navbar -->
 
-    <div class="navbar navbar-fixed-top frontpage">
+    <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></a> <!-- Be sure to leave the brand out there if you want it shown -->
-                 <a class="brand" href="#">Magnet.me</a> <!-- Everything you want hidden at 940px or less, place within here -->
-
-                <div class="nav-collapse collapse">
-                    <!-- .nav, .navbar-search, .navbar-form, etc -->
+                <div class="nav-collapse collapse span10">
+                   <ul class="nav row-fluid span12">
+			   		<form class="navbar-form pull-right">
+						<input type="text" class="span3" placeholder="Uni/HBO email">
+						<input type="text" class="span3" placeholder="Wachtwoord">
+						<button type="submit" class="btn">Inloggen</button>
+					
+					<button class="btn btn-info btn-facebook" type="submit"><div class="fb_icon"><span>f</span></div>Inloggen</button>
+					</form>
+                   </ul>
                 </div>
             </div>
         </div>
@@ -61,13 +65,14 @@
                                 <input class="input-block-level" type="text" placeholder="Vul je universiteits- of hogeschool-email in en meld je aan">
 
                                 <div class="row-fluid">
-                                    <button class="btn-info btn-facebook input-block-level" type="submit">
-                                    <div class="fb_icon"></div>Aanmelden met Facebook</button>
+                                    <button class="btn btn-info btn-facebook input-block-level" type="submit">
+                                    <div class="fb_icon"><span>f</span></div>Aanmelden met Facebook</button>
 
                                     <div class="btn_seperator">
                                         <span class="text">aanmelden zonder Facebook?</span>
                                         <span class="line"></span>
-                                    </div><button class="btn-primary registration_reg input-block-level" type="submit">Aanmelden</button>
+                                    </div>
+                                    <button class="btn btn-primary registration_reg input-block-level" type="submit">Aanmelden</button>
                                 </div>
                             </fieldset>
                         </form>
@@ -98,17 +103,17 @@
             </div>
 
             <div class="row-fluid" id="video">
-                <div class="span6" id="vimeo_container">
+                <div class="span4" id="vimeo_container">
                     <iframe src="http://player.vimeo.com/video/41917190?title=0&amp;byline=0&amp;portrait=0&amp;color=cc3c3c" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
                 </div>
 
-                <div class="span6 text">
-                    <h2>Overzichtelijk, makkelijk & persoonlijk.</h2>
+                <div class="span8 text">
+                    <h3>Overzichtelijk, makkelijk & persoonlijk.</h3>
 
                     <p class="video_text">Maak binnen een paar minuten een gratis profiel aan en ontvang op basis van jouw profiel netwerkverzoeken van bedrijven. Zo zie je in een keer welke bedrijven in jou geïnteresseerd zijn (voor bijvoorbeeld een stage), bepaal je zelf van welke bedrijven je berichten ontvangt en wie jouw CV mag zien.</p>
 
                     <div class="row-fluid">
-                        <a class="span8 input-block-level btn btn-large btn-danger">Maak direct je account aan.</a>
+                        <a class="btn btn-large btn-danger">Maak direct je account aan.</a>
                     </div>
                 </div>
             </div>

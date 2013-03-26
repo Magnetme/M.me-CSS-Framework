@@ -3,6 +3,8 @@
 	
 	.navbar{
 		.box-shadow(0 2px 0px rgba(0,0,0,.2));
+
+		
 	}
 	
 	#red_bg{
@@ -12,10 +14,11 @@
 		bottom:0;
 		top:0;
 		left:0;
-/*
-		margin-left:-20px;
-		padding:0 20px;
-*/
+		
+		@media (max-width: 767px) {
+			margin-left:-20px;
+			padding:0 20px;
+		}
 	}
 
 	.curtain#introductie{
@@ -23,7 +26,7 @@
 		
 		
 		.headline, .tagline{
-			line-height: 1.25em;
+			line-height: 1.15em;
 		}
 		
 		.headline{
@@ -101,7 +104,7 @@
 			
 			#usps_cols{
 				.usp{
-					margin-bottom:1em;
+					margin-bottom:3em;
 					img{
 						opacity:0.5;
 					}
@@ -116,13 +119,17 @@
 		
 		#video{
 		margin-bottom:5em;
-			h2{
-				margin:0.25em 0;
-			}
-			.video_text{
-				font-size:1.2em;
-				line-height:1.5em;
-				margin:1em 0;
+		
+			.text{
+			margin-top:-0.5em;
+				h3{
+					margin:0.15em 0;
+				}
+				.video_text{
+					font-size:1.2em;
+					line-height:1.5em;
+					margin:0.5em 0;
+				}
 			}
 		}
 		
