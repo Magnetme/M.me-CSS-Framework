@@ -6,11 +6,18 @@
 // Global values
 // --------------------------------------------------
 @magnetme_red:			#cc3c3c;
+@magnetme_grey:			#292e33;
+
+@magnetme_red_1:		#e66969;
+@magnetme_red_2:		#ff8282;
+
+
+@magnetme_btn_on_red:	@magnetme_red_1;
 
 // Grays
 // -------------------------
 @black:                 #000;
-@grayDarker:            #292e33;
+@grayDarker:            @magnetme_grey;
 @grayDark:              #4b5055;
 @gray:                  #64696e;
 @grayLight:             #c3c8cd;
@@ -20,7 +27,7 @@
 
 // Accent colors
 // -------------------------
-@blue:                  #049cdb;
+@blue:                  #5975B1;
 @blueDark:              #0064cd;
 @green:                 #00a550;
 @red:                   @magnetme_red;
@@ -32,8 +39,8 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white;
-@textColor:             @grayDark;
+@bodyBackground:        @magnetme_red;
+@textColor:             @magnetme_grey;
 
 
 // Links
@@ -54,7 +61,7 @@
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsFontWeight:    500;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
 
@@ -84,11 +91,11 @@
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #ccc;
 
-@btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+@btnPrimaryBackground:              @magnetme_red_1;
+@btnPrimaryBackgroundHighlight:     @magnetme_red_2;
 
-@btnInfoBackground:                 #5bc0de;
-@btnInfoBackgroundHighlight:        #2f96b4;
+@btnInfoBackground:                 @blue;
+@btnInfoBackgroundHighlight:        lighten(@blue, 5%);
 
 @btnSuccessBackground:              #62c462;
 @btnSuccessBackgroundHighlight:     #51a351;
@@ -96,11 +103,11 @@
 @btnWarningBackground:              lighten(@orange, 15%);
 @btnWarningBackgroundHighlight:     @orange;
 
-@btnDangerBackground:               #ee5f5b;
-@btnDangerBackgroundHighlight:      #bd362f;
+@btnDangerBackground:               @linkColor;
+@btnDangerBackgroundHighlight:      @magnetme_red_1;
 
-@btnInverseBackground:              #444;
-@btnInverseBackgroundHighlight:     @grayDarker;
+@btnInverseBackground:              @magnetme_red_1;
+@btnInverseBackgroundHighlight:     @magnetme_red_2;
 
 
 // Forms
@@ -175,10 +182,10 @@
 @navbarCollapseWidth:             979px;
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
-@navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
-@navbarBorder:                    darken(@navbarBackground, 12%);
+@navbarHeight:                    50px;
+@navbarBackgroundHighlight:       @grayDarker;
+@navbarBackground:                @grayDarker;
+@navbarBorder:                    transparant;
 
 @navbarText:                      #777;
 @navbarLinkColor:                 #777;

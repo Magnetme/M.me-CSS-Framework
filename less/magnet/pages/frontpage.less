@@ -1,0 +1,176 @@
+.frontpage{
+	background: lighten(@magnetme_grey,2.5%);
+	
+	.navbar{
+		.box-shadow(0 2px 0px rgba(0,0,0,.2));
+	}
+	
+	#red_bg{
+		background:@red;
+		position: relative;
+		width:100%;
+		bottom:0;
+		top:0;
+		left:0;
+/*
+		margin-left:-20px;
+		padding:0 20px;
+*/
+	}
+
+	.curtain#introductie{
+		color:white;
+		
+		
+		.headline, .tagline{
+			line-height: 1.25em;
+		}
+		
+		.headline{
+			font-size: 5em;
+			font-weight: 500;
+		}
+		
+		.tagline{
+			font-weight: 400;
+			font-size:2em;
+			margin-bottom:2em;	
+		}
+		
+		#registration{
+		
+			input, button{
+				border:none;
+			}
+		
+			.input-block-level{
+				height: 3em;
+			}
+		
+			
+			button{
+				text-transform: uppercase;
+			}
+			
+			.btn_seperator{
+				opacity:0.75;
+				position: relative;
+				height:2em;
+				line-height: 2em;
+				font-size:0.75em;
+				text-align: center;
+				width:100%;
+				margin:0.5em 0;
+
+				
+				.line{
+					width:97.5%;
+					position: absolute;
+					top:50%;
+					left:1.25%;
+					margin-top:-1px;
+					height:1px;
+					background:white;
+					z-index:0;
+				}
+				
+				.text{
+					background:@magnetme_red;
+					position: relative;
+					display:inline-block;
+					text-align: center;
+					padding:0 0.5em;
+					z-index:999;
+				}
+			}
+			
+		}
+	}
+	
+	.curtain#uitleg{
+		margin:3em 0;
+		color:@grayLight;
+		
+
+		#usps{
+			margin:3em 0;	
+			
+			h1{
+				margin-bottom:1em;
+			}	
+			
+			#usps_cols{
+				.usp{
+					margin-bottom:1em;
+					img{
+						opacity:0.5;
+					}
+					.usp_text{
+						margin:0.75em 0;
+						font-size:1.25em;
+						line-height: 1.25em;
+					}
+				}
+			}
+		}
+		
+		#video{
+		margin-bottom:5em;
+			h2{
+				margin:0.25em 0;
+			}
+			.video_text{
+				font-size:1.2em;
+				line-height:1.5em;
+				margin:1em 0;
+			}
+		}
+		
+		hr{
+			border-top:none;
+			border-bottom: 1px solid @grayDark;
+		}
+		
+		#clients{
+			margin:3em 0;
+			
+			h3{
+				margin-bottom: 1em;
+			}
+		
+			#client_list{
+				opacity:0.25;
+				
+				img{
+					margin:1em 0;
+				}
+			}
+			
+		}
+	}
+	
+	footer{
+		background:rgba(0,0,0,.3);
+		color:@grayLight;
+		
+		padding:3em 0;
+		
+		.container>.row-fluid{
+			vertical-align: top;
+		}
+		
+		.vertical_align{
+			display:inline-block;
+			position: relative;
+			vertical-align: middle;
+			
+			&.right{
+				text-align: right;
+				
+				a.btn{
+					margin-left:0.5em;
+				}
+			}
+		}
+	}
+}
