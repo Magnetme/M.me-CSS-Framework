@@ -5,13 +5,11 @@
 	background: lighten(@magnetme_grey,2.5%);
 	
 	.navbar{
-		.box-shadow(0 2px 0px rgba(0,0,0,.2));
-
-		
+/* 		.box-shadow(0 2px 0px rgba(0,0,0,.2)); */
 	}
 	
 	#red_bg{
-		background:@red;
+		background:@red url(../../../assets/img/frontpage/red_bg_office.jpg) no-repeat center center;
 		position: relative;
 		width:100%;
 		bottom:0;
@@ -19,17 +17,24 @@
 		left:0;
 		
 		@media (max-width: 767px) {
-			margin-left:-20px;
-			padding:0 20px;
+			margin-left:-40px;
+			padding:0 20px 0 40px;
+			left:0px !important;
+			top:0 !important;
+		}
+		
+		.container{
+			position: relative;
 		}
 	}
 
 	.curtain#introductie{
 		color:white;
-		
+		padding:2em 0;
+		-webkit-transition: all 0.5 ease-in-out;
 		
 		.headline, .tagline{
-			line-height: 1.15em;
+			line-height: 1.25em;
 		}
 		
 		.headline{
@@ -50,7 +55,8 @@
 			}
 		
 			.input-block-level{
-				height: 3em;
+				height: 3.5em;
+				margin:0.5em 0;
 			}
 		
 			
@@ -162,8 +168,8 @@
 	footer{
 		background:rgba(0,0,0,.3);
 		color:@grayLight;
-		
 		padding:3em 0;
+		position: relative;
 		
 		.container>.row-fluid{
 			vertical-align: top;
