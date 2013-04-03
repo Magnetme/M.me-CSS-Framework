@@ -1,12 +1,12 @@
 @import url('../../boostrap/variables.less');
 @import url('../../boostrap/mixins.less');
+@import url('../../magnetme_global/lesshat.less');
 
+body{
+/* 	background:@magnetme_grey; */
+}
 .frontpage{
-	background: lighten(@magnetme_grey,2.5%);
-	
-	.navbar{
-/* 		.box-shadow(0 2px 0px rgba(0,0,0,.2)); */
-	}
+/* 	background: lighten(@magnetme_grey,2.5%); */
 	
 	#red_bg{
 		background:@red url(../../../assets/img/frontpage/red_bg_office.jpg) no-repeat center center;
@@ -15,16 +15,11 @@
 		bottom:0;
 		top:0;
 		left:0;
-		
-		@media (max-width: 767px) {
-			margin-left:-40px;
-			padding:0 20px 0 40px;
-			left:0px !important;
-			top:0 !important;
-		}
+		z-index:100;
 		
 		.container{
 			position: relative;
+			margin-top:2em;
 		}
 	}
 
@@ -32,6 +27,7 @@
 		color:white;
 		padding:2em 0;
 		-webkit-transition: all 0.5 ease-in-out;
+		
 		
 		.headline, .tagline{
 			line-height: 1.25em;
@@ -50,6 +46,47 @@
 		
 		#registration{
 		
+			.studentmail-wrapper{
+				position: relative;
+				margin:0.5em 0;
+				
+				.validator{
+					background:white;
+					width:40px;
+					height:100%;
+					position: absolute;
+					right:0;
+					top:0;
+					line-height: 3.5em;
+					color:@green;
+					text-align: center;
+					.border-radius(2px);
+				}
+				
+				.error-message{
+					color:darken(@red,20%);
+					font-weight: 500;
+					position: absolute;
+					display:block;
+					left:100%;
+					top:0;
+					width:100%;
+					margin:1em;
+					height:1.5em;
+					opacity:0;
+					
+					vertical-align: middle;
+/* 					line-height:3.5em; */
+				}
+				
+				input{
+					height: 3.5em;
+					display:block;
+					
+				}
+				
+			}
+		
 			input, button{
 				border:none;
 			}
@@ -58,7 +95,6 @@
 				height: 3.5em;
 				margin:0.5em 0;
 			}
-		
 			
 			button{
 				text-transform: uppercase;
@@ -96,15 +132,37 @@
 				}
 			}
 			
+			.problems{
+				opacity:0.75;
+				margin:0.5em 0;
+				line-height: 2em;
+				font-size:0.75em;
+				
+				&:hover{
+				opacity:1;}
+				p{
+					a{
+						color:white;
+						font-weight: 500;
+					}
+				}
+			}
 		}
 	}
 	
-	.curtain#uitleg{
-		margin:3em 0;
-		color:@grayLight;
-		
+	#uitleg{
+		position: relative;
+		left:0;
+		bottom:0;
+		background:@magnetme_grey;
 
-		#usps{
+	
+		.container{
+			padding:15em 0 3em;
+			margin-top:-15em;
+			color:@grayLight;
+			position: relative;
+			#usps{
 			margin:3em 0;	
 			
 			h1{
@@ -126,7 +184,7 @@
 			}
 		}
 		
-		#video{
+			#video{
 		margin-bottom:5em;
 		
 			.text{
@@ -142,12 +200,12 @@
 			}
 		}
 		
-		hr{
+			hr{
 			border-top:none;
 			border-bottom: 1px solid @grayDark;
 		}
 		
-		#clients{
+			#clients{
 			margin:3em 0;
 			
 			h3{
@@ -163,10 +221,11 @@
 			}
 			
 		}
+		}
 	}
 	
 	footer{
-		background:rgba(0,0,0,.3);
+		background:darken(@magnetme_grey,5%);
 		color:@grayLight;
 		padding:3em 0;
 		position: relative;

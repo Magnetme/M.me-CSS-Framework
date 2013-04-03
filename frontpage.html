@@ -26,12 +26,15 @@
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-            	<span class="logo">Magnet.me</span>
+            	
+            	<div class="pull-left" id="brand">
+	            	<img src="assets/img/navbar/logo_magnetme.png" alt="Magnet.me logo" width="385" height="100%" />
+            	</div>
             	
             	<form class="navbar-form pull-right form-inline">
 					<input type="text" class="input-medium" placeholder="E-mail adres">
 					<input type="password" class="input-medium" placeholder="Wachtwoord">
-					<button type="submit" class="btn btn-danger input-small" data-loading-text="Inloggen...">Inloggen</button>
+					<button type="submit" class="btn btn-danger" data-loading-text="Inloggen...">Inloggen</button>
 					<div class="vertical_divider"></div>
 					<button class="btn btn-info btn-facebook " type="submit"><div class="icon_wrapper"><i class="icon-facebook"></i></div>Aanmelden met Facebook</button>
 				</form>
@@ -39,10 +42,6 @@
         </div>
         <div class="container" id="alerts">
 				<div class="alert animated">
-				 	<a href="#" class="close" data-dismiss="alert">×</a>
-				 	<strong>Fout:</strong>De gegeven combinatie van gebruikersnaam en wachtwoord werd niet herkend.
-				 </div>
-				 <div class="alert animated">
 				 	<a href="#" class="close" data-dismiss="alert">×</a>
 				 	<strong>Fout:</strong>De gegeven combinatie van gebruikersnaam en wachtwoord werd niet herkend.
 				 </div>
@@ -67,11 +66,17 @@
                 </div>
 
                 <div class="row-fluid">
-                    <div class="span4">
+                    <div class="span5">
                         <form id="registration">
                             <fieldset>
-                                <input class="input-block-level animated" type="text" placeholder="Universiteits- of HBO emailadres" rel="tooltip" data-placement="right" data-original-title="Vul hier je emailadres van je hogeschool of universiteit in.">
-
+                            	<div class="studentmail-wrapper input-block-level">
+                            		<div class="validator">V</div>
+	                                <input 
+	                                	class="input-block-level animated studentmail" 
+	                                	type="text" 
+	                                	placeholder="Vul je universiteits- of HBO emailadres in en meld je aan">
+	                                <div class="error-message animated ">Vul een geldig universiteits- of HBO emailadres in.</div>
+                                </div>
                                 <div class="row-fluid">
                                     <button class="btn btn-info btn-facebook large input-block-level" type="submit" rel="popover" data-placement="right" title="Magnet.me zal nooit ongevraagd je Facebook account gebruiken.">
                                     	<div class="icon_wrapper"><i class="icon-facebook"></i></div>Aanmelden met Facebook
@@ -84,6 +89,9 @@
                                     <button class="btn btn-primary registration_reg input-block-level" type="submit" rel="tooltip" data-placement="right" data-original-title="Zeker weten? Aanmelden met Facebook duurt slechts 15 seconden...">Aanmelden</button>
                                 </div>
                             </fieldset>
+                            <div class="problems">
+                            	<p>Problemen met inloggen of geen werkend studentenemail? <a href="#">Klik hier</a></p>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -91,8 +99,8 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="curtain" id="uitleg">
+    <div id="uitleg">
+        <div class="container">
             <div class="row-fluid" id="usps">
                 <h1>Alles op één plek.</h1>
 
@@ -113,7 +121,7 @@
 
             <div class="row-fluid" id="video">
                 <div class="span4" id="vimeo_container">
-<!--                     <iframe src="http://player.vimeo.com/video/41917190?title=0&amp;byline=0&amp;portrait=0&amp;color=cc3c3c" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe> -->
+                    <iframe src="http://player.vimeo.com/video/41917190?title=0&amp;byline=0&amp;portrait=0&amp;color=cc3c3c" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
                 </div>
 
                 <div class="span8 text">
@@ -360,15 +368,12 @@
     
     	<div class="row-fluid">
     		<div class="span8 vertical_align">
-    			<h4>© Magnet.me 2013 | Contact | Support | Gebruiksvoorwaarden</h4>
-    			<p>Benieuwd naar de mogelijkheden van Magnet.me voor bedrijven? Klik hier voor meer informatie</p>
+    			<h4>© Magnet.me 2013</h4>
+    			<h5>Contact | Support | Gebruiksvoorwaarden</h5>
     		</div>
     		
     		<div class="span4 vertical_align right">
-    		
-    			<a class="btn btn-large btn-danger">Registreren</a>
-    			<a class="btn btn-large btn-grey">Werkgever?</a>
-    		
+    			<a class="btn btn-large btn-danger">Aanmelden als werkgever?</a>
     		</div>
     	
     	</div>
