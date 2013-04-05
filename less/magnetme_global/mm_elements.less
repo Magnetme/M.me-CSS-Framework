@@ -1,4 +1,4 @@
-	//Facebook login/register button
+	/* //Facebook login/register button */
 	
 	.btn-facebook {
 	  background: @blue;
@@ -26,23 +26,23 @@
 			}
 		
 		}
-	}
-	
-	.btn-facebook.large {
-	  padding-left:45px;
-	  
-	  .icon_wrapper{
-			width:45px;
-			font-size:26px;
-			
-			.icon-facebook{
-				line-height:46px;
-			}
 		
+		&.large {
+		  padding-left:45px;
+		  
+		  .icon_wrapper{
+				width:45px;
+				font-size:26px;
+				
+				.icon-facebook{
+					line-height:46px;
+				}
+			
+			}
 		}
 	}
 	
-	//Navbar login form
+	/* //Navbar login form (Jules*/
 	.navbar{
 	
 		.navbar-inner{
@@ -112,7 +112,8 @@
 				}
 		}
 	}
-	
+		
+		/* Navbar alerts (Jules) */
 		.container#alerts{
 			position: relative;
 			z-index:-1;
@@ -133,3 +134,95 @@
 				 }
 			}
 		}
+		
+		/* Progress bar tweak */
+		.progress{
+			height:2px;
+			margin-bottom:2em;
+		}
+		
+		/* //Input append/prepend tweak (Jules) */
+		
+		.input-append{
+			.add-on{
+				.border-radius(0 2px 2px 0);
+				.box-shadow(-1px 0 0 white);
+				}
+		}
+		.input-prepend{
+			.add-on{
+				.border-radius(2px 0 0 2px);
+				}
+		}
+		
+		*[class*='input-']{
+
+			.add-on{
+				background-color:white !important;
+				
+				i{
+					color:@magnetme_grey_2;
+				}
+			}
+		}
+		
+		//Maakt inline labels naast input velden zichtbaar en gecentreerd.
+		
+		
+		
+		.help-inline, .help-block{
+			font-size:@fontSizeSmall;
+		}
+		
+		.help-block{
+			ul{
+				margin-left:28px;
+				
+				li{
+					list-style: none;
+					line-height:@inputHeight;
+				}
+			}
+		}
+		
+		/* //Tweak to optimize iCheck add-on in use with Flatstrap (Jules) */
+		.checkbox, .radio{
+			padding-left: 0;
+			label, .iradio_minimal-grey{
+				display:inline-block;
+			}
+			
+			.iradio_minimal-grey{
+				top:5px;
+				margin-right:0.5em;
+			}
+			
+			
+			.focus, .hover{
+				label{
+				text-decoration: underline;
+				}
+			}			
+		}
+		
+		//Maakt elke lengte mogelijk
+		.tooltip-inner{
+			max-width:none !important;	
+		}
+		
+		//In geval van tabfocus op btn
+		.btn, .input{
+			text-shadow: none;
+			.box-shadow(none);
+				
+			&:focus{
+				outline:none;
+				.box-shadow(inset 0 0 0 1px rgba(255,255,255,0.25));
+			}
+		}
+		
+
+
+
+
+

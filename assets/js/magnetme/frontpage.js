@@ -5,11 +5,11 @@ function vertical_center() {
     
     if(height_container+50 < height*0.90){
 	    var ninetypc = (90 * height) / 100;
-	    $("#red_bg").css('height',ninetypc + 'px');
+	    $("#fp_intro_red").css('height',ninetypc + 'px');
     	var offset = (ninetypc - height_container)/2;
 	    $(container).css('margin-top',offset);   
     } else{
-	    $("#red_bg").css('height','auto');
+	    $("#fp_intro_red").css('height','auto');
 	    $(container).css('margin-top','2em');
     }
 }
@@ -27,20 +27,36 @@ $(document).ready(function() {
     vertical_center();
     $(window).bind('resize', vertical_center);
     
+/*
     $('body').stellar({
 	    responsive:false,
 	    hideDistantElements: false,
     });
+*/
+    
+	 $('#registration input').iCheck({
+	    checkboxClass: 'icheckbox_minimal-grey',
+	    radioClass: 'iradio_minimal-grey',
+	    labelHoverClass: 'hover',
+	    });
     
     $('#registration input, #registration button').tooltip();
     
+    
+/*
     $("#registration button").click(function() {
     	event.preventDefault();
-    	$("#registration input").addClass('shake');
+    	$("#registration .studentmail-wrapper").addClass('shake');
     	$('.error-message').addClass("fadeInLeft");
     });
+*/
     
-    $('.alert').addClass("fadeInRightBig");
+/*     $('.alert').addClass("fadeInRightBig"); */
+
+  	$(function () { 
+  		$("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); 
+  	} );
+
     
     
 });	

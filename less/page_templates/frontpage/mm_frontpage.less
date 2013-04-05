@@ -2,13 +2,9 @@
 @import url('../../boostrap/mixins.less');
 @import url('../../magnetme_global/lesshat.less');
 
-body{
-/* 	background:@magnetme_grey; */
-}
-.frontpage{
-/* 	background: lighten(@magnetme_grey,2.5%); */
+#fp_wrapper{
 	
-	#red_bg{
+	#fp_intro_red{
 		background:@red url(../../../assets/img/frontpage/red_bg_office.jpg) no-repeat center center;
 		position: relative;
 		width:100%;
@@ -76,7 +72,6 @@ body{
 					opacity:0;
 					
 					vertical-align: middle;
-/* 					line-height:3.5em; */
 				}
 				
 				input{
@@ -223,8 +218,11 @@ body{
 		}
 		}
 	}
-	
-	footer{
+}
+
+@import url(mm_frontpage_registration.less);
+
+	footer.frontpage{
 		background:darken(@magnetme_grey,5%);
 		color:@grayLight;
 		padding:3em 0;
@@ -248,4 +246,3 @@ body{
 			}
 		}
 	}
-}
