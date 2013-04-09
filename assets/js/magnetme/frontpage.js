@@ -27,12 +27,10 @@ $(document).ready(function() {
     vertical_center();
     $(window).bind('resize', vertical_center);
     
-/*
     $('body').stellar({
 	    responsive:false,
 	    hideDistantElements: false,
     });
-*/
     
 	 $('#registration input').iCheck({
 	    checkboxClass: 'icheckbox_minimal-grey',
@@ -44,13 +42,11 @@ $(document).ready(function() {
     
     $('.typeahead').typeahead();
     
-/*
     $("#registration button").click(function() {
     	event.preventDefault();
-    	$("#registration .studentmail-wrapper").addClass('shake');
+    	$("#registration .studentmail-wrapper").removeClass('animated shake').addClass('animated shake');
     	$('.error-message').addClass("fadeInLeft");
     });
-*/
     
     $('.alert').addClass("fadeInRightBig");
     
@@ -59,6 +55,5 @@ $(document).ready(function() {
   		$("input,select,textarea").not("[type=radio], [type=submit]").jqBootstrapValidation(); 
   	} );
 
-    
     
 });	
