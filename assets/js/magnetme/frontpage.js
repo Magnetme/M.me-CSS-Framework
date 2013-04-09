@@ -42,6 +42,7 @@ $(document).ready(function() {
     
     $('#registration input, #registration button').tooltip();
     
+    $('.typeahead').typeahead();
     
 /*
     $("#registration button").click(function() {
@@ -51,10 +52,11 @@ $(document).ready(function() {
     });
 */
     
-/*     $('.alert').addClass("fadeInRightBig"); */
+    $('.alert').addClass("fadeInRightBig");
+    
 
   	$(function () { 
-  		$("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); 
+  		$("input,select,textarea").not("[type=radio], [type=submit]").jqBootstrapValidation(); 
   	} );
 
     
