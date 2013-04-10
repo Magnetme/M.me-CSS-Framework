@@ -72,121 +72,200 @@
   				<h5>Registratie stap 2 van 4</h5>
 
 		 		<div class="row-fluid step" id="step2">
+		 			<h3>Studiegegevens</h3>
+		 			<div class="row-fluid">	
 
-		 			<div class="span12">
-		 				<h3>Studie</h3>
-
-				 			<div class="row-fluid">
-				   			<div class="span4">
-				   				<form id="registration">
-									 <fieldset>
-										<legend>1. Studiegegevens</legend>
-										<div class="control-group">
-										<h5>Niveau studie</h5>
-									 		<div class="controls">
-												<div class=" radio inline">
-													<input type="radio" name="niveau" id="hbo" value="option1" tabindex="1">
-													<label for="niveau1">HBO</label>
-												</div>
+		 					<div class="span12">
+					 			<div class="row-fluid">
+						   			<div class="span4">
+						   				<form id="registration">
+											 <fieldset>
+											 <legend>Basisinformatie studie</legend>
+												<div class="control-group">
+												<h5>Type studie:</h5>
+											 		<div class="controls">
+														<div class=" radio inline">
+															<input type="radio" name="niveau" id="hbo" value="option1" tabindex="1">
+															<label for="niveau1">HBO</label>
+														</div>
+					
+														<div class="radio inline">
+															<input type="radio" name="niveau" id="wo" value="option2" checked>
+															<label for="niveau2">WO</label>
+														</div>
+													</div>
+											 	</div>
+											 	
+											 	<div class="control-group">
+											 	<h5>Studiefase:</h5>
+											 		<div class="controls">
+											 			<div class="radio inline">
+															<input type="radio" name="studietype" id="master" value="option1" tabindex="2">
+															<label for="niveau2">Propedeuse</label>
+														</div>
+														<div class="radio inline">
+															<input type="radio" name="studietype" id="bachelor" value="option2" checked>
+															<label for="niveau1">Bachelor</label>
+														</div>
+														<div class="clearfix"></div>
+														<div class="clear"></div>
+														<div class="radio inline">
+															<input type="radio" name="studietype" id="Schakeljaar" value="option3">
+															<label for="niveau2">Schakeljaar</label>
+														</div>
+														
+														<div class="radio inline">
+															<input type="radio" name="studietype" id="master" value="option4" >
+															<label for="niveau2">Master</label>
+														</div>
+													</div>
+											 	</div>
+											 												 	
+											 	<div class="control-group">
+												<h5>Status studie</h5>
+											 		<div class="controls">
+														<div class=" radio inline">
+															<input type="radio" name="status_studie" id="huidige" value="option1" tabindex="3" checked>
+															<label for="niveau1">Huidige studie</label>
+														</div>
+					
+														<div class="radio inline">
+															<input type="radio" name="status_studie" id="gestaakt" value="option2">
+															<label for="niveau2">Gestaakt</label>
+														</div>
+														
+														<div class="radio inline">
+															<input type="radio" name="status_studie" id="Afgestudeerd" value="option3">
+															<label for="niveau2">Afgestudeerd</label>
+														</div>
+													</div>
+											 	</div>
+											 	
+											 	<div class="control-group">
+											 		<div class="controls">
+											 		
+														<div class="row-fluid">
+															<div class="span6">														
+																<label>Van</label>
+														 		<select class="selectpicker show-tick span12" title="Algemene studierichting" data-style="btn-inverse" tabindex="4">
+														 		 	
+																      <option>1998</option>
+																      <option>1999</option>
+																      <option>2000</option>
+																      <option>2001</option>
+																      <option>2002</option>
+																      <option>2003</option>
+																      <option>2004</option>
+																      <option>2005</option>
+																      <option>2006</option>
+																      <option selected>2007</option>
+																      <option>2008</option>
+																      <option>2009</option>
+																      <option>2010</option>
+																      <option>2011</option>
+																      <option>2012</option>
+																      <option>2013</option>
+																  </select>
+															</div>
+															  
+															<div class="span6">														
+																<label>Tot</label>
+														 		<select class="selectpicker show-tick span12" title="Algemene studierichting" data-style="btn-inverse" tabindex="5" disabled>
+														 		 	
+																      <option>1998</option>
+																      <option>1999</option>
+																      <option>2000</option>
+																      <option>2001</option>
+																      <option>2002</option>
+																      <option>2003</option>
+																      <option>2004</option>
+																      <option>2005</option>
+																      <option>2006</option>
+																      <option>2007</option>
+																      <option>2008</option>
+																      <option>2009</option>
+																      <option>2010</option>
+																      <option>2011</option>
+																      <option>2012</option>
+																      <option selected="">2013</option>
+																  </select>
+															</div>
+												 		</div>										 		
+											 		</div>
+											 	</div>	 	
+											 </fieldset>
+							   			</div>
+						   				<div class="span4">
+											 <fieldset>
+											 <legend>Studiegegevens</legend>
+												<div class="control-group">
+											 		<div class="controls">
+											 		<h5>Opleidingsinstelling</h5>
+											 		<input type="text" class="input-block-level typeahead" name="opleidingsinstelling" data-provide="typeahead" placeholder="Naam van je universiteit of school">
+											 		
+											 		<h5>Studienaam</h5>
+											 		<input type="text" class="input-block-level typeahead" name="studierichting" data-provide="typeahead" placeholder="Naam van je studie of opleiding">		
+													</div>
+											 	</div>
+											 	
+											 	<div class="control-group">
+											 		<div class="controls">
+												 		<h5>Studierichting</h5>
+												 		
+												 		<label>Algemeen</label>
+												 		
+												 		<div class="row-fluid">
+													 		 <select class="selectpicker show-tick span12" title="Algemene studierichting" data-style="btn-inverse">
 			
-												<div class="radio inline">
-													<input type="radio" name="niveau" id="wo" value="option2" checked>
-													<label for="niveau2">WO</label>
-												</div>
-											</div>
-									 	</div>
-									 	<hr>
-									 	
-									 	<div class="control-group">
-									 		<div class="controls">
-									 		<h5>Type studie</h5>
-									 			<div class="radio inline">
-													<input type="radio" name="studietype" id="master" value="option1" tabindex="2">
-													<label for="niveau2">Propedeuse</label>
-												</div>
-												<div class="radio inline">
-													<input type="radio" name="studietype" id="bachelor" value="option2" checked>
-													<label for="niveau1">Bachelor</label>
-												</div>
-												<div class="clearfix"></div>
-												<div class="clear"></div>
-												<div class="radio inline">
-													<input type="radio" name="studietype" id="Schakeljaar" value="option3">
-													<label for="niveau2">Schakeljaar</label>
-												</div>
-												
-												<div class="radio inline">
-													<input type="radio" name="studietype" id="master" value="option4" >
-													<label for="niveau2">Master</label>
-												</div>
-											</div>
-									 	</div>
-									 	
-									 	<hr>
-									 	
-									 	<div class="control-group">
-									 		<div class="controls">
-									 		<h5>Opleidingsinstelling</h5>
-									 		<input type="text" class="input-block-level typeahead" name="opleidingsinstelling" data-provide="typeahead" placeholder="Naam van je universiteit of school">
-									 		
-									 		<h5>Studienaam</h5>
-									 		<input type="text" class="input-block-level typeahead" name="studierichting" data-provide="typeahead" placeholder="Naam van je studie of opleiding">		
-											</div>
-									 	</div>
-									 	
-									 </fieldset>
-				   				</form>
-				   			</div>
-				   				<div class="span4">
-				   				<form id="registration">
-									 <fieldset>
-										<legend>2. Studiegegevens</legend>
-										<div class="control-group">
-										<h5>Status studie</h5>
-									 		<div class="controls">
-												<div class=" radio inline">
-													<input type="radio" name="status_studie" id="huidige" value="option1" tabindex="1">
-													<label for="niveau1">Huidige studie</label>
-												</div>
+															      <option>Mustard</option>
+															      <option>Ketchup</option>
+															      <option>Relish</option>
+															      <option data-divider="true"></option>
+															      <option>Tent</option>
+															      <option>Flashlight</option>
+															      <option>Toilet Paper</option>
+															  </select>
+												 		</div>
+												 		
+												 		<label>Specifiek</label>
+												 		
+												 		<div class="row-fluid">
+													 		 <select class="selectpicker show-tick span12" title="Algemene studierichting" data-style="btn-inverse">
 			
-												<div class="radio inline">
-													<input type="radio" name="status_studie" id="gestaakt" value="option2" checked>
-													<label for="niveau2">Gestaakt</label>
-												</div>
-												
-												<div class="radio inline">
-													<input type="radio" name="status_studie" id="Afgestudeerd" value="option3">
-													<label for="niveau2">Afgestudeerd</label>
-												</div>
-											</div>
-									 	</div>
-									 	<hr>
-									 	
-									 	<div class="control-group">
-									 		<div class="controls">
-										 		<h5>Algemene studierichting</h5>
-										 		<p>Bullshit uitleg hier</p>
-										 		<input type="text" class="input-block-level typeahead" name="opleidingsinstelling" data-provide="typeahead" placeholder="Naam van je universiteit of school">
-											</div>
-									 	</div>
-									 	
-									 	<hr>
-									 	
-									 	<div class="control-group">
-									 		<div class="controls">
-									 		<h5>Gemiddelde cijfer</h5>
-									 		<input type="text" class="input-block-level input-large typeahead" name="opleidingsinstelling" data-provide="typeahead" placeholder="Naam van je universiteit of school">
-									 		
-									 		<h5>Studienaam</h5>
-									 		<input type="text" class="input-block-level typeahead" name="studierichting" data-provide="typeahead" placeholder="Naam van je studie of opleiding">		
-											</div>
-									 	</div>
-									 	
-									 </fieldset>
-				   				</form>
-				   			</div>
+															      <option>Mustard</option>
+															      <option>Ketchup</option>
+															      <option>Relish</option>
+															      <option data-divider="true"></option>
+															      <option>Tent</option>
+															      <option>Flashlight</option>
+															      <option>Toilet Paper</option>
+															  </select>
+												 		</div>
+													</div>
+											 	</div>
+											 </fieldset>
+							   			</div>
+							   			<div class="span4">
+											 <fieldset>
+											 <legend>Gemiddelde cijfer</legend>
+												<div class="control-group">
+											 		<div class="controls">
+												 		<div class="input-prepend">
+													 		<span class="add-on">Gemiddelde cijfer:</span>
+													 		<input type="text" id="prependedInput" class="input-mini" name="gpa" data-provide="typeahead" placeholder="7,8">
+												 		</div>
+												 		
+												 		<p class="lead">Het invullen van je gemiddelde eindcijfer is belangrijk. Lees hieronder waarom.</p>
+												 		<p>Suspendisse laoreet tincidunt velit, sed congue tellus condimentum nec. Suspendisse id eros ut tortor tristique vulputate in auctor augue. In ultrices sapien vitae justo laoreet at sodales purus auctor. </p>
+												 		<small>Curabitur sit amet nisi sed justo pretium mattis ultricies et justo. Nam sit amet dictum urna. Duis adipiscing enim nec purus feugiat tristique. Maecenas quis commodo lectus. Phasellus ac ante hendrerit lorem semper vestibulum. Duis a tempus nisi.</small>
+												 			
+													</div>
+											 	</div>
+											 </fieldset>
+							   			</div>
+						   			</form>
+						   		</div>
 				   		</div>
-				   		
 			 		</div>
 		 		</div>
 		 	</div>

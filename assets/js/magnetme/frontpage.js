@@ -50,10 +50,6 @@ $(document).ready(function() {
     
     $('.alert').addClass("fadeInRightBig");
     
-
-  	$(function () { 
-  		$("input,select,textarea").not("[type=radio], [type=submit]").jqBootstrapValidation(); 
-  	} );
-
+    $('.selectpicker').selectpicker();
     
 });	
