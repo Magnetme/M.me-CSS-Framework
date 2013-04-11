@@ -5,7 +5,7 @@
 #fp_wrapper{
 	
 	#fp_intro_red{
-		background:@red url(../../../assets/img/frontpage/red_bg_office.jpg) no-repeat center center;
+		background:@red url(@backgroundfrontpageimage) no-repeat center center;
 		position: relative;
 		width:100%;
 		bottom:0;
@@ -47,6 +47,7 @@
 				margin:0.5em 0;
 				
 				.validator{
+					font: FontAwesome; 
 					background:white;
 					width:40px;
 					height:100%;
@@ -246,3 +247,68 @@
 			}
 		}
 	}
+	
+	/* iCheck.js Minimal skin, grey
+----------------------------------- */
+.icheckbox_minimal-grey,
+.iradio_minimal-grey {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background: url(@greybutton) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_minimal-grey,
+.icheckbox_minimal-grey.static:hover {
+    background-position: 0 0;
+}
+    .icheckbox_minimal-grey.hover,
+    .icheckbox_minimal-grey:hover {
+        background-position: -20px 0;
+    }
+    .icheckbox_minimal-grey.checked {
+        background-position: -40px 0;
+    }
+    .icheckbox_minimal-grey.disabled {
+        background-position: -60px 0;
+        cursor: default;
+    }
+    .icheckbox_minimal-grey.checked.disabled {
+        background-position: -80px 0;
+    }
+
+.iradio_minimal-grey,
+.iradio_minimal-grey.static:hover {
+    background-position: -100px 0;
+}
+    .iradio_minimal-grey.hover,
+    .iradio_minimal-grey:hover {
+        background-position: -120px 0;
+    }
+    .iradio_minimal-grey.checked {
+        background-position: -140px 0;
+    }
+    .iradio_minimal-grey.disabled {
+        background-position: -160px 0;
+        cursor: default;
+    }
+    .iradio_minimal-grey.checked.disabled {
+        background-position: -180px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_minimal-grey,
+    .iradio_minimal-grey {
+        background-image: url(grey@2x.png);
+        -webkit-background-size: 200px 20px;
+        background-size: 200px 20px;
+    }
+}
