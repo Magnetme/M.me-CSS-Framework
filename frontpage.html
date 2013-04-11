@@ -36,39 +36,76 @@
 <body>
 
 	<!-- Navbar -->
-		 <div class="navbar navbar-fixed-top">
+		 <div class="navbar navbar-fixed-top not-logged-in">
 			 <div class="navbar-inner">
 				 <div class="container">
-
-				 	<div class="pull-left" id="brand">
-					  	<a href="#home">
-					  		<img src="assets/img/navbar/logo_magnetme.png" alt="Magnet.me logo" width="385" height="100%" />
-					  	</a>
-				 	</div>
-
-				 	<form class="navbar-form pull-right form-inline">
-						<input type="text" class="input-medium" placeholder="E-mail adres">
-						<input type="password" class="input-medium" placeholder="Wachtwoord">
-						<button type="submit" class="btn btn-danger" data-loading-text="Inloggen...">Inloggen</button>
-						<div class="vertical_divider"></div>
-						<button class="btn btn-info btn-facebook " type="submit"><div class="icon_wrapper"><i class="icon-facebook"></i></div>Aanmelden met Facebook</button>
-					</form>
+					 <div class="row-fluid">
+					 	<div class="span2">
+						 	<div class="pull-left" id="brand">
+							  	<a href="#home">
+							  		<img src="assets/img/navbar/logo_magnetme.png" alt="Magnet.me logo" width="auto "height="100%" />
+							  	</a>
+						 	</div>
+					 	</div>
+					 	<div class="span8 pull-right">
+						 	<form id="login" class="navbar-form  form-inline">
+						 		<div class="inlog_wrapper">
+						 			<div class="span6">
+										<div class="row-fluid">
+											<div class="span6">
+												<input type="text" class="input-block-level" placeholder="E-mail adres">
+												<div class="login-tool">
+													<label>
+														<input class="name="remember" type="checkbox" checked><small>Aangemeld blijven</small>
+													</label>
+												</div>
+											</div><!-- span6 -->
+											<div class="span6">
+												<input type="password" class="input-block-level" placeholder="Wachtwoord">
+												<div class="login-tool">
+													<label>
+														<a href="#forgotPassword" role="button" data-toggle="modal"><small>Wachtwoord vergeten?</small></a>
+													</label>
+												</div>
+											</div><!-- span6 -->
+										</div><!-- row-fluid -->
+						 			</div><!-- span7 -->
+									
+									<div class="span6">
+										<div class="row-fluid">
+											<div class="span4">
+												<button type="submit" class="btn btn-danger btn-block" data-loading-text="Inloggen...">Inloggen</button>
+											</div>
+										<div class="span1 vertical_divider"></div>
+											<div class="span7">
+												<button class="btn btn-info btn-facebook btn-block" type="submit">
+													<div class="icon_wrapper">
+														<i class="icon-facebook"></i>
+													</div>
+													Inloggen met Facebook
+												</button>
+											</div>
+										</div>
+							 		</div>
+								</form><!-- #login -->
+						 	</div><!-- span9 -->
+						 </div>
+					 </div>
 				 </div>
 			 </div>
-			 <div class="container" id="alerts">
+			 
+			 	<div class="container" id="alerts">
 					<div class="alert animated">
 					 	<a href="#" class="close" data-dismiss="alert">×</a>
 					 	<strong>Fout:</strong>De gegeven combinatie van gebruikersnaam en wachtwoord werd niet herkend.
 					 </div>
 				 </div>
-		 </div>
-
 		 	</div>
 		 </div>
 
 
 
-		 <div id="fp_wrapper">
+		 <div id="fp_wrapper" >
 
 		 <div id="fp_intro_red" data-stellar-ratio="1.35" data-stellar-background-ratio="0.25" data-stellar-vertical-offset="50">
 			 <div class="container">
@@ -397,6 +434,20 @@
 				 	</div>
 		 	</div>
 	</footer>
+	
+	<div id="forgotPassword" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-header">
+				    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				    <h3 id="myModalLabel">Modal header</h3>
+				  </div>
+				  <div class="modal-body">
+				    <p>One fine body…</p>
+				  </div>
+				  <div class="modal-footer">
+				    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+				    <button class="btn btn-primary">Save changes</button>
+				  </div>
+				</div>
 
 	<!-- Le javascript -->
 	
@@ -418,10 +469,10 @@
 	<script src="assets/js/bootstrap-affix.js" type="text/javascript"></script>
 	<script src="assets/js/application.js" type="text/javascript"></script>
 	
-	/* Magnet.me plugins */
+	<!-- /* Magnet.me plugins */ -->
 	<script src="assets/js/magnetme/plugins.js" type="text/javascript"></script>
 	
-	/* Page specific JS */
+	<!-- /* Page specific JS */ -->
 	<script src="assets/js/magnetme/frontpage.js" type="text/javascript"></script>
 
 </body>

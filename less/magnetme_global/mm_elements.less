@@ -22,13 +22,13 @@
 				position: relative;
 				display:inline-block!important;
 				vertical-align: middle;
-				.opacity(0.95);
+				.opacity(95);
 			}
 		
 		}
 		
 		&.large {
-		  padding-left:45px;
+		  padding-left:inherit;
 		  
 		  .icon_wrapper{
 				width:45px;
@@ -42,11 +42,32 @@
 		}
 	}
 	
-	/* //Navbar login form (Jules*/
+	/* //Navbar login form (Jules)*/
 	.navbar{
+		color:@magnetme_grey_2;
+		
+		.container{
+			height:auto;
+		}
+		
+		
+		a, label, checkbox{
+			color:inherit;
+			&:hover{
+				color:@magnetme_grey_3;
+			}
+		}
+		
+		.btn{
+			text-transform: uppercase;
+			font-size:@fontSizeSmall;
+		}
+		
+
 	
 		.navbar-inner{
-			background-color: darken(@magnetme_grey,2.5%);
+			.box-shadow(inset 0 -1px 0 lighten(@magnetme_grey,5%));
+			padding:20px 0 15px;
 		}
 	
 		.container{
@@ -61,48 +82,65 @@
 			left:0;
 			width:auto;
 			line-height:50px;
+			padding:0 0 5px;
 			
 			img{
-				height:85%;
+				
 				width:auto;
 			}
 		}
 		
-		form{
+		
+		
+		form#login{
+			margin-bottom:-10px;
 		
 			input, button{
-				margin-left:5px;
+				margin:0;
+
 			}
 			
 			.vertical_divider{
 				display: inline-block;
 				vertical-align: middle;
-				position: relative;
-				width:1px;
-				height:24px;
-				margin:0 0 0 5px;
 				background:@grayDark;
-				padding:5px 0;
-				top:5px;
+				width:1px;
 
 			}
 				
 			input{
-				
 				background:@grayDark;
 				color: @grayLighter;
 				border:none;
+				font-size:@fontSizeSmall;
 								
 				.placeholder(@grayLight);
 				
 				&:focus{
-				.box-shadow( inset 0 0 0px 1px rgba(255,255,255,0.25);)}
+					.box-shadow( inset 0 0 0px 1px rgba(255,255,255,0.25);)}
+					}
+			
+			.inlog_wrapper{
+				
+				.login-tool{
+					display:inline-block;
+					margin:5px 0 0 5px;
+					
+					
+					label{
+					margin:0;
+					line-height:@baseLineHeight/2;
+					}					
+					input[type="checkbox"]{
+						margin-right:0.25em ;
+						line-height:@baseLineHeight/2;
+					}
+				}	
 			}
-		
 		}
 		
 		.btn-facebook{
-			padding-left:42px;
+			padding-left:20%;
 				.icon_wrapper{
 					width:30px;
 					font-size:16px;	
@@ -210,8 +248,6 @@
 		
 		//In geval van tabfocus op btn
 		.btn, .input{
-			text-shadow: none;
-			.box-shadow(none);
 				
 			&:focus{
 				outline:none;
