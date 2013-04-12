@@ -2,12 +2,17 @@
 @import url('../../boostrap/mixins.less');
 @import url('../../magnetme_global/lesshat.less');
 
+
 #fp_wrapper{
 	width:100%;
 	min-width:940px;
 	
+	.btn{
+		.box-shadow(0 1px 1px rgba(0,0,0,0.25));
+	}
+	
 	#fp_intro_red{
-		background:@red url(../../../assets/img/frontpage/red_bg_office.jpg) no-repeat center center;
+		background:@red url(@frontpage_red_image) no-repeat center center;
 		position: relative;
 		width:100%;
 		bottom:0;
@@ -49,7 +54,6 @@
 				margin:0.5em 0;
 				
 				.validator{
-					background:white;
 					width:40px;
 					height:100%;
 					position: absolute;
@@ -71,7 +75,7 @@
 					width:100%;
 					margin:1em;
 					height:1.5em;
-					opacity:0;
+					.opacity(0);
 					
 					vertical-align: middle;
 				}
@@ -79,7 +83,6 @@
 				input{
 					height: 3.5em;
 					display:block;
-					
 				}
 				
 			}
@@ -88,17 +91,22 @@
 				border:none;
 			}
 		
-			.input-block-level{
+			.input-block-level, .btn-block{
 				height: 3.5em;
 				margin:0.5em 0;
 			}
 			
-			button{
+			button, .btn{
 				text-transform: uppercase;
 			}
 			
+			.btn{
+				 padding:inherit;
+				 line-height:3.5em;
+			}
+			
 			.btn_seperator{
-				opacity:0.75;
+				.opacity(75);
 				position: relative;
 				height:2em;
 				line-height: 2em;
@@ -130,19 +138,25 @@
 			}
 			
 			.problems{
-				opacity:0.75;
+				.opacity(75);
 				margin:0.5em 0;
 				line-height: 2em;
 				font-size:0.75em;
 				
 				&:hover{
-				opacity:1;}
+				.opacity(100);}
 				p{
 					a{
 						color:white;
 						font-weight: 500;
 					}
+					
+					i{
+						margin-right:0.25em;
+					}
 				}
+				
+
 			}
 		}
 	}
@@ -159,27 +173,28 @@
 			margin-top:-15em;
 			color:@grayLight;
 			position: relative;
+			
 			#usps{
-			margin:3em 0;	
+				margin:3em 0;	
 			
-			h1{
-				margin-bottom:1em;
-			}	
+				h1{
+					margin-bottom:1em;
+				}	
 			
-			#usps_cols{
-				.usp{
-					margin-bottom:3em;
-					img{
-						opacity:0.5;
-					}
-					.usp_text{
-						margin:0.75em 0;
-						font-size:1.25em;
-						line-height: 1.25em;
+				#usps_cols{
+					.usp{
+						margin-bottom:3em;
+						img{
+							.opacity(75);
+						}
+						.usp_text{
+							margin:0.75em 0;
+							font-size:1.25em;
+							line-height: 1.25em;
+						}
 					}
 				}
 			}
-		}
 		
 			#video{
 		margin-bottom:5em;
@@ -210,7 +225,7 @@
 			}
 		
 			#client_list{
-				opacity:0.25;
+				.opacity(25);
 				
 				img{
 					margin:1em 0;
@@ -222,8 +237,6 @@
 	}
 }
 
-@import url('../../magnetme_global/icheck/skins/minimal/grey.less');
-
 @import url(mm_frontpage_registration.less);
 
 	footer.frontpage{
@@ -231,6 +244,7 @@
 		color:@grayLight;
 		padding:3em 0;
 		position: relative;
+		min-width:1140px;
 		
 		.container>.row-fluid{
 			vertical-align: top;

@@ -18,19 +18,19 @@ $(document).ready(function() {
     
     $("#vimeo_container").fitVids();
     
-/*
     jQuery(".headline").fitText(1.2, { maxFontSize: '65px' })
     jQuery(".tagline").fitText(1.05, { maxFontSize: '26px' })
     jQuery("#uitleg h1, #uitleg h2").not('.tagline').fitText(1.25, { maxFontSize: '49px' })
-*/
     
     vertical_center();
     $(window).bind('resize', vertical_center);
+/*
     
     $('body').stellar({
 	    responsive:false,
 	    hideDistantElements: false,
     });
+*/
     
 	 $('#registration input').iCheck({
 	    checkboxClass: 'icheckbox_minimal-grey',

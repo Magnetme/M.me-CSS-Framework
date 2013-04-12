@@ -45,7 +45,7 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        #fff;
+@bodyBackground:        darken(white,2%);
 @textColor:             @magnetme_grey;
 
 
@@ -79,7 +79,7 @@
 @fontSizeSmall:         @baseFontSize * 0.875; // ~12px
 @fontSizeMini:          @baseFontSize * 0.70; // ~11px
 
-@paddingLarge:          11px 19px; // 44px
+@paddingLarge:          6px 12px; // 44px
 @paddingSmall:          2px 10px;  // 26px
 @paddingMini:           0 6px;   // 22px
 
@@ -307,3 +307,10 @@
 // 768px-979px
 @fluidGridColumnWidth768:      percentage(@gridColumnWidth768/@gridRowWidth768);
 @fluidGridGutterWidth768:      percentage(@gridGutterWidth768/@gridRowWidth768);
+
+
+//ONLINE URL variables (Jules)
+@import url('../magnetme_global/url_variables.less');
+
+//LOCAL URL variables (Jules)
+/* @import url('../magnetme_global/url_variables_local.less'); */
