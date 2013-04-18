@@ -32,7 +32,7 @@ $(document).ready(function() {
     });
 */
     
-	 $('#registration input').iCheck({
+	 $('#registrationForm1 input, #registrationForm2 input').iCheck({
 	    checkboxClass: 'icheckbox_minimal-grey',
 	    radioClass: 'iradio_minimal-grey',
 	    labelHoverClass: 'hover',
