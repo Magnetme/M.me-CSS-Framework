@@ -5,11 +5,11 @@ function vertical_center() {
     
     if(height_container+50 < height*0.90){
 	    var ninetypc = (90 * height) / 100;
-	    $("#fp_intro_red").css('height',ninetypc + 'px');
+	    $("#fp_intro").css('height',ninetypc + 'px');
     	var offset = (ninetypc - height_container)/2;
 	    $(container).css('margin-top',offset);   
     } else{
-	    $("#fp_intro_red").css('height','auto');
+	    $("#fp_intro").css('height','auto');
 	    $(container).css('margin-top','2em');
     }
 }
@@ -18,14 +18,16 @@ $(document).ready(function() {
     
     $("#vimeo_container").fitVids();
     
+/*
     jQuery(".headline").fitText(1.2, { maxFontSize: '65px' })
     jQuery(".tagline").fitText(1.05, { maxFontSize: '26px' })
     jQuery("#uitleg h1, #uitleg h2").not('.tagline').fitText(1.25, { maxFontSize: '49px' })
+*/
     
     vertical_center();
     $(window).bind('resize', vertical_center);
+
 /*
-    
     $('body').stellar({
 	    responsive:false,
 	    hideDistantElements: false,
