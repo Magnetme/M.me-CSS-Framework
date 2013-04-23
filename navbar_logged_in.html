@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+
+	<title>Je carriere begint op Magnet.me - www.magnet.me</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Je carriere begint op Magnet.me - www.magnet.me">
+	<meta name="author" content="magnet.me">
+
+	<!-- Le styles -->
+
+		 <!-- Bootstrap default stylesheets -->
+		 <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		 <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
+
+		 <!-- Magnet.me page specific stylesheet -->
+		 <link href="assets/css/page_templates/mm_frontpage.css" rel="stylesheet" type="text/css">
+
+		 <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
+
+		 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+
+		 <!--[if lt IE 9]>
+			 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		 <![endif]-->
+
+		 <!-- Google font (Roboto) import -->
+		 		 
+		 <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,500italic'>
+		
+		<!-- Font awesome -->  
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">       
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome-ie7.css" rel="stylesheet">
+</head>
+
+<body>
+
+	 <!-- Navbar -->
+        
+            <!-- Vanaf hier angular functionaliteit-->
+             <div class="navbar navbar-fixed-top ng-cloak logged_in" data-app="login">
+                 <div class="navbar-inner">
+                     <div class="container navcontainer">
+                     <div class="row">
+                     	<div class="span4">
+		                     <div class="row-fluid">
+		                     	<div class="span5">
+			                        <div class="pull-left" id="brand">
+			                            <a href="#home">
+			                                <img src="assets/img/navbar/logo_magnetme.png" alt="Magnet.me logo" width="auto" height="100%" />
+			                            </a>
+			                        </div>
+		                     	</div>
+		                     	<div class="span7">
+			                        <ul class="nav" id="main">
+			                        	<li>
+				                            <a href="#home">
+				                                <i class="icon-envelope"></i> Berichten
+				                            </a>
+			                        	</li>
+			                        	<li>
+				                            <a href="#home">
+				                                <i class="icon-building"></i> Netwerk
+				                            </a>
+			                        	</li>
+			                        </ul>
+		                        </div>
+		                     </div>
+                     	</div>
+                     	<div class="span5">
+                     		<div class="row-fluid">
+		                     	<div class="span7">
+			                        <form id="search" class="navbar-form form-inline" ng-controller="search" action="search" name="searchForm" autocomplete="on">
+							        	<input class="input-block-level" placeholder="Zoeken" tabindex="1" type="text">
+			                        </form>
+		                        </div>
+		                        <div class="span5">
+			                        <ul class="nav" id="main">
+			                        	<li>
+				                            <a href="#home">
+				                                <i class="icon-envelope"></i> Alle bedrijven
+				                            </a>
+			                        	</li>
+			                        </ul>
+			                    </div>
+	                     	</div>
+                     	</div>
+                     	<div class="span3">
+                 			<ul class="nav pull-right" id="personal">  
+                     			<li class="dropdown">  
+                     				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                     					Jules Holleboom
+                     					<b class="caret"></b>  
+                     				</a>  
+							         
+							         <ul class="dropdown-menu pull-right text-right"> 
+					         			 <li><a href="#">Persoonlijke gegevens</a></li>  
+									     <li><a href="#">Mijn profiel</a></li>  
+									     <li><a href="#">Account instellingen</a></li>
+									     <li class="divider"></li>  
+								     	<li><a href="#">Uitloggen</a></li>  
+								     </ul>  
+							    </li>  
+</ul> 
+
+                 	</div>  	
+             	</div>
+    <!-- Tot hier angular functionaliteit-->
+                 </div>
+                 </div>
+                 <div class="container" id="alerts" ng-show="error">
+                        <div class="alert animated" >
+                            <a href="#" class="close" data-dismiss="alert">×</a>
+                            <i class="icon-exclamation-sign"></i><strong>Fout:</strong>{[error]}
+                         </div>
+                     </div>
+             </div>
+	<!-- Le javascript -->
+	
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/jquery.js" type="text/javascript"></script>
+	<script src="assets/js/google-code-prettify/prettify.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap-transition.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap-alert.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap-modal.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap-dropdown.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap-scrollspy.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap-tab.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap-tooltip.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap-popover.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap-button.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap-collapse.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap-carousel.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap-typeahead.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap-affix.js" type="text/javascript"></script>
+	<script src="assets/js/application.js" type="text/javascript"></script>
+	
+	<!-- /* Magnet.me plugins */ -->
+	<script src="assets/js/magnetme/plugins.js" type="text/javascript"></script>
+	
+	<!-- /* Page specific JS */ -->
+	<script src="assets/js/magnetme/frontpage.js" type="text/javascript"></script>
+
+</body>
+</html>	

@@ -49,480 +49,362 @@
 		}
 	}
 	
-	/* //Navbar login form (Jules)*/
-	.navbar{
-		color:@magnetme_grey_2;
-		
-		.container{
-			height:auto;
-		}
-		
-		
-		a, label, checkbox{
-			color:inherit;
-			&:hover{
-				color:@magnetme_grey_3;
-			}
-		}
-		
-		.btn, a.btn{
-			text-transform: uppercase;
-			font-size:@fontSizeSmall;
-			color:white;
-		}
-		
-
+	//Navbar plugin
+	@import url(elements/navbar.less);
 	
-		.navbar-inner{
-			.box-shadow(inset 0 -1px 0 lighten(@magnetme_grey,5%));
-			padding:20px 0 15px;
-		}
-	
-		.container{
-			height:50px;
-			position: relative;
-		}
+	/* Navbar alerts (Jules) */
+	.container#alerts{
+		position: relative;
+		z-index:-1;
 		
-		#brand{
+		.alert{
 			position: relative;
-			height:100%;
+			right:0;
+			margin:0 0 0.25em;
 			display:inline-block;
-			left:0;
-			line-height:50px;
-			padding:0 0 5px;
+			float:right;
+			clear:both;
+			.box-shadow(0 1px 1px rgba(0,0,0,.15));
 			
-			img{
-				
-				width:385px/2;
-			}
-		}
-		
-		
-		
-		form#login{
-			margin-bottom:-10px;
-		
-			input, button, a.btn{
-				margin:0;
-
-			}
-			
-			.vertical_divider{
-				display: inline-block;
-				vertical-align: middle;
-				background:@grayDark;
-				width:1px;
-
-			}
-				
-			input{
-				background:@grayDark;
-				color: @grayLighter;
-				border:none;
-				font-size:@fontSizeSmall;
-								
-				.placeholder(@grayLight);
-				
-				&:focus{
-					.box-shadow( inset 0 0 0px 1px rgba(255,255,255,0.25);)
-					}
-				}
-			
-			.inlog_wrapper{
-				
-				.login-tool{
-					display:inline-block;
-					margin:5px 0 0 5px;
-					
-					
-					label{
-					margin:0;
-					line-height:@baseLineHeight/2;
-					}					
-					input[type="checkbox"]{
-						margin-right:0.25em ;
-						line-height:@baseLineHeight/2;
-					}
-				}	
-			}
-		}
-		
-		.btn#login{
-			
-			.box-shadow(0 1px 1px rgba(0,0,0,0.25));
-			
-			i{
-				margin: 0;
-				width: 0.5em;
-				left: -0.5em;
-				position: relative;
-			}
-		}
-		
-		.btn-facebook{
-			padding-left:15%;
-				.icon_wrapper{
-					width:30px;
-					font-size:16px;	
-					 i{
-						 line-height:32px;
-					 }				
-				}
+			 .close{
+				 color:darken(@red,15%);
+				 text-shadow: none;
+				 font-weight: normal;
+			 }
+			 
+			 i{
+				 margin-right:0.25em;
+			 }
 		}
 	}
-		
-		/* Navbar alerts (Jules) */
-		.container#alerts{
-			position: relative;
-			z-index:-1;
-			
-			.alert{
-				position: relative;
-				right:0;
-				margin:0 0 0.25em;
-				display:inline-block;
-				float:right;
-				clear:both;
-				.box-shadow(0 1px 1px rgba(0,0,0,.15));
-				
-				 .close{
-					 color:darken(@red,15%);
-					 text-shadow: none;
-					 font-weight: normal;
-				 }
-				 
-				 i{
-					 margin-right:0.25em;
-				 }
+	
+	/* Progress bar tweak */
+	.progress{
+		height:2px;
+		margin-bottom:2em;
+	}
+	
+	/* //Input append/prepend tweak (Jules) */
+	
+	.input-append{
+		.add-on{
+			.border-radius(0 2px 2px 0);
+			.box-shadow(-1px 0 0 white);
 			}
-		}
-		
-		/* Progress bar tweak */
-		.progress{
-			height:2px;
-			margin-bottom:2em;
-		}
-		
-		/* //Input append/prepend tweak (Jules) */
-		
-		.input-append{
-			.add-on{
-				.border-radius(0 2px 2px 0);
-				.box-shadow(-1px 0 0 white);
-				}
-		}
-		.input-prepend{
-			.add-on{
-				.border-radius(2px 0 0 2px);
-				}
-		}
-		
-		*[class*='input-']{
+	}
+	.input-prepend{
+		.add-on{
+			.border-radius(2px 0 0 2px);
+			}
+	}
+	
+	*[class*='input-']{
 
-			.add-on{
-				background-color:white !important;
-				
-				i{
-					color:@magnetme_grey_2;
-				}
-			}
-		}
-		
-		//Maakt inline labels naast input velden zichtbaar en gecentreerd.	
-		
-		.help-inline, .help-block{
-			font-size:@fontSizeSmall;
-		}
-		
-		.help-block{
-			ul{
-				margin-left:28px;
-				
-				li{
-					list-style: none;
-					line-height:@inputHeight;
-				}
-			}
-		}	
-		
-		/* //Tweak to optimize iCheck add-on in use with Flatstrap (Jules) */
-		.checkbox, .radio{
-			padding-left: 0;
-			label, .iradio_minimal-grey, .icheckbox_minimal-grey{
-				display:inline-block;
-			}
+		.add-on{
+			background-color:white !important;
 			
+			i{
+				color:@magnetme_grey_2;
+			}
+		}
+	}
+	
+	//Maakt inline labels naast input velden zichtbaar en gecentreerd.	
+	
+	.help-inline, .help-block{
+		font-size:@fontSizeSmall;
+	}
+	
+	.help-block{
+		ul{
+			margin-left:28px;
+			
+			li{
+				list-style: none;
+				line-height:@inputHeight;
+			}
+		}
+	}	
+	
+	/* //Tweak to optimize iCheck add-on in use with Flatstrap (Jules) */
+	.checkbox, .radio{
+		padding-left: 0;
+		label, .iradio_minimal-grey, .icheckbox_minimal-grey{
+			display:inline-block;
+		}
+		
+		label{
+			display:inline;
+			vertical-align: middle;
+		}
+		
+		.iradio_minimal-grey, .icheckbox_minimal-grey{
+			top:5px;
+			margin-right:0.5em;
+		}
+		
+		.focus, .hover{
 			label{
-				display:inline;
-				vertical-align: middle;
+			text-decoration: underline;
 			}
+		}			
+	}
+	
+	//Maakt elke lengte mogelijk
+	.tooltip-inner{
+		max-width:none !important;	
+	}
+	
+	//In geval van tabfocus op btn
+	.btn, .input{
 			
-			.iradio_minimal-grey, .icheckbox_minimal-grey{
-				top:5px;
-				margin-right:0.5em;
-			}
-			
-			.focus, .hover{
-				label{
-				text-decoration: underline;
-				}
-			}			
+		&:focus{
+			outline:none;
+			.box-shadow(0 0 0px 1px rgba(255,255,255,0.25));
 		}
-		
-		//Maakt elke lengte mogelijk
-		.tooltip-inner{
-			max-width:none !important;	
+	}
+	
+	
+	fieldset{
+		legend{
+			margin-bottom:0;
+			line-height:@baseLineHeight;
 		}
-		
-		//In geval van tabfocus op btn
-		.btn, .input{
-				
-			&:focus{
-				outline:none;
-			}
-		}
-		
-		
-		fieldset{
-			legend{
-				margin-bottom:0;
-				line-height:@baseLineHeight;
-			}
-		} 		
-		
-		
-		
-		/* //Select dropdown */
-		.bootstrap-select.btn-group {
-		    .dropdown-menu {
-		        li {
-		            & > a {
-		                min-height:20px;
-		            }
-		        }
-		    }
-		}
-		.bootstrap-select.btn-group {
-		    .dropdown-menu {
-		        min-width:100%;
-		        -moz-box-sizing:border-box;
-		        -webkit-box-sizing:border-box;
-		        box-sizing:border-box;
-		        dt {
-		            display:block;
-		            padding:3px 20px;
-		            cursor:default;
-		        }
-		        li {
-		            a {
-		                i.check-mark {
-		                    display: none;
-		                }
-		            }
-		            & > dt {
-		                small {
-		                    font-weight:normal;
-		                    font-weight:normal;
-		                }
-		            }
-		            & > a.opt {
-		                padding-left:35px;
-		            }
-		            small {
-		                padding-left:0.5em;
-		                padding-left:0.5em;
-		            }
-		            & > a {
-		                min-height:20px;
-		            }
-		        }
-		        li:not(.disabled) {
-		            & > a:hover {
-		                small {
-		                    color: #64b1d8;
-		                    color:rgba(255,255,255,0.4);
-		                }
-		            }
-		        }
-		    }
-		    .btn {
-		        .filter-option {
-		            overflow:hidden;
-		            position:absolute;
-		            left:12px;
-		            right:25px;
-		            text-align:left;
-		        }
-		        .caret {
-		            position:absolute;
-		            right:12px;
-		        }
-		    }
-		    .div-contain {
-		        overflow:hidden;
-		    }
-		}
-		.bootstrap-select {
-		    .btn:focus {
-		        outline: none;
-		        outline-offset: -2px;
-		    }
-		    .btn {
-		        width: 100%;
-		    }
-		}
-		.input-append {
-		    .bootstrap-select.btn-group {
-		        margin-left: -1px;
-		    }
-		}
-		.bootstrap-select.btn-group.pull-right, .bootstrap-select.btn-group[class*="span"].pull-right, .row-fluid .bootstrap-select.btn-group[class*="span"].pull-right {
-		    float:right;
-		}
-		.bootstrap-select.btn-group, .bootstrap-select.btn-group[class*="span"] {
-		    float:none;
-		    display: inline-block;
-		    margin-bottom: 10px;
-		    margin-left:0;
-		}
-		.clearfix:after {
-		    visibility: hidden;
-		    display: block;
-		    font-size: 0;
-		    content: " ";
-		    clear: both;
-		    height: 0;
-		}
-		.bootstrap-select.btn-group[class*="span"] {
-		    .btn {
-		        width:100%;
-		    }
-		}
-		.bootstrap-select.btn-group.show-menu-arrow {
-		    .dropdown-menu::before {
-		        position: absolute;
-		        top: -7px;
-		        left: 9px;
-		        display: inline-block;
-		        border-right: 7px solid transparent;
-		        border-bottom: 7px solid #CCC;
-		        border-left: 7px solid transparent;
-		        border-bottom-color: rgba(0, 0, 0, 0.2);
-		        content: '';
-		    }
-		    .dropdown-menu::after {
-		        position: absolute;
-		        top: -6px;
-		        left: 10px;
-		        display: inline-block;
-		        border-right: 6px solid transparent;
-		        border-bottom: 6px solid white;
-		        border-left: 6px solid transparent;
-		        content: '';
-		    }
-		    .dropdown-menu {
-		        overflow-y:visible !important;
-		    }
-		}
-		.bootstrap-select:not([class*="span"]) {
-		    width: 220px;
-		}
-		.bootstrap-select.btn-group &>.disabled, .bootstrap-select.btn-group .dropdown-menu li.disabled &>a {
-		    cursor: not-allowed;
-		}
-		.input-prepend {
-		    .bootstrap-select.btn-group {
-		        margin-right: -1px;
-		    }
-		}
-		.bootstrap-select.btn-group .dropdown-menu li:not(.disabled) &>a:hover small, .bootstrap-select.btn-group .dropdown-menu li:not(.disabled) &>a:focus small {
-		    color: #64b1d8;
-		    color:rgba(255,255,255,0.4);
-		}
-		.bootstrap-select.btn-group.show-tick {
-		    .dropdown-menu {
-		        li.selected {
-		            a {
-		                i.check-mark {
-		                    display:inline-block;
-		                    position: absolute;
-		                    right: 20px;
-		                }
-		            }
-		        }
-		        li {
-		            a {
-		                .pull-left {
-		                    margin-right: 34px;
-		                }
-		            }
-		        }
-		    }
-		}
-		
-		
-		/* iCheck.js Minimal skin, grey
-		----------------------------------- */
-		.icheckbox_minimal-grey,
-		.iradio_minimal-grey {
-		    display: block;
-		    margin: 0;
-		    padding: 0;
-		    width: 18px;
-		    height: 18px;
-		    background: url(@greypng) no-repeat;
-		    border: none;
-		    cursor: pointer;
-		}
-		
-		.icheckbox_minimal-grey,
-		.icheckbox_minimal-grey.static:hover {
-		    background-position: 0 0;
-		}
-		    .icheckbox_minimal-grey.hover,
-		    .icheckbox_minimal-grey:hover {
-		        background-position: -20px 0;
-		    }
-		    .icheckbox_minimal-grey.checked {
-		        background-position: -40px 0;
-		    }
-		    .icheckbox_minimal-grey.disabled {
-		        background-position: -60px 0;
-		        cursor: default;
-		    }
-		    .icheckbox_minimal-grey.checked.disabled {
-		        background-position: -80px 0;
-		    }
-		
-		.iradio_minimal-grey,
-		.iradio_minimal-grey.static:hover {
-		    background-position: -100px 0;
-		}
-		    .iradio_minimal-grey.hover,
-		    .iradio_minimal-grey:hover {
-		        background-position: -120px 0;
-		    }
-		    .iradio_minimal-grey.checked {
-		        background-position: -140px 0;
-		    }
-		    .iradio_minimal-grey.disabled {
-		        background-position: -160px 0;
-		        cursor: default;
-		    }
-		    .iradio_minimal-grey.checked.disabled {
-		        background-position: -180px 0;
-		    }
-		
-		/* Retina support */
-		@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-		       only screen and (-moz-min-device-pixel-ratio: 1.5),
-		       only screen and (-o-min-device-pixel-ratio: 1.5),
-		       only screen and (min-device-pixel-ratio: 1.5) {
-		    .icheckbox_minimal-grey,
-		    .iradio_minimal-grey {
-		        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAAoCAYAAADQUaxgAAAFRklEQVR4Xu3aUWiVZRzH8R09raXTGjEQpGTZcCbZ0TCds8AUrK0uW2a3wyFtahJUN9muSknrtFVMoyLIkXaXM2RmF83GwGqGqZu6kSHIdrFy0+bGOH0v/hfdjHw483mes/P7w4cXBvJ++c/x8MKT6OvryxTENYny8vKC13btKLCJru+9/emCixcvxtln+xseHo62r6SkJPo+xn7HzlOGTViHpViEeRYwgj9wHp04jgE4Db/fAsb+RuLr+8/fR5R99vcRbZ/9/7PGSPtsktCIZGc2atGASiSmCLjfrMTLyKALLTiMyVzqU5/6krCxl4aTwRTjqU996nO3Ec2osIBRHMNJ9GAAf1vAvShDCutRg7XmLTTiBBwmXJ/61JeERsRdEdLYagH92INDGJ0iYNB0oxXF2Iw3UYEOHMAOjIXsU5/6dIAE0PpJi7eA+m0NWngYpWjHKoxhNz7AOFxmFJ/iS+xEE7ZiBWowFHOf+tQ3C24josPjR6xCPyqxF+NZBIxjLyrRj1X2jtKQfepTnw6QmSdj/I/2NwffYgnOogo9mK7pQRXOYom9a05sfepTnw4QEXdprMYlbMA1TPdcw9O4ZO9Kx9SnPvW5HyCiLw/tbyPqMIZaDOJOzRBewBjqsDGGPvWpTweIiLtZ+NACmvCrh4AeNFlAM2bH1qc+9SWhiVsGYUf7exFLcRn74Gv2oQ4VqEXbTO3j9mI2txE97U+/X32BiLh7xZ57MAFfM4G91tAQuk996tMB4k/G6LZVbu+vDGsxikPwPV9hFJV4KI/6CrEdXRgxXfazwjB92p8OEBE3zyCBdtyA77mBdmvYlCd9C9GNNNag2KxBGt1Y6L9P+9MB4l/G5OaXh/ZXZc+TCDS821ryoK8QR5HCVJNCO+7226f96QARcbPMnmcQan6z5yN50FePFP5vHsNWv33aX/hbWLoNlMjytlAC/kb7e8CelxFqLtlzUR70bXEI2IJmf33an75ARNzMs+d1hBl7N4rzoG+lQ8AKv33aX0RfIPoS0ZeH9idZmYDH0f70BSLiZsSe8xFm7N0YzYO+XxwCzvrt0/5y7wDR7aKECTPa35/2XIwwY+/GlTzoa3MIaPPbp/3pABFxc86eyxFm7N34PQ/6WnHmNm8Gtfrt0/50gPiTMFn/+6C0v057bkCYsXfjVB703UINejDVnEE1bvnt0/50gIi4OY4MqjEXvmcuqq3heJ70XcVq7MRp3DCn7WdP4Kr/Pu3P7y0syf3bQtpfP35CFbbgIHzOS5hnDf151DeOtImkT/vTASLi7iNU4XV84fH66F14wxpaZnJf/bYG7S/yPl3jDSthdNsq9/Z3GBewGLvga3Zhsb37cOg+9alPB4iIu0k0WsBupDwEpLDbArZjMnSf+tSnAyS8hMmtLw/t7wQ+xz04glLcqSnFEXvXZ+iIqU996tMBIuKuAd14GN9jAaZ7FuCEvaMbjaH71Ke++A8QfYlI/Pu7iefRi0dxCilM16TQieXotXfdjLVPfepLQjON7DaJzFxDeArH8Di60IT9GAfjrBCv4m0U4WdUYyjmPvWpT18gIu4G8SQOoAjv4DzqMNchYA7qcA7voggHsA6DsfepT31JaETc/YN6fINmLMFBvI+j+AE9GMBfFnAfypDCejyHYgvoRSM6YuhTn/pcD5AMohv1qS9yHViGWjRiDTab25kutOBrTMbSpz716QtExI9JtJkyPIt1qMCDmG8B13EFF9CJ7zCQq33qU18y9ptA6lNfjhnAx2ZG96lPfYlMJuPQJiIi4vsWloiI6AARERHNv9u+HrGfS9FbAAAAAElFTkSuQmCC);
+	} 		
+	
+	
+	
+	/* //Select dropdown */
+	.bootstrap-select.btn-group {
+	    .dropdown-menu {
+	        li {
+	            & > a {
+	                min-height:20px;
+	            }
+	        }
+	    }
+	}
+	.bootstrap-select.btn-group {
+	    .dropdown-menu {
+	        min-width:100%;
+	        -moz-box-sizing:border-box;
+	        -webkit-box-sizing:border-box;
+	        box-sizing:border-box;
+	        dt {
+	            display:block;
+	            padding:3px 20px;
+	            cursor:default;
+	        }
+	        li {
+	            a {
+	                i.check-mark {
+	                    display: none;
+	                }
+	            }
+	            & > dt {
+	                small {
+	                    font-weight:normal;
+	                    font-weight:normal;
+	                }
+	            }
+	            & > a.opt {
+	                padding-left:35px;
+	            }
+	            small {
+	                padding-left:0.5em;
+	                padding-left:0.5em;
+	            }
+	            & > a {
+	                min-height:20px;
+	            }
+	        }
+	        li:not(.disabled) {
+	            & > a:hover {
+	                small {
+	                    color: #64b1d8;
+	                    color:rgba(255,255,255,0.4);
+	                }
+	            }
+	        }
+	    }
+	    .btn {
+	        .filter-option {
+	            overflow:hidden;
+	            position:absolute;
+	            left:12px;
+	            right:25px;
+	            text-align:left;
+	        }
+	        .caret {
+	            position:absolute;
+	            right:12px;
+	        }
+	    }
+	    .div-contain {
+	        overflow:hidden;
+	    }
+	}
+	.bootstrap-select {
+	    .btn:focus {
+	        outline: none;
+	        outline-offset: -2px;
+	    }
+	    .btn {
+	        width: 100%;
+	    }
+	}
+	.input-append {
+	    .bootstrap-select.btn-group {
+	        margin-left: -1px;
+	    }
+	}
+	.bootstrap-select.btn-group.pull-right, .bootstrap-select.btn-group[class*="span"].pull-right, .row-fluid .bootstrap-select.btn-group[class*="span"].pull-right {
+	    float:right;
+	}
+	.bootstrap-select.btn-group, .bootstrap-select.btn-group[class*="span"] {
+	    float:none;
+	    display: inline-block;
+	    margin-bottom: 10px;
+	    margin-left:0;
+	}
+	.clearfix:after {
+	    visibility: hidden;
+	    display: block;
+	    font-size: 0;
+	    content: " ";
+	    clear: both;
+	    height: 0;
+	}
+	.bootstrap-select.btn-group[class*="span"] {
+	    .btn {
+	        width:100%;
+	    }
+	}
+	.bootstrap-select.btn-group.show-menu-arrow {
+	    .dropdown-menu::before {
+	        position: absolute;
+	        top: -7px;
+	        left: 9px;
+	        display: inline-block;
+	        border-right: 7px solid transparent;
+	        border-bottom: 7px solid #CCC;
+	        border-left: 7px solid transparent;
+	        border-bottom-color: rgba(0, 0, 0, 0.2);
+	        content: '';
+	    }
+	    .dropdown-menu::after {
+	        position: absolute;
+	        top: -6px;
+	        left: 10px;
+	        display: inline-block;
+	        border-right: 6px solid transparent;
+	        border-bottom: 6px solid white;
+	        border-left: 6px solid transparent;
+	        content: '';
+	    }
+	    .dropdown-menu {
+	        overflow-y:visible !important;
+	    }
+	}
+	.bootstrap-select:not([class*="span"]) {
+	    width: 220px;
+	}
+	.bootstrap-select.btn-group &>.disabled, .bootstrap-select.btn-group .dropdown-menu li.disabled &>a {
+	    cursor: not-allowed;
+	}
+	.input-prepend {
+	    .bootstrap-select.btn-group {
+	        margin-right: -1px;
+	    }
+	}
+	.bootstrap-select.btn-group .dropdown-menu li:not(.disabled) &>a:hover small, .bootstrap-select.btn-group .dropdown-menu li:not(.disabled) &>a:focus small {
+	    color: #64b1d8;
+	    color:rgba(255,255,255,0.4);
+	}
+	.bootstrap-select.btn-group.show-tick {
+	    .dropdown-menu {
+	        li.selected {
+	            a {
+	                i.check-mark {
+	                    display:inline-block;
+	                    position: absolute;
+	                    right: 20px;
+	                }
+	            }
+	        }
+	        li {
+	            a {
+	                .pull-left {
+	                    margin-right: 34px;
+	                }
+	            }
+	        }
+	    }
+	}
+	
+	
+	/* iCheck.js Minimal skin, grey
+	----------------------------------- */
+	.icheckbox_minimal-grey,
+	.iradio_minimal-grey {
+	    display: block;
+	    margin: 0;
+	    padding: 0;
+	    width: 18px;
+	    height: 18px;
+	    background: url(@greypng) no-repeat;
+	    border: none;
+	    cursor: pointer;
+	}
+	
+	.icheckbox_minimal-grey,
+	.icheckbox_minimal-grey.static:hover {
+	    background-position: 0 0;
+	}
+	    .icheckbox_minimal-grey.hover,
+	    .icheckbox_minimal-grey:hover {
+	        background-position: -20px 0;
+	    }
+	    .icheckbox_minimal-grey.checked {
+	        background-position: -40px 0;
+	    }
+	    .icheckbox_minimal-grey.disabled {
+	        background-position: -60px 0;
+	        cursor: default;
+	    }
+	    .icheckbox_minimal-grey.checked.disabled {
+	        background-position: -80px 0;
+	    }
+	
+	.iradio_minimal-grey,
+	.iradio_minimal-grey.static:hover {
+	    background-position: -100px 0;
+	}
+	    .iradio_minimal-grey.hover,
+	    .iradio_minimal-grey:hover {
+	        background-position: -120px 0;
+	    }
+	    .iradio_minimal-grey.checked {
+	        background-position: -140px 0;
+	    }
+	    .iradio_minimal-grey.disabled {
+	        background-position: -160px 0;
+	        cursor: default;
+	    }
+	    .iradio_minimal-grey.checked.disabled {
+	        background-position: -180px 0;
+	    }
+	
+	/* Retina support */
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	       only screen and (-moz-min-device-pixel-ratio: 1.5),
+	       only screen and (-o-min-device-pixel-ratio: 1.5),
+	       only screen and (min-device-pixel-ratio: 1.5) {
+	    .icheckbox_minimal-grey,
+	    .iradio_minimal-grey {
+	        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAAoCAYAAADQUaxgAAAFRklEQVR4Xu3aUWiVZRzH8R09raXTGjEQpGTZcCbZ0TCds8AUrK0uW2a3wyFtahJUN9muSknrtFVMoyLIkXaXM2RmF83GwGqGqZu6kSHIdrFy0+bGOH0v/hfdjHw483mes/P7w4cXBvJ++c/x8MKT6OvryxTENYny8vKC13btKLCJru+9/emCixcvxtln+xseHo62r6SkJPo+xn7HzlOGTViHpViEeRYwgj9wHp04jgE4Db/fAsb+RuLr+8/fR5R99vcRbZ/9/7PGSPtsktCIZGc2atGASiSmCLjfrMTLyKALLTiMyVzqU5/6krCxl4aTwRTjqU996nO3Ec2osIBRHMNJ9GAAf1vAvShDCutRg7XmLTTiBBwmXJ/61JeERsRdEdLYagH92INDGJ0iYNB0oxXF2Iw3UYEOHMAOjIXsU5/6dIAE0PpJi7eA+m0NWngYpWjHKoxhNz7AOFxmFJ/iS+xEE7ZiBWowFHOf+tQ3C24josPjR6xCPyqxF+NZBIxjLyrRj1X2jtKQfepTnw6QmSdj/I/2NwffYgnOogo9mK7pQRXOYom9a05sfepTnw4QEXdprMYlbMA1TPdcw9O4ZO9Kx9SnPvW5HyCiLw/tbyPqMIZaDOJOzRBewBjqsDGGPvWpTweIiLtZ+NACmvCrh4AeNFlAM2bH1qc+9SWhiVsGYUf7exFLcRn74Gv2oQ4VqEXbTO3j9mI2txE97U+/X32BiLh7xZ57MAFfM4G91tAQuk996tMB4k/G6LZVbu+vDGsxikPwPV9hFJV4KI/6CrEdXRgxXfazwjB92p8OEBE3zyCBdtyA77mBdmvYlCd9C9GNNNag2KxBGt1Y6L9P+9MB4l/G5OaXh/ZXZc+TCDS821ryoK8QR5HCVJNCO+7226f96QARcbPMnmcQan6z5yN50FePFP5vHsNWv33aX/hbWLoNlMjytlAC/kb7e8CelxFqLtlzUR70bXEI2IJmf33an75ARNzMs+d1hBl7N4rzoG+lQ8AKv33aX0RfIPoS0ZeH9idZmYDH0f70BSLiZsSe8xFm7N0YzYO+XxwCzvrt0/5y7wDR7aKECTPa35/2XIwwY+/GlTzoa3MIaPPbp/3pABFxc86eyxFm7N34PQ/6WnHmNm8Gtfrt0/50gPiTMFn/+6C0v057bkCYsXfjVB703UINejDVnEE1bvnt0/50gIi4OY4MqjEXvmcuqq3heJ70XcVq7MRp3DCn7WdP4Kr/Pu3P7y0syf3bQtpfP35CFbbgIHzOS5hnDf151DeOtImkT/vTASLi7iNU4XV84fH66F14wxpaZnJf/bYG7S/yPl3jDSthdNsq9/Z3GBewGLvga3Zhsb37cOg+9alPB4iIu0k0WsBupDwEpLDbArZjMnSf+tSnAyS8hMmtLw/t7wQ+xz04glLcqSnFEXvXZ+iIqU996tMBIuKuAd14GN9jAaZ7FuCEvaMbjaH71Ke++A8QfYlI/Pu7iefRi0dxCilM16TQieXotXfdjLVPfepLQjON7DaJzFxDeArH8Di60IT9GAfjrBCv4m0U4WdUYyjmPvWpT18gIu4G8SQOoAjv4DzqMNchYA7qcA7voggHsA6DsfepT31JaETc/YN6fINmLMFBvI+j+AE9GMBfFnAfypDCejyHYgvoRSM6YuhTn/pcD5AMohv1qS9yHViGWjRiDTab25kutOBrTMbSpz716QtExI9JtJkyPIt1qMCDmG8B13EFF9CJ7zCQq33qU18y9ptA6lNfjhnAx2ZG96lPfYlMJuPQJiIi4vsWloiI6AARERHNv9u+HrGfS9FbAAAAAElFTkSuQmCC);
 
-		        -webkit-background-size: 200px 20px;
-		        background-size: 200px 20px;
-		    }
-		}
+	        -webkit-background-size: 200px 20px;
+	        background-size: 200px 20px;
+	    }
+	}

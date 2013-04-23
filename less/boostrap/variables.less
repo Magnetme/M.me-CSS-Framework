@@ -97,8 +97,8 @@
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #ccc;
 
-@btnPrimaryBackground:              @magnetme_red_1;
-@btnPrimaryBackgroundHighlight:     @magnetme_red_2;
+@btnPrimaryBackground:              @magnetme_red;
+@btnPrimaryBackgroundHighlight:     @magnetme_red_1;
 
 @btnInfoBackground:                 @blue;
 @btnInfoBackgroundHighlight:        lighten(@blue, 5%);
@@ -109,8 +109,8 @@
 @btnWarningBackground:              lighten(@orange, 15%);
 @btnWarningBackgroundHighlight:     @orange;
 
-@btnDangerBackground:               @magnetme_red;
-@btnDangerBackgroundHighlight:      @magnetme_red_1;
+@btnDangerBackground:               @btnPrimaryBackground;
+@btnDangerBackgroundHighlight:      @btnPrimaryBackgroundHighlight;
 
 @btnInverseBackground:              @magnetme_grey_2;
 @btnInverseBackgroundHighlight:     @magnetme_grey_1;
@@ -193,10 +193,10 @@
 @navbarBackground:                @grayDarker;
 @navbarBorder:                    transparant;
 
-@navbarText:                      #777;
-@navbarLinkColor:                 #777;
-@navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:           @gray;
+@navbarText:                      @magnetme_grey_2;
+@navbarLinkColor:                 @magnetme_grey_3;
+@navbarLinkColorHover:            @magnetme_grey_4;
+@navbarLinkColorActive:           @magnetme_grey_4;
 @navbarLinkBackgroundHover:       transparent;
 @navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
 
@@ -311,7 +311,7 @@
 
 
 //ONLINE URL variables (Jules)
-@import url('../magnetme_global/url_variables.less');
+/* @import url('../magnetme_global/url_variables.less'); */
 
 //LOCAL URL variables (Jules)
-/* @import url('../magnetme_global/url_variables_local.less'); */
+@import url('../magnetme_global/url_variables_local.less');
