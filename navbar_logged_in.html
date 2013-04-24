@@ -6,9 +6,16 @@
 
 	<title>Je carriere begint op Magnet.me - www.magnet.me</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=1280px, initial-scale=1.0">
 	<meta name="description" content="Je carriere begint op Magnet.me - www.magnet.me">
 	<meta name="author" content="magnet.me">
+		
+	<link rel="shortcut icon" href="favicon.ico"/>
+	
+	<link rel="apple-touch-icon-precomposed" href="assets/img/touch-icon-iphone.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/touch-icon-ipad.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/touch-icon-iphone-retina.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/touch-icon-ipad-retina.png" />
 
 	<!-- Le styles -->
 
@@ -44,8 +51,8 @@
              <div class="navbar navbar-fixed-top ng-cloak logged_in" data-app="login">
                  <div class="navbar-inner">
                      <div class="container navcontainer">
-                     <div class="row">
-                     	<div class="span4">
+                     <div class="row-fluid">
+                     	<div class="left_col pull-left">
 		                     <div class="row-fluid">
 		                     	<div class="span5">
 			                        <div class="pull-left" id="brand">
@@ -58,56 +65,60 @@
 			                        <ul class="nav" id="main">
 			                        	<li>
 				                            <a href="#home">
-				                                <i class="icon-envelope"></i> Berichten
+				                                <i class="icon-envelope"></i><span class="counter">5</span> Berichten
 				                            </a>
 			                        	</li>
 			                        	<li>
 				                            <a href="#home">
-				                                <i class="icon-building"></i> Netwerk
+				                                <i class="icon-building"></i><span class="counter">3</span> Netwerk
 				                            </a>
 			                        	</li>
 			                        </ul>
 		                        </div>
 		                     </div>
                      	</div>
-                     	<div class="span5">
+                     	<div class="right_col pull-right">
                      		<div class="row-fluid">
-		                     	<div class="span7">
-			                        <form id="search" class="navbar-form form-inline" ng-controller="search" action="search" name="searchForm" autocomplete="on">
-							        	<input class="input-block-level" placeholder="Zoeken" tabindex="1" type="text">
+		                     	<div class="span4">
+			                        <form id="search" class="navbar-form form-inline input-block-level" ng-controller="search" action="search" name="searchForm" autocomplete="on">
+			                        	<div class="input-append input-block-level">
+								        	<input class="input input-block-level" placeholder="Zoeken" tabindex="1" type="text">
+								        	<button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
+			                        	</div>
 			                        </form>
 		                        </div>
-		                        <div class="span5">
-			                        <ul class="nav" id="main">
+		                        <div class="offset2 span1">
+			                        <ul class="nav" id="secondary">
 			                        	<li>
 				                            <a href="#home">
-				                                <i class="icon-envelope"></i> Alle bedrijven
+				                                <i class="icon-building"></i>
 				                            </a>
 			                        	</li>
 			                        </ul>
 			                    </div>
+			                    <div class="span5">
+		                 			<ul class="nav pull-right" id="personal">  
+		                     			<li class="dropdown">  
+		                     				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		                     					<span class="avatar"><img src="https://www.magnet.me/export/ad/ad1a33ZCGZiHFEiFS.jpeg"/></span>
+		                     					<span>Vincent van Nues - Schouten Karremans</span>
+		                     					<b class="caret"></b>  
+		                     				</a>  
+									         
+									         <ul class="dropdown-menu pull-right text-right"> 
+							         			 <li><a href="#">Persoonlijke gegevens</a></li>  
+											     <li><a href="#">Mijn profiel</a></li>  
+											     <li><a href="#">Account instellingen</a></li>
+											     <li class="divider"></li>  
+										     	<li><a href="#">Uitloggen</a></li>  
+										     </ul>  
+									    </li>  
+								    </ul> 
+							    </div> 
 	                     	</div>
                      	</div>
-                     	<div class="span3">
-                 			<ul class="nav pull-right" id="personal">  
-                     			<li class="dropdown">  
-                     				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                     					Jules Holleboom
-                     					<b class="caret"></b>  
-                     				</a>  
-							         
-							         <ul class="dropdown-menu pull-right text-right"> 
-					         			 <li><a href="#">Persoonlijke gegevens</a></li>  
-									     <li><a href="#">Mijn profiel</a></li>  
-									     <li><a href="#">Account instellingen</a></li>
-									     <li class="divider"></li>  
-								     	<li><a href="#">Uitloggen</a></li>  
-								     </ul>  
-							    </li>  
-</ul> 
-
-                 	</div>  	
-             	</div>
+ 	
+	             	</div>
     <!-- Tot hier angular functionaliteit-->
                  </div>
                  </div>
