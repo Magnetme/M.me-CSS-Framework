@@ -359,7 +359,7 @@
 
 // Gradient Bar Colors for buttons and alerts
 .gradientBar(@primaryColor, @secondaryColor, @textColor: #fff, @textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
-  color: @textColor;
+  color: @textColor !important;
   /* text-shadow: @textShadow; */
   #gradient > .vertical(@primaryColor, @secondaryColor);
   border-color: @secondaryColor @secondaryColor darken(@secondaryColor, 15%);
@@ -428,7 +428,7 @@
 
   // in these cases the gradient won't cover the background, so we override
   &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
-    color: @textColor;
+    color: @textColor !important;
     background-color: @endColor;
     *background-color: darken(@endColor, 5%);
   }

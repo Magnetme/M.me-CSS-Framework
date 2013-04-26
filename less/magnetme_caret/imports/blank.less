@@ -1,0 +1,176 @@
+@import url('../../boostrap/variables.less');
+@import url('../../boostrap/mixins.less');
+@import url('../../magnetme_global/lesshat.less');
+
+@import url('magnetme_restyle_elements.less');
+
+/* DEFAULT BLANK */
+
+.fixIt{padding:@baseLineHeight; border:solid 1px #f00; display:block; margin:20px 0 20px 0}
+
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+    a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,  
+    small, strike, strong, sub, sup, tt, var,  b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,  
+    table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}  
+
+html{height:100%; width:100%;}
+body {height:100%; width:100%; line-height:@baseLineHeight; background:@magnetme_bg_color; text-align:left;}
+body, td, th, textarea, input, select{font-family: @sansFontFamily; font-size: @baseFontSize; color: @textColor;}
+ol, ul {list-style: none;}  
+blockquote, q { quotes: none;}  
+blockquote:before, blockquote:after,  q:before, q:after {  content: ''; content: none;  }  
+:focus {outline: 0;}  
+ins {text-decoration: none;  }  
+del {text-decoration: line-through;  }  
+
+/* tables still need 'cellspacing="0"' in the markup */ 
+table {border-collapse: collapse; border-spacing: 0;  } 
+
+/* starrating */
+div.starWrapper{display:inline-block;}
+
+@bg_star: '${image-url:bg_star}';
+@bg_star_f2: '${image-url:bg_star_f2}';
+
+div.starWrapper div.star{height:16px; width:16px; background:url(@bg_star); display:inline-block; float:left;}
+div.starWrapper div.star:hover, div.starWrapper div.star.active{background:url(@bg_star_f2);}
+
+/* BASIS */
+a:link{font-weight:500; color:@linkColor; /* text-decoration:underline; */}
+a:active{color:inherit; /* text-decoration:underline; */}
+a:visited{color:inherit; /* text-decoration:underline; */}
+a:hover{color:@linkColorHover; text-decoration:underline;}
+
+a.btn:link{color:inherit; text-decoration:underline;}
+a.btn:active{color:inherit; text-decoration:underline;}
+a.btn:visited{color:inherit; text-decoration:underline;}
+a.btn:hover{color:inherit; text-decoration:none;}
+
+h1{color:@magnetme_red; font-size:22px; font-weight:500; line-height:24px; margin:0 0 20px 0; padding:0 0 20px 0; border-bottom:1px solid #ddd;}
+h2{color:@magnetme_red; font-size:15px; font-weight:500; line-height:20px; margin:0 0 10px 0;}
+h3{color:@magnetme_red; font-size:12px; font-weight:500; line-height:16px; margin:0; padding:10px; background:#fff;}
+
+hr{border:0; border-top:1px solid @magnetme_grey_3; height:0; margin:0 0 20px 0;}
+
+li{margin:0 0 0 15px; list-style-type:disc;}
+
+/* Docicon */
+a.docIcon{line-height:22px; text-decoration:none;}
+a.docIcon img{vertical-align:bottom; margin:0 5px 0 0;}
+
+/* HOLDERS */
+div#waitwhileloading{width:100%; height:100%; display:block; background:@magnetme_grey; .opacity(60); position:fixed; left:0; top:0; z-index:1234567890;}
+div#spinnerHolder{position:fixed; top:50%; left:50%;}
+
+/* GENERAL */
+@back_menuholder: '${image-url:back_menuholder}';
+
+#menuHolder{width:100%; height:50px; background:url('@back_menuholder') repeat-x @magnetme_grey; text-align:center; position:fixed; top:0; left:0; z-index:1000; .box-shadow(none)}
+div.menu{width:960px; height:50px; margin:auto; position:relative; color:#fff; font-size:16px; font-weight:500; text-align:left; }
+div.menu a{height:40px; color:#fff; text-decoration:none; line-height:40px; display:inline-block; float:left;}
+div.menu a.navactive {color:#fff; text-decoration:none; margin:18px 20px 0 0;}
+div.menu a.navinactive {color:#fff; text-decoration:none; margin:18px 20px 0 0;}
+div.menu a:hover {color:#fff; text-decoration:none; }
+
+
+@logo_magnetme_small: '${image-url:logo_magnetme_small}';
+
+div.menu a.logo:link{width:200px; height:42px; display:block; background:url('@logo_magnetme_small') no-repeat; position:absolute; top:7px; left:7px;}
+div.menu a.logo:visited{width:200px; height:42px; display:block; background:url('@logo_magnetme_small') no-repeat; position:absolute; top:7px; left:7px;}
+div.menu a.logo:hover{width:200px; height:42px; display:block; background:url('@logo_magnetme_small') no-repeat; position:absolute; top:7px; left:7px;}
+div.menu a.logo:active{width:200px; height:42px; display:block; background:url('@logo_magnetme_small') no-repeat; position:absolute; top:7px; left:7px;}
+
+#contentHolder{width:100%; min-height:500px; text-align:center; padding:50px 0 0 0;}
+div.content{width:980px; min-height:500px; margin:24px auto 24px auto; text-align:left;}
+.clearfix{height:0px; clear:both; float:none;}
+div.dev{width:100px; padding:5px; position:absolute; top:2px; left:2px; z-index:1000; border:1px dashed #000; text-align:left; font-size:10px;}
+div.update{width:100%; padding:10px; background:#fff6bf; position:fixed; top:0; left:0; z-index:10001; text-align:center; font-size:16px; font-weight:500; border:#ffd324; color:#817134;}
+div.error{width:100%; padding:10px; background:#fbe3e4; position:fixed; top:0; left:0; z-index:10001; text-align:center; font-size:16px; font-weight:500; border:#fbe3e4; color:#d12f19;}
+div.notice{width:100%; padding:10px; background:#fff6bf; border:solid 1px #ffd324; color:#817134; border-radius:5px;}
+.dontshow{display:none;}
+a.greenButton, a.greenButton:visited, a.greenButton:active, a.greenButton:hover, a.greenButton:link{display: inline-block; padding: 5px 10px;color: white;background: @green; font-weight:500; font-size:12px;}
+
+ /* TOP */
+div.top{width:960px; height:90px; margin:auto; text-align:left; position:relative; top:0; left:0; }
+
+/* TOOLTIP */
+#tooltip {line-height:16px; width:300px; text-align:left; position: absolute; z-index: 3000; border: 2px solid @magnetme_grey_2; background-color: #eee;}
+#tooltip div {margin:5px; font-weight:normal; color:#000; background-color:@magnetme_grey_4; padding:0px; text-indent:0px;}
+#tooltip h3 {margin:5px; font-weight:normal; color:#000; background-color:@magnetme_grey_4; padding:0px; text-indent:0px; box-shadow:none;}
+
+div.loginForm{width:300px; height:200px; padding:10px; text-align:left;}
+
+ /* RECRUITERLIST */
+table.recruiterList{width:480px; margin:10px; display:inline-block;}
+table.recruiterList thead th.caption{color:@magnetme_red; font-size:22px; font-weight:500; line-height:24px; margin:0 10px 20px 0; padding:0 0 20px 0; text-align:left; }
+table.recruiterList td{vertical-align:middle; padding:5px; cursor:pointer;}
+table.recruiterList td.width50{width:50px;}
+table.recruiterList td.width80{width:80px;}
+table.recruiterList td.width350{width:350px;}
+
+/* MSG DETAIL */
+.bericht{text-align:left;}
+.bericht .header {background:#eee; padding:20px; overflow:auto;}
+.bericht .header span {display:inline-block; width:315px; margin:0 0 2px 0}
+.bericht .header span.head {width:80px;}
+.bericht .header span.bold {font-weight:bold}    
+.bericht .header a:link {text-decoration:none;}
+.bericht .header a:active {text-decoration:none;}
+.bericht .header a:visited {text-decoration:none;}
+.bericht .header a:hover {text-decoration:underline;}
+.msgDetail br {clear:both;}
+.msgDetail p {padding:20px;}
+
+.bericht .fromPhoto {width:70px; margin:0 20px 0 0; text-align:center; font-size:10px; float:left}
+.bericht .fromInfo {width:400px; display:inline-block; float:left}
+.msgDetail hr {clear:both;}
+
+/* FORMS */
+fieldset.horizontal{margin:0; padding:0; border:0; font-size:12px;}
+fieldset.horizontal label {width:150px; height:25px; color:#000; float:left; display:inline-block; line-height:20px; font-weight:500; margin:0; padding:5px; }
+fieldset.horizontal label.smallLabel{width:160px; display:inline-block;}
+fieldset.horizontal input, select{display:inline-block; margin:0 0 2px 0; padding:5px; }
+fieldset.horizontal br{clear:both;}
+fieldset.horizontal .button{margin:10px 10px 0 0; cursor:pointer; padding:5px; text-decoration:underline;}
+fieldset.horizontal .button:hover{text-decoration:none;}
+
+.signupform fieldset.horizontal label {width:140px;}
+.signupform fieldset.horizontal .form300 {width:290px;}
+
+fieldset.vert{margin:0; padding:0; border:0;}
+fieldset.vert label {width:300px; height:20px; color:#000; display:inline-block; line-height:20px; padding:5px;}
+fieldset.vert input, select{padding:5px; display:inline-block;}
+fieldset.vert select{margin:0 0 2px 0;}
+fieldset.vert br{clear:both;}
+fieldset.vert .button{margin:10px 10px 0 0; cursor:pointer; padding:5px; text-decoration:underline;}
+fieldset.vert .button:hover{text-decoration:none;}
+
+input, select, textarea {color:#000; font-weight: normal; border: 1px solid #ccc; background-color: #ffffff;}
+
+textarea {height:150px;}
+
+.button{ border:0; background:@magnetme_red; color:#fff; cursor:pointer; }
+.afterInput{height:25px; line-height:25px; font-size:12px;}
+.formblank{border: 0px; background-color: transparent; margin:10px 0; }
+.form220{width:220px;}
+select.form220{width:232px;}
+.form232{width:232px;}
+.form300{width:300px;}
+.form400{width:400px;}
+.textarea200{width:200px;}
+.textarea300{width:310px;}
+.textarea400{width:410px;}
+
+/* OID OVERRIDE */
+div.oid {float:left; width:300px; margin:0 0 15px 0;}
+div.oid .imageoptions{display:none;}
+div.oid img{display:none;}
+div.oid br{display:none;}
+
+
+/* STUDIEINFO POPUP */
+div.studieinfo td, div.studieinfo th { padding-left: 10px; }
+div.studieinfo { padding-top: 5px; }
+div.studieinfo table { width: 100%; }
+div.studieinfo th { font-size: 120%; text-align: left; border-bottom: 1px solid black; }

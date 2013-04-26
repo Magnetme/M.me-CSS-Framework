@@ -1,3 +1,7 @@
+@import url('../boostrap/variables.less');
+@import url('../boostrap/mixins.less');
+@import url('lesshat.less');
+
 	input:invalid {
 	    -moz-box-shadow: none;
 	    box-shadow:none;
@@ -5,7 +9,7 @@
 	
 	/* //Facebook login/register button */
 	.btn-facebook {
-	  background: @blue;
+	  background: #5975B1;
 	  color:white;
 	  position: relative;
 	  
@@ -81,7 +85,7 @@
 	/* Progress bar tweak */
 	.progress{
 		height:2px;
-		margin-bottom:2em;
+		margin-bottom:@baseLineHeight 0;
 	}
 	
 	/* //Input append/prepend tweak (Jules) */

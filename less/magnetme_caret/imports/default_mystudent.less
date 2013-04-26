@@ -1,0 +1,352 @@
+@import url('../../boostrap/variables.less');
+@import url('../../boostrap/mixins.less');
+@import url('../../magnetme_global/lesshat.less');
+@import url('magnetme_restyle_elements.less');
+
+
+.fixIt{padding:10px; border:solid 1px @magnetme_red; display:none;}
+div.dev{width:100px; padding:5px; position:absolute; top:2px; left:2px; z-index:1000; border:1px dashed #000; text-align:left; font-size:10px;}
+
+/* DEFAULT */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+    a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,  
+    small, strike, strong, sub, sup, tt, var,  b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,  
+    table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: top; background: transparent;}  
+
+html{height:100%; width:100%;}
+body {width:100%; line-height:@baseLineHeight/1.25; background:@magnetme_bg_color; text-align:center;}
+body, td, input, textarea{font-family: @sansFontFamily; font-size: @baseFontSize; color: @textColor;}
+ol, ul {list-style: none;}  
+blockquote, q { quotes: none;}  
+blockquote:before, blockquote:after,  q:before, q:after {  content: ''; content: none;  }  
+:focus {outline: 0;}  
+ins {text-decoration: none;  }  
+del {text-decoration: line-through;  }  
+
+/* tables still need 'cellspacing="0"' in the markup */ 
+table {border-collapse: collapse; border-spacing: 0;  } 
+
+/* BASIS */
+a:link{font-weight:500; color:@linkColor; text-decoration:none !important;}
+a:active{color:inherit; /* text-decoration:underline; */}
+a:visited{color:inherit; /* text-decoration:underline; */}
+a:hover{color:@linkColorHover; text-decoration:underline;}
+
+a.btn:link{color:inherit; }
+a.btn:active{color:inherit;}
+a.btn:visited{color:inherit;}
+a.btn:hover{color:inherit; text-decoration:none !important;}
+
+h1{color:@magnetme_red; font-size:16px; font-weight:500; line-height:inherit; margin:0 0 20px 0; padding:0 0 5px 0; border-bottom:1px solid @magnetme_grey_3;}
+h1.caption{margin:0px; border:0px; padding:0px;}
+h2{color:@magnetme_red; font-size:15px; font-weight:500; line-height:inherit; margin:0 0 10px 0;}
+h3{font-size:@baseFontSize; font-weight:500; margin:0; padding:10px; background:@magnetme_grey_1; color:#fff; line-height:4px;}
+
+caption{color:#006633;} 
+small{font-size:10px;}
+span.companyName{font-weight:normal; font-style:italic;}
+
+hr{border:0; border-top:@border_box_light; height:0; margin:0 0 @whitespacePadding 0;}
+
+li{margin:0 0 0 15px; list-style-type:disc;}
+
+/* Docicon */
+a.docIcon{line-height:22px; text-decoration:none;}
+a.docIcon img{vertical-align:bottom; margin:0 5px 0 0;}
+
+
+/* HOLDERS */
+div#waitwhileloading{width:100%; height:100%; display:block; background:#000; opacity:0.6; filter:alpha(opacity=60); position:fixed; left:0; top:0; z-index:1234567890;}
+div#spinnerHolder{position:fixed; top:50%; left:50%;}
+
+#topHolder{width:100%; height:90px; background:#5a5859; line-height:18px; text-align:center; position:fixed; top:0; left:0;}
+#contentHolder{width:100%; min-height:500px; text-align:center; position:relative; top:50px; margin-top:@whitespacePadding; left:0; padding:0;}
+#footer{height:40px; width:720px; line-height:40px; margin:auto;}
+
+/* 2 losse vlakken creeren */
+div.content{width:980px; min-height:500px; margin:0 auto 0 auto; margin-top:@whitespacePadding; text-align:left; }
+div.content div.wideColumn{width:68%; min-height:460px; float:left; background:#fff; padding:0 @whitespacePadding_relative; margin:0 @whitespacePadding_relative/2 0 0; .box-shadow(none); border:@border_box; .border-radius(2px);}
+
+div.content div.wideColumn div.mainColumn{width:68%; min-height:460px; float:right; padding:0 0 @whitespacePadding @whitespacePadding_relative;  border-left:@border_box; margin-top:@whitespacePadding;}
+div.content div.smallColumn{width:25%; float:left;}
+
+/* geen 2 vlakken maar 1 vlak creeren met witte achtergrond*/ 
+div.content div.contentWide {background:#fff; overflow:auto; padding:0 @whitespacePadding_relative;}
+div.content div.contentWide div.wideColumn{padding:@whitespacePadding 0 @whitespacePadding_relative @whitespacePadding; border-left:@border_box; margin:0;}
+div.content div.contentWide div.smallColumn{padding:0;}
+
+div.subMenuColumn {width:26.5%; float:left; margin:@whitespacePadding @whitespacePadding_relative 0 0;}
+
+/* LOSSE ELEMENTEN */
+.clearfix{height:0px; clear:both; float:none;}
+.date{text-transform:lowercase;}
+div.feedback{width:30px; height:80px; display:block; position:fixed; left:0; top:30%; z-index:1000;}
+div.feedback a{width:30px; height:80px; display:block;}
+
+/* STATUS */
+.statusHolder{
+	background: rgba(242,206,24,0.15);
+	padding: 22px;
+	margin-left: -22px;
+	margin-right: -22px;
+}
+
+/* MELDINGEN */
+div.update{width:100%; padding:10px; background:#fff6bf; position:fixed; top:0; left:0; z-index:1001; text-align:center; font-size:16px; font-weight:500; border:#ffd324; color:#817134;}
+div.error{width:100%; padding:10px; background:#fbe3e4; position:fixed; top:0; left:0; z-index:1001; text-align:center; font-size:16px; font-weight:500; border:#fbe3e4; color:#d12f19;}
+.dontshow{display:none;}
+
+/* TOP */
+div.top{width:960px; height:90px; margin:auto; text-align:left; position:relative; top:0; left:0; }
+
+/* SUBMENU */
+div.subMenu {width:100%; margin:0 0 @whitespacePadding 0; text-align:left;}
+div.subMenu a{display:block; padding:0 0 0 35px; line-height:@baseLineHeight+4; font-weight:500; margin:@whitespacePadding/2 0 @whitespacePadding/2 0; position:relative; top:0; left:0;}
+div.subMenu a:first-child{border:0;}
+div.subMenu a:link{color:@textColor; text-decoration:none;}
+div.subMenu a:active{color:inherit;}
+div.subMenu a:visited{color:inherit; }
+div.subMenu a:hover{color:inherit; text-decoration:underline;}
+
+
+.subMenu .magnetsHolder{margin:@whitespacePadding 0 0 0; padding:@whitespacePadding 0 0 0; border-top:@border_box;}
+
+.subMenu .magnetsHolder a.magnetInvite{ padding:0; line-height:@baseLineHeight;}
+
+.subMenu .magnetsHolder a.gotoStore{margin:0; padding:0; line-height:18px; display:inline-block;}
+.subMenu .magnetsHolder a.gotoStore:link{text-decoration:none; color:#666;}
+.subMenu .magnetsHolder a.gotoStore:active{text-decoration:underline; color:#666;}
+.subMenu .magnetsHolder a.gotoStore:visited{text-decoration:none; color:#666;}
+.subMenu .magnetsHolder a.gotoStore:hover{text-decoration:underline; color:#666;}
+
+
+
+
+
+.listSmall h3 {background:@magnetme_grey_1; color:#fff; line-height:@whitespacePadding/2; font-size:@baseFontSize; margin:@whitespacePadding/2 0 0 0; .border-radius(2px 2px 0 0);}
+.listSmall .itemHolder {padding:@baseLineHeight*0.65; margin:0 0 @baseLineHeight/2 0; background:#fff; .border-radius(0 0 2px 2px);}
+
+div.data{width:80%; display:block; float:left; margin:0 0 @whitespacePadding/2 @whitespacePadding/2; }
+div.data i{color:@magnetme_grey_2; font-size:@fontSizeSmall;}
+span.icon{width:26px; height:26px; background:@magnetme_red; display:block; float:left;}
+span.defaulticon{background-color:@magnetme_red;}
+
+
+
+/* EVENEMENTEN - STAGES - VACATURES LIST GROOT */
+div.itemList{margin:0 0 24px 0; background:#fff;}
+div.itemList .header h1{border:0px; line-height:@baseLineHeight; padding:0 0 20px 0; margin:0;}
+div.itemList div.item{border-top:1px solid @magnetme_grey_3; padding:10px 0;}
+div.itemList div.item:first-child{border:0; padding:0 0 10px 0;}
+div.itemList div.item div.data{width:400px; }
+
+/* DATALIST */
+table.dataList{width:100%;}
+table.dataList thead th{height:@baseLineHeight; text-align:left; padding:10px 0 0 0;}
+table.dataList thead th.option{width:50px;}
+table.dataList thead th.caption{color:@magnetme_red; font-size:@fontSizeLarge; font-weight:500; line-height:24px; margin:0 0 20px 0; padding:0 0 5px 0; border-bottom:1px solid @magnetme_grey_3;}
+table.dataList thead th.addRecord{border-bottom:@border_box; padding:0; text-align:center;}
+table.dataList thead th.addRecord a{display:block;}
+table.dataList thead th.addRecord a:link{padding:5px; color:#fff;}
+table.dataList thead th.addRecord a:active{color:#fff;}
+table.dataList thead th.addRecord a:visited{color:#fff;}
+table.dataList thead th.addRecord a:hover{color:#fff; text-decoration:none;}
+table.dataList tbody td{height:25px; vertical-align:middle;}
+
+a.deleteButton{width:26px; height:26px; display:block; background:@magnetme_grey;}
+
+/* INFOLIST */
+table.infoList{width:100%;}
+table.infoList thead th{height:25px; padding:10px 0 0 0;}
+table.infoList thead th.option{width:50px ;}
+table.infoList thead th.caption{color:@magnetme_red; font-size:16px; font-weight:500; line-height:24px; margin:0 0 20px 0; padding:0 0 5px 0; border-bottom:1px solid @magnetme_grey_3;}
+table.infoList thead th.addRecord{border-bottom:1px solid @magnetme_grey_3; padding:0; text-align:center;}
+table.infoList thead th.addRecord a:link{display:block; padding:5px; color:#fff;}
+table.infoList thead th.addRecord a:active{color:#fff;}
+table.infoList thead th.addRecord a:visited{color:#fff;}
+table.infoList thead th.addRecord a:hover{color:#fff; text-decoration:none;}
+table.infoList tbody td{height:25px;}
+
+/* INBOX */
+table.messageList{width:100%;  }
+table.messageList caption{font-size:16px; font-weight:500; line-height:24px; margin:0 0 5px 0; padding:0 0 5px 0; border-bottom:1px solid @magnetme_grey_3; text-align:left; color:@magnetme_red;}
+table.messageList thead th{height:30px; text-align:left; padding:0 0 0 5px; vertical-align:middle;}
+table.messageList thead th.option{width:50px; padding:0 5px 0 5px; text-align:center;}
+table.messageList thead tr.header th{font-weight:500; background:#eee; border:solid 1px @magnetme_grey_3;}
+
+table.messageList tbody td{vertical-align:middle; padding:@whitespacePadding 0; border-top:@border_box_light; line-height:@baseLineHeight;}
+table.messageList tbody td a.companyIcon{width:50px; height:50px; display:block; overflow:hidden; border:1px solid @magnetme_grey_4;}
+table.messageList tbody td.icon {width:60px; vertical-align:top;}
+table.messageList tbody td.option {text-align:center;}
+table.messageList tbody td.date {width:100px; color:#999;}
+table.messageList tbody td.bijlagen{width:120px;}
+table.messageList tbody td a.deleteButton{width:16px; height:16px; display:block; background:#000;}
+table.messageList tbody span.date {color:#999; text-transform:lowercase;}
+table.messageList tbody td.statusmessage{width:25px;}
+table.messageList tbody td.deletemessage{width:25px;}
+
+
+.wallExcerpt a {display:block;}
+
+/* PAGINATOR */
+.paginator{margin:0 0 0 0; }
+.paginator a{width:20px; height:20px; font-weight:500; display:inline-block; text-decoration:none; line-height:20px; text-align:center;}
+.paginator a:link{background:@magnetme_red; color:#fff;}
+.paginator a:hover{color:#fff; background:@magnetme_red;}
+.paginator a.active{color:#fff; background:@magnetme_red;}
+.paginator a.inactive{color:#000; background:#fff;}
+.paginator a.inactive:hover{color:#fff; background:@magnetme_red;}
+
+/* MESSAGELIST NETWORK */
+table.messageList tbody td.ipStatus{width:250px; text-align:center;}
+table.messageList tbody td.ipStatus a.status{padding:5px; display:block; float:right; background:@magnetme_red; color:#fff; margin:0 0 0 5px; text-decoration:none;}
+table.messageList tbody td.ipStatus a.accepted{background:#529214;}
+table.messageList tbody td.ipStatus a.declined{background:#d12f19;}
+
+
+div.applications h2 {padding:5px; background:#eee; }
+div.applications h3 {.box-shadow(none); cursor:pointer; text-transform:capitalize;}
+div.applications .listing {margin:0 0 0 20px}
+div.applications .listing a {display:block;}
+
+/* MAGNET STORE */
+div.magnetFilter{borderz: 1px solid #aaa; margin: 0; padding: 12px 20px; text-align: left; width: 160px; background:#eee;}
+    .slider {background:#ccc; height:3px; position:relative; cursor:pointer; border:1px solid #333; width:155px; float:left; clear:right; margin:10px 0; border-radius:2px;}
+    .handle {background:#fff; height:15px; width:10px; top:-7px; position:absolute; display:block; margin-top:1px; border:1px solid #000; cursor:pointer; border-radius:2px 2px 5px 5px;}
+    .range {border:0; background:transparent; margin:auto; padding:0; text-align:center; width:80px; }
+    .minMax{width:35px; font-weight:500; }
+
+table.dataList td.productSummary{padding:10px 0 20px 0; vertical-align:top;}
+table.dataList td.productSummary a{width:210px; height:140px; display:block; text-align:center;}
+table.dataList td.productSummary a:link{ border:4px solid #aaa; }
+table.dataList td.productSummary a:active{border:4px solid #aaa;}
+table.dataList td.productSummary a:visited{border:4px solid #aaa;}
+table.dataList td.productSummary a:hover{border:4px solid #8dc63f;}
+table.dataList td.productSummary a.smallimage:link{width:65px; height:45px; display:block; border:4px solid #aaa; text-align:center; float:left; margin:0 2px 0 0;}
+table.dataList td.productSummary a.smallimage:active{border:4px solid #aaa;}
+table.dataList td.productSummary a.smallimage:visited{border:4px solid #aaa;}
+table.dataList td.productSummary a.smallimage:hover{border:4px solid #8dc63f;}
+table.dataList td.productSummary a.sponsorLink{border:0; height:auto; width:auto; text-align:left;}
+table.dataList td.productSummary a.meerinfo{border:0; height:auto; width:auto; float:right;}
+
+table.dataList td.productSummary p{width:110px; float:left;}
+table.dataList td.productSummary input{float:right; margin:15px 0 0 0;}
+table.dataList td.productSummary i{font-size:10px;}
+table.dataList td.productSummary b{width:100%; display:block; margin:15px 0 0 0;}
+
+div.insufficientMagnets{background:#fbe3e4; color: #d12f19; border: 1px solid #fbc2c4; border-radius:8px; margin-bottom: 12px; padding: 10px;}
+div.sufficientMagnets{background:#e6efc2; color: #529214; border: 1px solid #c6d880; border-radius:8px; margin-bottom: 12px; padding: 10px;}
+div.magnetNotification{background:#fff6bf; color: #817134; border:1px solid #ffd324; border-radius:8px; margin-bottom:12px; padding:10px;}
+
+div.magnetSaldo{font-size:14px; font-weight:500; color:#666;}
+div.magnetSaldo b{display:inline-block; color:@magnetme_red; font-size:16px;}
+
+    table.hoewerkthet_voorbeeld tr td{border:1px solid #DDDDDD; padding:3px;}
+    table.hoewerkthet_voorbeeld tr th{border:1px solid #DDDDDD; padding:3px; color:#fff; background-color:@magnetme_red}
+    table.hoewerkthet_reken tr td{font-size:16px; vertical-align:middle; text-align:center; border-bottom:1px solid #DDDDDD; padding:4px;}
+
+/* SEARCH COMPANY */
+div.searchResult div.header {display:none;}
+div.searchResult h1{margin:0 0 5px 0;}
+div.searchResult h2.search {margin:0 0 10px 10px; padding:2px 0 0 0}    
+div.searchResult div.itemList div.item {border-top:0px; border-bottom:solid 1px @magnetme_grey_3;}
+div.searchResult table caption{font-size:15px; border-bottom:none; padding:0;}
+div.searchResult table td p{ margin:0 0 10px 0}
+div.searchResult table td h2{ font-size:12px; color:#000; margin:0 0 0 0}
+div.searchResult table td h2.caption {font-size:15px; color:#5A5959; margin:0}
+
+ul.tabs {border-bottom:solid 1px #8dc63f; overflow:auto; margin:0 0 15px 0}  
+ul.tabs li{width:33%; display:block; float:left; background:@magnetme_grey_3; margin:0 1px 0 0; padding:0px;}
+ul.tabs li.active{background:#8dc63f;}
+ul.tabs li a {padding:8px; display:block;}
+ul.tabs li a:link {color:#000; text-decoration:none;}
+ul.tabs li a:active {color:#000; text-decoration:none;}
+ul.tabs li a:visited {color:#000; text-decoration:none;}
+ul.tabs li a:hover {color:#000; text-decoration:none;}
+ul.tabs li:hover {background:#c5e19f}
+ul.tabs li.active a{color:#fff;}
+ul.tabs li.active:hover {background:#8dc63f;}
+
+/* PROFILE SHORT */
+div.profileInfoShort {width:100%; height:auto; margin:0; padding:0; display:block; border-bottom:@border_box; overflow:auto; }
+div.profileInfoShort a:link{padding:0 0 5px 0; margin:0;}
+div.profileInfoShort img {float:left; margin:0 15px 15px 0; }
+div.profileInfoShort b {/* font-size:14px; */ font-weight: 500;}
+
+/* PROFILE SUBMENU QUICKLINKS */
+.quicklinks{margin:15px 20px 0 0; padding:0 0 15px 0; }
+.quicklinks li {margin:0 0 5px 0; list-style-type:none;}
+.quicklinks a:link {font-weight:500; text-decoration:none;}
+.quicklinks a:active {font-weight:500; text-decoration:none;}
+.quicklinks a:visited {font-weight:500; text-decoration:none;}
+.quicklinks a:hover {font-weight:500; text-decoration:none;}
+
+/* PROFILE INTERSET POOL */
+.profileInterestPool {overflow:auto; padding:15px 0 0 0; width:200px;}
+.profileInterestPool b {display:block; margin:0 0 10px 0}
+.profileInterestPool a {width:50px; height:50px; overflow:hidden; float:left; margin:0 14px 15px 0; border:solid 1px @magnetme_grey_3;}
+
+/* ITEMHOLDER */
+div.itemHolder{.box-shadow(none); border: @border_box; border-top:none;}
+div.itemHolder a.itemButton {clear:both; background:#8dc63f; color:#fff; height:20px; line-height:20px; overflow:hidden; padding:0 8px 0 8px; display:inline-block; }
+div.itemHolder a.itemButton:link {color:#fff; text-decoration:none;}
+div.itemHolder a.itemButton:active {color:#fff; text-decoration:none;}
+div.itemHolder a.itemButton:visited {color:#fff; text-decoration:none;}
+div.itemHolder a.itemButton:hover {color:#fff; text-decoration:underline;}
+
+/* FORMS */
+fieldset.horizontal{margin:0; padding:0; border:0;}
+fieldset.horizontal label {float:left; width:200px; height:25px; color:#000; display:block; line-height:25px; font-weight:500; margin:0 0 5px 0;}
+fieldset.horizontal label.smallLabel{width:160px; display:inline-block;}
+fieldset.horizontal input, select{float:left; display:block; margin:0 5px 5px 0;}
+fieldset.horizontal br{clear:both;}
+fieldset.horizontal .button{margin:10px 10px 0 0; cursor:pointer; padding:5px; text-decoration:underline;}
+fieldset.horizontal .button:hover{text-decoration:none;}
+
+fieldset.vert{margin:0; padding:0; border:0;}
+fieldset.vert label {width:300px; height:25px; color:#000; display:block; line-height:25px; font-weight:500;}
+fieldset.vert input, select{display:inline-block;}
+fieldset.vert br{clear:both;}
+fieldset.vert i{font-size:10px;}
+fieldset.vert .button{margin:10px 10px 0 0; cursor:pointer; padding:5px; text-decoration:underline;}
+fieldset.vert .button:hover{text-decoration:none; cursor:pointer;}
+
+fieldset.cv{margin:0; padding:0; border:0;}
+fieldset.cv label {float:left; width:280px; height:25px; color:#000; display:block; line-height:25px; margin:0 0 5px 0; padding:5px;}
+fieldset.cv label.smallLabel{width:160px; display:inline-block;}
+fieldset.cv input, select{float:left; display:block; margin:0 5px 5px 0; padding:5px;}
+fieldset.cv br{clear:both;}
+fieldset.cv .button{margin:10px 10px 0 0; cursor:pointer; padding:5px; text-decoration:underline;}
+fieldset.cv .button:hover{text-decoration:none;}
+
+input, textarea {padding:5px; color:#000; font-weight: normal; border: 1px solid #ccc; background-color: #ffffff; resize: none; }
+select{padding:4px;}
+.button{ border:0; background:@magnetme_red; color:#fff; cursor:pointer; padding:0 5px 0 5px;}
+
+.afterInput{float:left; margin:5px 5px 0 5px;}
+.formblank{border: 0px; background-color: transparent; }
+.form35{width:35px;}
+.form50{width:50px;}
+.form220{width:220px;}
+select.form220{width:232px;}
+.form350{width:350px;}
+select.form350{width:362px;}
+.form400{width:400px;}
+select.form400{width:412px;}
+.select400{width:411px;}
+.textarea400{width:400px;}
+.textarea420{width:420px;}
+
+/* OID OVERRIDE */
+div.oid {float:left; width:300px; margin:0 0 15px 0;}
+div.oid .imageoptions{display:none;}
+div.oid img{display:none;}
+div.oid br{display:none;}
+
+/* MEDIA DATASET */
+.addPhoto{margin:0 0 5px 0;}
+div.addedPhotos{width:740px; display:block; float:left;}
+div.thumbHolder{width:112px; height:105px; display:block; float:left; position:relative; top:0; left:0; }
+div.thumbHolder a.deleteImage{width:30px; height:30px; display:block; position:absolute; top:-10px; right:9px;}
+
+@import url('default_mystudent/default_mystudent_icons.less');
