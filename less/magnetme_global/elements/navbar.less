@@ -1,0 +1,222 @@
+	/* //Navbar login form (Jules)*/
+	.navbar{
+		color:@magnetme_grey_2;
+		
+		
+		&.logged_out{
+			
+			.navbar-inner{
+				padding:15px 0 20px;
+				
+				#brand{
+					img{
+						@logoHeight:44px;
+						margin: (@navbarHeight - @logoHeight)/2 0;
+						height:@logoHeight;
+						width:auto;
+						max-width:inherit !important;
+						}
+				}
+			}
+		
+			.container.navcontainer{
+				position: relative;
+								
+				form#login{
+					margin-bottom:-10px;
+				
+					input, button, a.btn{
+						margin:0;
+		
+					}
+					
+					.inlog_wrapper{
+						
+						.login-tool{
+							display:inline-block;
+							margin:5px 0 0 5px;
+							
+							
+							label{
+							margin:0;
+							line-height:@baseLineHeight/2;
+							}					
+							input[type="checkbox"]{
+								margin-right:0.25em ;
+								line-height:@baseLineHeight/2;
+							}
+						}	
+					}
+				}
+				.btn#login{			
+					.box-shadow(0 1px 1px rgba(0,0,0,0.25));
+					
+					i{
+						margin: 0;
+						width: 0.5em;
+						left: -0.5em;
+						position: relative;
+					}
+				}
+				
+				.btn-facebook{
+					padding-left:15%;
+					.icon_wrapper{
+						width:30px;
+						font-size:16px;	
+						 i{
+							 line-height:32px;
+						 }				
+					}
+				}
+			}
+		}
+		
+		&.logged_in{
+			font-size:@fontSizeSmall;
+			
+			.left_col{
+				width:38.5%;
+				
+				#brand{
+					img{
+						@logoHeight:32px;
+						margin: (@navbarHeight - @logoHeight)/2 0;
+						height:@logoHeight;
+						width:auto;
+						max-width:inherit !important;
+						}
+				}
+			}
+			
+			.right_col{
+				width:61.5%;
+			}
+			
+			.navbar-inner{
+				padding:0;
+			}
+			
+			.container.navcontainer{
+				position: relative;
+				
+				ul.nav{
+					font-weight: 500;
+					
+					li{
+						list-style: none;
+						margin: 0;
+					}
+					
+					a{
+						i{
+								font-size:125%;
+								vertical-align: middle;
+								
+							}
+					}
+				}
+				
+				ul.nav#main{
+										
+						a{
+							color:@magnetme_grey_3;
+							position: relative;
+							
+							&:hover, &.notification{
+								color:@magnetme_grey_4;
+							}
+							
+							.counter{
+								position: absolute;
+								height:@baseLineHeight/2;
+								width:@baseLineHeight/2;
+								left:@baseLineHeight;
+								top:@baseLineHeight/2;
+								padding:1px;
+								line-height: @baseLineHeight/2;
+								background:@magnetme_red;
+								
+								font-weight:600;
+								text-align: center;
+								font-size:75%;
+								text-shadow: none;
+								color:white;
+								.border-radius(2px);
+								.box-shadow(1px 1px 0 rgba(0,0,0,.25));
+							}	
+						}
+					}
+								
+				ul.nav#secondary{
+					margin-left:-175%;
+					
+					@media (min-width: 1280px) {
+						margin-left:-200%;
+					}
+					
+					a{
+					color:@magnetme_grey_2;
+					
+						&:hover{
+							color:@magnetme_grey_3;
+						}
+					}	
+				}
+				
+				.avatar{ 
+					margin-right:@baseLineHeight/3;
+					
+					img{
+					height:@baseLineHeight;
+					width:@baseLineHeight;
+					}
+				}
+			}
+		}
+			
+		a, label, checkbox{
+			color:@magnetme_grey_3;
+			&:hover{
+				color:@magnetme_grey_4;
+			}
+		}
+		
+		.btn, a.btn{
+			text-transform: uppercase;
+			font-size:@fontSizeSmall;
+			color:white;
+		}
+		
+		#brand{
+			height:100%;
+			position: relative;
+			
+			img{
+				
+			}
+		}
+		
+		.vertical_divider{
+				display: inline-block;
+				vertical-align: middle;
+				background:@grayDark;
+				width:1px !important;
+				position: relative;
+			}
+		
+		.navbar-inner{
+			.box-shadow(inset 0 -1px 0 lighten(@magnetme_grey,5%));
+		}
+
+		
+		input{
+			background:@grayDark;
+			color: @grayLighter;
+			border:none;
+			font-size:@fontSizeSmall;
+			.placeholder(@grayLight);
+		}
+
+		
+	}

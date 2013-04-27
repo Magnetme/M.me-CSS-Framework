@@ -29,176 +29,251 @@
 
 		 <!-- Google font (Roboto) import -->
 		 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,500italic' rel='stylesheet' type='text/css'>
-                     <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">       
-            <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome-ie7.css" rel="stylesheet">
 </head>
 
 <body>
 
 	<!-- Navbar -->
-		 <div class="navbar navbar-fixed-top not-logged-in">
+		 <div class="navbar navbar-fixed-top">
 			 <div class="navbar-inner">
 				 <div class="container">
-					 <div class="row-fluid">
-					 	<div class="span2">
-						 	<div class="pull-left" id="brand">
-							  	<a href="#home">
-							  		<img src="assets/img/navbar/logo_magnetme.png" alt="Magnet.me logo" width="auto "height="100%" />
-							  	</a>
-						 	</div>
-					 	</div>
-					 	<div class="span8 pull-right">
-						 	<form id="login" class="navbar-form  form-inline">
-						 		<div class="inlog_wrapper">
-						 			<div class="span6">
-										<div class="row-fluid">
-											<div class="span6">
-												<input type="text" class="input-block-level" placeholder="E-mail adres">
-												<div class="login-tool">
-													<label>
-														<input class="name="remember" type="checkbox" checked><small>Aangemeld blijven</small>
-													</label>
-												</div>
-											</div><!-- span6 -->
-											<div class="span6">
-												<input type="password" class="input-block-level" placeholder="Wachtwoord">
-												<div class="login-tool">
-													<label>
-														<a href="#forgotPassword" role="button" data-toggle="modal"><small>Wachtwoord vergeten?</small></a>
-													</label>
-												</div>
-											</div><!-- span6 -->
-										</div><!-- row-fluid -->
-						 			</div><!-- span7 -->
-									
-									<div class="span6">
-										<div class="row-fluid">
-											<div class="span4">
-												<button type="submit" class="btn btn-danger btn-block" data-loading-text="Inloggen...">Inloggen</button>
-											</div>
-										<div class="span1 vertical_divider"></div>
-											<div class="span7">
-												<button class="btn btn-info btn-facebook btn-block" type="submit">
-													<div class="icon_wrapper">
-														<i class="icon-facebook"></i>
-													</div>
-													Inloggen met Facebook
-												</button>
-											</div>
-										</div>
-							 		</div>
-								</form><!-- #login -->
-						 	</div><!-- span9 -->
-						 </div>
-					 </div>
+
+				 	<div class="pull-left" id="brand">
+					  	<a href="#home">
+					  		<img src="assets/img/navbar/logo_magnetme.png" alt="Magnet.me logo" width="385" height="100%" />
+					  	</a>
+				 	</div>
+
+				 	<form class="navbar-form pull-right form-inline">
+						<input type="text" class="input-medium" placeholder="E-mail adres">
+						<input type="password" class="input-medium" placeholder="Wachtwoord">
+						<button type="submit" class="btn btn-danger" data-loading-text="Inloggen...">Inloggen</button>
+						<div class="vertical_divider"></div>
+						<button class="btn btn-info btn-facebook " type="submit"><div class="icon_wrapper"><i class="icon-facebook"></i></div>Aanmelden met Facebook</button>
+					</form>
 				 </div>
 			 </div>
-			 
-			 	<div class="container" id="alerts">
+			 <div class="container" id="alerts">
 					<div class="alert animated">
 					 	<a href="#" class="close" data-dismiss="alert">×</a>
-					 	<i class="icon-exclamation-sign"></i><strong>Fout:</strong> De gegeven combinatie van gebruikersnaam en wachtwoord werd niet herkend.
+					 	<strong>Fout:</strong>De gegeven combinatie van gebruikersnaam en wachtwoord werd niet herkend.
 					 </div>
 				 </div>
-		 	</div>
 		 </div>
 
 		 <div id="registration_wrapper" class="animated fadeInUpBig">
 		 	<div class="container">
 		 		<div class="progress progress-success">
-				 		<div class="bar" style="width: 25%;"></div>
+				 		<div class="bar" style="width: 50%;"></div>
   				</div>
 
-  				<h5>Registratie</h5>
+  				<h5>Registratie stap 2 van 4</h5>
 
 		 		<div class="row-fluid step" id="step2">
+		 			<h3>Studiegegevens</h3>
+		 			<div class="row-fluid">	
 
-		 			<div class="span12">
-		 				<h3>Jouw persoonlijke gegevens</h3>
-
-				 			<div class="row-fluid">
-				   			<div class="span4">
-				   				<form id="registration">
-									 <fieldset>
-										<legend>Personalia</legend>
-										<div class="control-group input-prepend input-block-level">
-											 <div class="controls">
-											 	<span class="add-on"><i class="icon-user"></i></span>
-											 	<input class="input input-big span11 warning" type="text" placeholder="Voornaam" required>
-											 	<p class="help-block"></p>
-											 </div>
-										</div>
-										<div class="input-prepend input-block-level">
-										  	<span class="add-on"><i class="icon-user"></i></span>
-										  	<input class="input span11" type="text" placeholder="Achternaam" required>
-									 	</div>
-									 	<hr>
-									 	<div class="row-fluid">
-										 	<div class="control-group span6">
-										 	<label>Geslacht</label>
-										 		<div class="controls">
-													<div class=" radio inline">
-														<input type="radio" name="geslacht" id="geslacht1" value="option1">
-														<label for="geslacht1">Man</label>
+		 					<div class="span4">
+					 			<div class="row-fluid">
+						   				<form id="registration">
+											 <fieldset>
+											 <legend>Studiegegevens</legend>
+												<div class="control-group">
+												<h5>Type studie:</h5>
+											 		<div class="controls">
+														<div class=" radio">
+															<input type="radio" name="niveau" id="hbo" value="option1" tabindex="1">
+															<label for="niveau1">HBO</label>
+														</div>
+					
+														<div class="radio">
+															<input type="radio" name="niveau" id="wo" value="option2" checked>
+															<label for="niveau2">WO</label>
+														</div>
 													</div>
-				
-													<div class="radio inline">
-														<input type="radio" name="geslacht" id="geslacht2" value="option2">
-														<label for="geslacht2">Vrouw</label>
+											 	</div>
+											 	
+											 	<div class="control-group">
+											 	<h5>Studiefase:</h5>
+											 		<div class="controls">
+											 			<div class="row-fluid">
+											 			
+												 			<div class="radio span6">
+																<input type="radio" name="studietype" id="master" value="option1" tabindex="2">
+																<label for="niveau2">Propedeuse</label>
+															</div>
+															<div class="radio span6">
+																<input type="radio" name="studietype" id="bachelor" value="option2" checked>
+																<label for="niveau1">Bachelor</label>
+															</div>
+											 			</div>
+	
+														<div class="row-fluid">
+											 			
+												 			<div class="radio span6">
+																<input type="radio" name="studietype" id="master" value="option1" tabindex="2">
+																<label for="niveau2">Master</label>
+															</div>
+															<div class="radio span6">
+																<input type="radio" name="studietype" id="bachelor" value="option2" checked>
+																<label for="niveau1">Schakeljaar</label>
+															</div>
+											 			</div>
+											 			
+											 			<div class="row-fluid">
+											 			
+												 			<div class="radio span6">
+																<input type="radio" name="studietype" id="master" value="option1" tabindex="2">
+																<label for="niveau2">Exchange</label>
+															</div>
+											 			</div>
+											 			
 													</div>
-													<p class="help-block"></p>
-											  </div>
-										 	</div>
-										 	<div class="control-group input-prepend span6">
-										 		<label>Geboortedatum</label>
-										 		<div class="controls">
-										 			<span class="add-on"><i class="icon-calendar"></i></span>
-													<input type="text" class="input span10" placeholder="dd/mm/jjjj" required>
-													
-													<p class="help-block"></p>
-											  </div>
-										 	</div>
-									 	</div>
-									 </fieldset>
+											 	</div>
+											 	
+											 	<hr>
+											 												 	
+											 	<div class="control-group">
+												<h5>Status studie</h5>
+											 		<div class="controls">
+											 			<div class="row-fluid">
+															<div class="radio  span6">
+																<input type="radio" name="status_studie" id="huidige" value="option1" tabindex="3" checked>
+																<label for="niveau1">Huidige studie</label>
+															</div>
+						
+															<div class="radio  span6">
+																<input type="radio" name="status_studie" id="gestaakt" value="option2">
+																<label for="niveau2">Gestaakt</label>
+															</div>
+											 			</div>
+														<div class="row-fluid">
+															<div class="radio span6">
+																<input type="radio" name="status_studie" id="Afgestudeerd" value="option3">
+																<label for="niveau2">Afgestudeerd</label>
+															</div>
+											 			</div>
+													</div>
+											 	</div>
+											 	
+											 	<div class="control-group">
+											 		<div class="controls">
+											 		
+														<div class="row-fluid">
+															<div class="span6">														
+																<label>Van</label>
+														 		<select class="selectpicker show-tick span12" title="Algemene studierichting" data-style="btn-inverse" tabindex="4">
+														 		 	
+																      <option>1998</option>
+																      <option>1999</option>
+																      <option>2000</option>
+																      <option>2001</option>
+																      <option>2002</option>
+																      <option>2003</option>
+																      <option>2004</option>
+																      <option>2005</option>
+																      <option>2006</option>
+																      <option selected>2007</option>
+																      <option>2008</option>
+																      <option>2009</option>
+																      <option>2010</option>
+																      <option>2011</option>
+																      <option>2012</option>
+																      <option>2013</option>
+																  </select>
+															</div>
+															  
+															<div class="span6">														
+																<label>Tot</label>
+														 		<select class="selectpicker show-tick span12" title="Algemene studierichting" data-style="btn-inverse" tabindex="5" disabled>
+														 		 	
+																      <option>1998</option>
+																      <option>1999</option>
+																      <option>2000</option>
+																      <option>2001</option>
+																      <option>2002</option>
+																      <option>2003</option>
+																      <option>2004</option>
+																      <option>2005</option>
+																      <option>2006</option>
+																      <option>2007</option>
+																      <option>2008</option>
+																      <option>2009</option>
+																      <option>2010</option>
+																      <option>2011</option>
+																      <option>2012</option>
+																      <option selected="">2013</option>
+																  </select>
+															</div>
+												 		</div>										 		
+											 		</div>
+											 	</div>	 	
+											 </fieldset>
+											 <hr>
+											 <fieldset>
+												<div class="control-group">
+											 		<div class="controls">
+											 		<h5>Opleidingsinstelling</h5>
+											 		<input type="text" class="input-block-level typeahead" name="opleidingsinstelling" data-provide="typeahead" placeholder="Naam van je universiteit of school">
+											 		
+											 		<h5>Studienaam</h5>
+											 		<input type="text" class="input-block-level typeahead" name="studierichting" data-provide="typeahead" placeholder="Naam van je studie of opleiding">		
+													</div>
+											 	</div>
+											 	
+											 	<div class="control-group">
+											 		<div class="controls">
+												 		<h5>Studierichting</h5>
+												 		
+												 		<label>Algemeen</label>
+												 		
+												 		<div class="row-fluid">
+													 		 <select class="selectpicker show-tick span12" title="Algemene studierichting" data-style="btn-inverse">
 			
-									<fieldset>
-										<legend>Inloggegevens</legend>
-										<div class="control-group input-prepend input-block-level">
-											<div class="controls">
-											  	<span class="add-on"><i class="icon-envelope"></i></span>
-												<input class="input span11" type="email" name="email" id="email" placeholder="E-mail adres" rel="tooltip" title="Gebruik hier je e-mailadres waarop je berichten van recruiters wilt ontvangen." data-placement="right" data-validation-email-message="Geen geldig e-mail adres." required>
-												<p class="help-block"></p>
-										  	</div>
-										  </div>
-										  <div class="control-group input-prepend input-block-level">
-										  	<div class="controls">
-												<span class="add-on"><i class="icon-envelope"></i></span>
-												<input class="input span11" type="text" id="mail_check" placeholder="Herhaal e-mail adres ter controle" data-validation-matches-match="email" data-validation-matches-message="E-mail adressen komen niet overeen">
-												<p class="help-block"></p>
-										  	</div>
-										  </div>
-										  <div class="input-prepend input-block-level">
-										  	<div class="controls">
-												<span class="add-on"><i class="icon-lock"></i></span>
-												<input class="input span11" type="password" name="secret" id="password" placeholder="Wachtwoord" required>
-											 	<p class="help-block"></p>
-										  	</div>
-										  </div>
-										  <div class="control-group input-prepend input-block-level">
-										  	<div class="controls">
-												 	<span class="add-on"><i class="icon-lock"></i></span>
-												 	<input class="input span11" type="password" name="password_check" id="password_check" placeholder="Herhaal Wachtwoord ter controle" data-validation-matches-match="password" data-validation-matches-message="Wachtwoorden komen niet overeen">
-												 	<p class="help-block"></p>
-										  	</div>
-										  </div>
-									</fieldset>
-
-									<button type="submit" class="btn btn-danger pull-right">Verder</button>
-
-				   				</form>
-				   			</div>
+															      <option>Mustard</option>
+															      <option>Ketchup</option>
+															      <option>Relish</option>
+															      <option data-divider="true"></option>
+															      <option>Tent</option>
+															      <option>Flashlight</option>
+															      <option>Toilet Paper</option>
+															  </select>
+												 		</div>
+												 		
+												 		<label>Specifiek</label>
+												 		
+												 		<div class="row-fluid">
+													 		 <select class="selectpicker show-tick span12" title="Algemene studierichting" data-style="btn-inverse">
+			
+															      <option>Mustard</option>
+															      <option>Ketchup</option>
+															      <option>Relish</option>
+															      <option data-divider="true"></option>
+															      <option>Tent</option>
+															      <option>Flashlight</option>
+															      <option>Toilet Paper</option>
+															  </select>
+												 		</div>
+													</div>
+											 	</div>
+											 </fieldset>
+											 <fieldset>
+											 <legend>Gemiddelde cijfer</legend>
+												<div class="control-group">
+											 		<div class="controls">
+												 		<div class="input-prepend">
+													 		<span class="add-on">Gemiddelde cijfer:</span>
+													 		<input type="text" id="prependedInput" class="input-mini" name="gpa" data-provide="typeahead" placeholder="7,8">
+												 		</div>
+												 		
+												 		<p class="lead">Het invullen van je gemiddelde eindcijfer is belangrijk. Lees hieronder waarom.</p>
+												 		<p>Suspendisse laoreet tincidunt velit, sed congue tellus condimentum nec. Suspendisse id eros ut tortor tristique vulputate in auctor augue. In ultrices sapien vitae justo laoreet at sodales purus auctor. </p>												 			
+													</div>
+											 	</div>
+											 </fieldset>
+						   			</form>
+						   		</div>
 				   		</div>
-				   		
 			 		</div>
 		 		</div>
 		 	</div>
@@ -519,6 +594,8 @@
 			</div>
 			 </div>
 		 </div>
+	</div>
+
 		 <footer class="frontpage">
 			 	<div class="container">
 				 	<div class="row-fluid">
@@ -533,9 +610,6 @@
 				 	</div>
 		 	</div>
 	</footer>
-	</div>
-
-		 
 
 	<!-- Le javascript -->
 	
@@ -557,11 +631,11 @@
 	<script src="assets/js/bootstrap-affix.js" type="text/javascript"></script>
 	<script src="assets/js/application.js" type="text/javascript"></script>
 	
-	/* Magnet.me plugins */
+	<!-- /* Magnet.me plugins */ -->
 	<script src="assets/js/magnetme/plugins.js" type="text/javascript"></script>
 	
-	/* Page specific JS */
+	<!-- /* Page specific JS */ -->
 	<script src="assets/js/magnetme/frontpage.js" type="text/javascript"></script>
 
 </body>
-</html>	
+</html>

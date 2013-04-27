@@ -5,11 +5,11 @@ function vertical_center() {
     
     if(height_container+50 < height*0.90){
 	    var ninetypc = (90 * height) / 100;
-	    $("#fp_intro_red").css('height',ninetypc + 'px');
+	    $("#fp_intro").css('height',ninetypc + 'px');
     	var offset = (ninetypc - height_container)/2;
 	    $(container).css('margin-top',offset);   
     } else{
-	    $("#fp_intro_red").css('height','auto');
+	    $("#fp_intro").css('height','auto');
 	    $(container).css('margin-top','2em');
     }
 }
@@ -26,13 +26,15 @@ $(document).ready(function() {
     
     vertical_center();
     $(window).bind('resize', vertical_center);
-    
+
+/*
     $('body').stellar({
 	    responsive:false,
 	    hideDistantElements: false,
     });
+*/
     
-	 $('#registration input').iCheck({
+	 $('#registrationForm1 input, #registrationForm2 input').iCheck({
 	    checkboxClass: 'icheckbox_minimal-grey',
 	    radioClass: 'iradio_minimal-grey',
 	    labelHoverClass: 'hover',
@@ -50,10 +52,6 @@ $(document).ready(function() {
     
     $('.alert').addClass("fadeInRightBig");
     
-
-  	$(function () { 
-  		$("input,select,textarea").not("[type=radio], [type=submit]").jqBootstrapValidation(); 
-  	} );
-
+    $('.selectpicker').selectpicker();
     
 });	

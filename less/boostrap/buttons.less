@@ -24,6 +24,14 @@
   *border: 0; // Remove the border to prevent IE7s black border on input:focus
   /* border-bottom-color: darken(@btnBorder, 10%); */ // Removed, Jules
   .ie7-restore-left-whitespace(); // Give IE7 some love
+  
+  font-weight:@headingsFontWeight;//Jules
+  .transition(all 0.15s ease-in-out); // Jules
+  
+  i{
+	  margin:0 0.4em;
+			}
+
 
   // Hover/focus state
   &:hover,
@@ -54,8 +62,7 @@
   &[disabled] {
     cursor: default;
     background-image: none;
-    .opacity(65);
-
+    .opacity(85);
   }
 
 }

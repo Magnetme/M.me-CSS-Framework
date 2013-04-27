@@ -21,16 +21,17 @@
 
 		 <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
 
-		 <link href="assets/css/mm_global/icheck/skins/minimal/grey.css" rel="stylesheet" type="text/css">
-
 		 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 
 		 <!--[if lt IE 9]>
 			 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		 <![endif]-->
 
-		 <!-- fonts (Roboto&bootstrap) import -->
-		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,500italic'>
+		 <!-- Google font (Roboto) import -->
+		 		 
+		 <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,500italic'>
+		
+		<!-- Font awesome -->  
 		<link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">       
 		<link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome-ie7.css" rel="stylesheet">
 </head>
@@ -38,85 +39,124 @@
 <body>
 
 	<!-- Navbar -->
-		 <div class="navbar navbar-fixed-top">
+		 <div class="navbar navbar-fixed-top not-logged-in">
 			 <div class="navbar-inner">
 				 <div class="container">
-
-				 	<div class="pull-left" id="brand">
-					  	<a href="#home">
-					  		<img src="assets/img/navbar/logo_magnetme.png" alt="Magnet.me logo" width="385" height="100%" />
-					  	</a>
-				 	</div>
-
-				 	<form class="navbar-form pull-right form-inline">
-						<input type="text" class="input-medium" placeholder="E-mail adres">
-						<input type="password" class="input-medium" placeholder="Wachtwoord">
-						<button type="submit" class="btn btn-danger" data-loading-text="Inloggen...">Inloggen</button>
-						<div class="vertical_divider"></div>
-						<button class="btn btn-info btn-facebook " type="submit"><div class="icon_wrapper"><i class="icon-facebook"></i></div>Aanmelden met Facebook</button>
-					</form>
+					 <div class="row-fluid">
+					 	<div class="span2">
+						 	<div class="pull-left" id="brand">
+							  	<a href="#home">
+							  		<img src="assets/img/navbar/logo_magnetme.png" alt="Magnet.me logo" width="auto "height="100%" />
+							  	</a>
+						 	</div>
+					 	</div>
+					 	<div class="span8 pull-right">
+						 	<form id="login" class="navbar-form  form-inline">
+						 		<div class="inlog_wrapper">
+						 			<div class="span6">
+										<div class="row-fluid">
+											<div class="span6">
+												<input type="text" class="input-block-level" placeholder="E-mail adres">
+												<div class="login-tool">
+													<label>
+														<input class="name="remember" type="checkbox" checked><small>Aangemeld blijven</small>
+													</label>
+												</div>
+											</div><!-- span6 -->
+											<div class="span6">
+												<input type="password" class="input-block-level" placeholder="Wachtwoord">
+												<div class="login-tool">
+													<label>
+														<a href="#forgotPassword" role="button" data-toggle="modal"><small>Wachtwoord vergeten?</small></a>
+													</label>
+												</div>
+											</div><!-- span6 -->
+										</div><!-- row-fluid -->
+						 			</div><!-- span7 -->
+									
+									<div class="span6">
+										<div class="row-fluid">
+											<div class="span4">
+												<button type="submit" class="btn btn-danger btn-block" data-loading-text="Inloggen...">Inloggen</button>
+											</div>
+										<div class="span1 vertical_divider"></div>
+											<div class="span7">
+												<button class="btn btn-info btn-facebook btn-block" type="submit">
+													<div class="icon_wrapper">
+														<i class="icon-facebook"></i>
+													</div>
+													Inloggen met Facebook
+												</button>
+											</div>
+										</div>
+							 		</div>
+								</form><!-- #login -->
+						 	</div><!-- span9 -->
+						 </div>
+					 </div>
 				 </div>
 			 </div>
-			 <div class="container" id="alerts">
+			 
+			 	<div class="container" id="alerts">
 					<div class="alert animated">
 					 	<a href="#" class="close" data-dismiss="alert">×</a>
-					 	<strong>Fout:</strong>De gegeven combinatie van gebruikersnaam en wachtwoord werd niet herkend.
+					 	<i class="icon-exclamation-sign"></i><strong>Fout:</strong> De gegeven combinatie van gebruikersnaam en wachtwoord werd niet herkend.
 					 </div>
 				 </div>
+		 	</div>
 		 </div>
 
-<!-- vanaf hier alles in pagina specifiek, niet meer in template -->
 
-	<div id="fp_wrapper">
+		 <div id="fp_wrapper" >
 
-		 <div id="fp_intro_red" data-stellar-ratio="1.35" data-stellar-background-ratio="0.25" data-stellar-vertical-offset="50" style="">
-			 <div class="container">
-
-				 <div class="curtain" id="introductie" >
-
-					 <div class="row-fluid">
-						 <h1 class="headline">Je carriere begint op Magnet.me</h1>
-					 </div>
-
-					 <div class="row-fluid">
-						 <div class="span8">
-							 <h2 class="tagline">Ontvang netwerkverzoeken van bedrijven, bouw een netwerk op van interessante werkgevers en bepaal zelf wie jouw CV ziet en met wie je in contact staat.</h2>
+			 <div id="fp_intro_red" data-stellar-ratio="1.35" data-stellar-background-ratio="0.25" data-stellar-vertical-offset="50">
+				 <div class="container">
+	
+					 <div class="curtain" id="introductie" >
+	
+						 <div class="row-fluid">
+							 <h1 class="headline">Je carriere begint op Magnet.me</h1>
 						 </div>
-					 </div>
-
-					 <div class="row-fluid">
-						 <div class="span5">
-							 <form id="registration">
-								 <fieldset>
-								 	<div class="studentmail-wrapper animated">
-								 		<div class="validator">V</div>
-											<input
-												class="input-block-level"
-												type="text"
-												placeholder="Vul je universiteits- of HBO emailadres in en meld je aan">
-											<div class="error-message animated">Vul een geldig universiteits- of HBO emailadres in.</div>
-									 </div>
-									 <div class="row-fluid">
-										 <button class="btn btn-info btn-facebook large input-block-level" type="submit" rel="popover" data-placement="right" title="Magnet.me zal nooit ongevraagd je Facebook account gebruiken.">
-										 	<div class="icon_wrapper"><i class="icon-facebook"></i></div>Aanmelden met Facebook
-										 </button>
-
-										 <div class="btn_seperator">
-											 <span class="text">aanmelden zonder Facebook?</span>
-											 <span class="line"></span>
+	
+						 <div class="row-fluid">
+							 <div class="span8">
+								 <h2 class="tagline">Ontvang netwerkverzoeken van bedrijven, bouw een netwerk op van interessante werkgevers en bepaal zelf wie jouw CV ziet en met wie je in contact staat.</h2>
+							 </div>
+						 </div>
+	
+						 <div class="row-fluid">
+							 <div class="span5">
+								 <form id="registration">
+									 <fieldset>
+									 	<div class="studentmail-wrapper animated">
+									 		<div class="validator"><i class="icon-ok-sign"></i></div>
+												<input
+													class="input-block-level"
+													type="text"
+													placeholder="Vul je universiteits- of HBO emailadres in en meld je aan">
+												<div class="error-message animated">Vul een geldig universiteits- of HBO emailadres in.</div>
 										 </div>
-										 <button class="btn btn-primary registration_reg input-block-level" type="submit" rel="tooltip" data-placement="right" data-original-title="Zeker weten? Aanmelden met Facebook duurt slechts 15 seconden...">Aanmelden</button>
+										 <div class="row-fluid">
+											 <button class="btn btn-large btn-info btn-facebook large btn-block" type="submit" rel="popover" data-placement="right" title="Magnet.me zal nooit ongevraagd je Facebook account gebruiken.">
+											 	<div class="icon_wrapper"><i class="icon-facebook"></i></div>Aanmelden met Facebook
+											 </button>
+	
+											 <div class="btn_seperator">
+												 <span class="text">aanmelden zonder Facebook?</span>
+												 <span class="line"></span>
+											 </div>
+											 <button class="btn btn-primary registration_reg btn-block" type="submit" rel="tooltip" data-placement="right" data-original-title="Zeker weten? Aanmelden met Facebook duurt slechts 15 seconden...">Aanmelden</button>
+										 </div>
+									 </fieldset>
+									 <div class="problems">
+									 	<p><i class="icon-question-sign"></i>Problemen met inloggen of geen werkend studentenemail? <a href="#">Klik hier</a></p>
 									 </div>
-								 </fieldset>
-								 <div class="problems">
-								 	<p>Problemen met inloggen of geen werkend studentenemail? <a href="#">Klik hier</a></p>
-								 </div>
-							 </form>
+								 </form>
+							 </div>
 						 </div>
 					 </div>
 				 </div>
 			 </div>
-		 </div>
 
 		 <div id="uitleg">
 			 <div class="container">
@@ -125,15 +165,15 @@
 
 					 <div class="row-fluid" id="usps_cols">
 						 <div class="span4 usp">
-							 <img class="img-rounded span12" src="http://placehold.it/350x180&text=USP1"> <span class="span12 usp_text">Persoonlijk overzicht van voor jou relevante en interessante evenementen, stages en vacatures.</span>
+							 <img class="img-rounded span12" src="http://mme-wruijs.dev.caret.net/export/28/28aa3465BxDt3PJm0.png"> <span class="span12 usp_text">Persoonlijk overzicht van voor jou relevante en interessante evenementen, stages en vacatures.</span>
 						 </div>
 
 						 <div class="span4 usp">
-							 <img class="img-rounded span12" src="http://placehold.it/350x180&text=USP2"> <span class="span12 usp_text">Meer dan 220 bedrijven op een plek, van multinationals tot start-ups.</span>
+							 <img class="img-rounded span12" src="http://mme-wruijs.dev.caret.net/export/35/35aa34E05JTAlodzD.png"> <span class="span12 usp_text">Meer dan 220 bedrijven op een plek, van multinationals tot start-ups.</span>
 						 </div>
 
 						 <div class="span4 usp">
-							 <img class="img-rounded span12" src="http://placehold.it/350x180&text=USP3"> <span class="span12 usp_text">Ontvang netwerkverzoeken van bedrijven op basis van jouw profiel en ontdek welke bedrijven jou interessant vinden.</span>
+							 <img class="img-rounded span12" src="http://mme-wruijs.dev.caret.net/export/42/42aa34sm5hbguhhx6.png"> <span class="span12 usp_text">Ontvang netwerkverzoeken van bedrijven op basis van jouw profiel en ontdek welke bedrijven jou interessant vinden.</span>
 						 </div>
 					 </div>
 				 </div>
@@ -325,65 +365,9 @@
 
 					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
 				</div>
-
-				<div class="row-fluid" id="client_list">
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-				</div>
-
-				<div class="row-fluid" id="client_list">
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-
-					<div class="span1"><img class="img-rounded span12" src="http://placehold.it/350x120&text=Client"></div>
-				</div>
 			</div>
 			 </div>
 		 </div>
-	</div>
-
-<!-- vanaf hier alles weer in template -->
-
 		 <footer class="frontpage">
 			 	<div class="container">
 				 	<div class="row-fluid">
@@ -397,7 +381,22 @@
 				 		</div>
 				 	</div>
 		 	</div>
-	</footer>
+	 	</footer>
+	</div>
+	
+	<div id="forgotPassword" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Modal header</h3>
+		</div>
+		<div class="modal-body">
+			<p>One fine body…</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+			<button class="btn btn-primary">Save changes</button>
+		</div>
+	</div>
 
 	<!-- Le javascript -->
 	
@@ -419,10 +418,10 @@
 	<script src="assets/js/bootstrap-affix.js" type="text/javascript"></script>
 	<script src="assets/js/application.js" type="text/javascript"></script>
 	
-	<!-- Magnet.me plugins -->
+	<!-- /* Magnet.me plugins */ -->
 	<script src="assets/js/magnetme/plugins.js" type="text/javascript"></script>
 	
-	<!-- Page specific JS -->
+	<!-- /* Page specific JS */ -->
 	<script src="assets/js/magnetme/frontpage.js" type="text/javascript"></script>
 
 </body>
