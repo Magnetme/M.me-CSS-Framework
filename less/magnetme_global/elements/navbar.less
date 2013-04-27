@@ -1,14 +1,15 @@
   /* //Navbar login form (Jules)*/
   #searchResult {
-    .box-shadow(inset 0 -1px 0 lighten(@magnetme_grey,5%));
-    background-color: @magnetme_grey;
     color: @magnetme_grey_2;
     text-align: left;
     position: absolute;
+    margin: 0px;
     ul {
       list-style-type: none;
       padding: 0px;
       width: 100% !important;
+      .box-shadow(inset 0 -1px 0 lighten(@magnetme_grey,5%));
+      background-color: @magnetme_grey;
     }
     li {
       margin: 0px;
@@ -16,7 +17,10 @@
       list-style-type: none;
       display: block;
     }
-    .ui-autocomplete-category {
+    li:hover {
+      background-color: @magnetme_red;
+    }
+    .ui-autocomplete-category, .ui-autocomplete-category:hover {
       background-color: @magnetme_grey;
     }
   ;
