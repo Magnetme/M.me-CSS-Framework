@@ -17,11 +17,11 @@
       list-style-type: none;
       display: block;
     }
-    li:hover {
+    li.hover {
       background-color: @magnetme_red;
     }
     .ui-autocomplete-category, .ui-autocomplete-category:hover {
-      background-color: @nacbarAutocompleteCaptionBackground;
+      background-color: @navbarAutocompleteCaptionBackground;
     }
   ;
     a {
@@ -39,6 +39,10 @@
       display: block;
       margin: 0px;
       padding-top: (@navbarAutocompleteRowHeight/2 - @navbarAutocompleteLineHeight);
+	  float: left;
+	  position: absolute;
+	  left: @navbarAutocompleteRowHeight + 2*@navbarAutocompletePadding;
+	  right: @navbarAutocompleteRowHeight;
     }
     span {
       width: 100%;
