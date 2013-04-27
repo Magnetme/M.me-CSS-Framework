@@ -1,6 +1,6 @@
   /* //Navbar login form (Jules)*/
   #searchResult {
-    color: @magnetme_grey_2;
+    color: @navbarText;
     text-align: left;
     position: absolute;
     margin: 0px;
@@ -8,12 +8,12 @@
       list-style-type: none;
       padding: 0px;
       width: 100% !important;
-      .box-shadow(inset 0 -1px 0 lighten(@magnetme_grey,5%));
-      background-color: @magnetme_grey;
+      .box-shadow(inset 0 -1px 0 lighten(@navbarBackground,5%));
+      background-color: @navbarBackground;
     }
     li {
       margin: 0px;
-      padding: 5px;
+      padding: @navbarAutocompletePadding;
       list-style-type: none;
       display: block;
     }
@@ -21,7 +21,7 @@
       background-color: @magnetme_red;
     }
     .ui-autocomplete-category, .ui-autocomplete-category:hover {
-      background-color: @magnetme_grey;
+      background-color: @nacbarAutocompleteCaptionBackground;
     }
   ;
     a {
@@ -31,20 +31,29 @@
     img {
       display: block;
       float: left;
-      width: 30;
-      height: 30;
-      margin: 0px 5px 0px 0px;
+      width: @navbarAutocompleteRowHeight;
+      height: @navbarAutocompleteRowHeight;
+      margin: 0px @navbarAutocompletePadding 0px 0px;
     }
     p {
       display: block;
-      float: left;
+      margin: 0px;
+      padding-top: (@navbarAutocompleteRowHeight/2 - @navbarAutocompleteLineHeight);
     }
     span {
-      margin: 0px 5px;
       width: 100%;
       margin: 0px;
-      line-height: 12px;
+      line-height: @navbarAutocompleteLineHeight;
       display: block;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    i {
+      color: @green;
+      line-height: @navbarAutocompleteRowHeight;
+      display: block;
+      float: right;
     }
   }
   .navbar {
