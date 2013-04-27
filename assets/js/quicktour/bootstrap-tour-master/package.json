@@ -1,0 +1,14 @@
+{
+  "name": "bootstrap-tour",
+  "description": "Quick and easy way to build your product tours with Twitter Bootstrap Popovers.",
+  "version": "0.3.0",
+  "homepage": "http://bootstraptour.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sorich87/bootstrap-tour.git"
+  },
+  "dependencies": {
+    "bootstrap": "2.3.1",
+    "jquery": "~1.8.0"
+  }
+}
