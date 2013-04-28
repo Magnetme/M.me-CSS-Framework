@@ -233,7 +233,7 @@
 			}
 		
 			#video{
-		margin-bottom:5em;
+		margin-bottom:@baseLineHeight*4;
 		
 			.text{
 			margin-top:-0.5em;
@@ -254,21 +254,22 @@
 		}
 		
 			#clients{
-			margin:3em 0;
+			margin:@baseLineHeight*2 0;
 			
-			h3{
-				margin-bottom: 1em;
-			}
+				h3{
+					margin-bottom: @baseLineHeight;
+				}
 		
-			#client_list{
-				.opacity(25);
-				
-				img{
-					margin:1em 0;
+				#client-row {
+					margin:@baseLineHeight/2 0;
+					line-height: 50px;
+					
+					.client-logo{
+						text-align: center;
+					}
+					
 				}
 			}
-			
-		}
 		}
 	}
 }
