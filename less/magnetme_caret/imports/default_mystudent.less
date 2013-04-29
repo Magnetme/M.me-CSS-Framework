@@ -123,7 +123,34 @@ div.subMenu a:hover{color:inherit; text-decoration:underline;}
 
 
 
-.listSmall h3 {background:@magnetme_grey_1; color:#fff; line-height:@whitespacePadding/2; font-size:@baseFontSize; margin:@whitespacePadding/2 0 0 0; .border-radius(2px 2px 0 0);}
+.listSmall h3 {
+	background:@magnetme_grey_1; 
+	color:@magnetme_grey_3; 
+	line-height:@whitespacePadding/2; 
+	font-size:@baseFontSize; 
+	margin:@whitespacePadding/2 0 0 0; 
+	.border-radius(2px 2px 0 0);
+	
+	a{
+		color:@magnetme_grey_3; 	
+			
+		i{
+			font-size:105%;
+			.opacity(50);
+			margin-top:-1px;
+		}		
+		
+		&:hover{
+				color:@magnetme_grey_4;
+				
+				i{
+					.opacity(100);
+				}	
+		}
+	}
+	
+
+}
 .listSmall .itemHolder {padding:@baseLineHeight*0.65; margin:0 0 @baseLineHeight/2 0; background:#fff; .border-radius(0 0 2px 2px);}
 
 div.data{width:80%; display:block; float:left; margin:0 0 @whitespacePadding/2 @whitespacePadding/2; }

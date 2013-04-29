@@ -70,7 +70,8 @@ div.subMenu a:hover{color:inherit;text-decoration:underline;}
 .subMenu .magnetsHolder a.gotoStore:active{text-decoration:underline;color:#666;}
 .subMenu .magnetsHolder a.gotoStore:visited{text-decoration:none;color:#666;}
 .subMenu .magnetsHolder a.gotoStore:hover{text-decoration:underline;color:#666;}
-.listSmall h3{background:#4b5055;color:#fff;line-height:11px;font-size:13px;margin:11px 0 0 0;-webkit-border-radius:2px 2px 0 0;-webkit-background-clip:padding-box;-moz-border-radius:2px 2px 0 0;-moz-background-clip:padding;border-radius:2px 2px 0 0;background-clip:padding-box;}
+.listSmall h3{background:#4b5055;color:#c3c8cd;line-height:11px;font-size:13px;margin:11px 0 0 0;-webkit-border-radius:2px 2px 0 0;-webkit-background-clip:padding-box;-moz-border-radius:2px 2px 0 0;-moz-background-clip:padding;border-radius:2px 2px 0 0;background-clip:padding-box;}.listSmall h3 a{color:#c3c8cd;}.listSmall h3 a i{font-size:105%;opacity:0.5;filter:alpha(opacity=50);margin-top:-1px;}
+.listSmall h3 a:hover{color:#edf0f2;}.listSmall h3 a:hover i{opacity:1;filter:alpha(opacity=100);}
 .listSmall .itemHolder{padding:14.3px;margin:0 0 11px 0;background:#fff;-webkit-border-radius:0 0 2px 2px;-webkit-background-clip:padding-box;-moz-border-radius:0 0 2px 2px;-moz-background-clip:padding;border-radius:0 0 2px 2px;background-clip:padding-box;}
 div.data{width:80%;display:block;float:left;margin:0 0 11px 11px;}
 div.data i{color:#64696e;font-size:11.375px;}

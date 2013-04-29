@@ -42,8 +42,12 @@ input:invalid {
   }
 
   &.large {
+  	.btn_text{
+	  	padding-left:15%;
+  	}
     .icon_wrapper {
-      width: 55px;
+      width: 15%;
+      max-width:57px;
       font-size: 26px;
 
       .icon-facebook {
@@ -58,6 +62,10 @@ input:invalid {
 
 //Navbar plugin
 @import url(elements/navbar.less);
+
+/* Vertical row spacing */
+
+.top-buffer { margin-top:@baseLineHeight/2; }
 
   /* Navbar alerts (Jules) */
 .container#alerts {
