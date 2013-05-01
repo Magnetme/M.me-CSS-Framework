@@ -4,42 +4,13 @@
 .input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 .fixIt{padding:10px;border:solid 1px #cc3c3c;display:none;}
 div.dev{width:100px;padding:5px;position:absolute;top:2px;left:2px;z-index:1000;border:1px dashed #000;text-align:left;font-size:10px;}
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;background:transparent;}
-html{height:100%;width:100%;}
-body{width:100%;line-height:17.6px;background:#f7f7f7;text-align:center;}
-body,td,input,textarea{font-family:Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;color:#292e33;}
-ol,ul{list-style:none;}
-blockquote,q{quotes:none;}
-blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
-:focus{outline:0;}
-ins{text-decoration:none;}
-del{text-decoration:line-through;}
-table{border-collapse:collapse;border-spacing:0;}
-a:link{font-weight:500;color:#cc3c3c;text-decoration:none !important;}
-a:active{color:inherit;}
-a:visited{color:inherit;}
-a:hover{color:#a92c2c;text-decoration:underline;}
-a.btn:link{color:inherit;}
-a.btn:active{color:inherit;}
-a.btn:visited{color:inherit;}
-a.btn:hover{color:inherit;text-decoration:none !important;}
-h1{color:#cc3c3c;font-size:16px;font-weight:500;line-height:inherit;margin:0 0 20px 0;padding:0 0 5px 0;border-bottom:1px solid #c3c8cd;}
-h1.caption{margin:0px;border:0px;padding:0px;}
-h2{color:#cc3c3c;font-size:15px;font-weight:500;line-height:inherit;margin:0 0 10px 0;}
-h3{font-size:13px;font-weight:500;margin:0;padding:10px;background:#4b5055;color:#fff;line-height:4px;}
-caption{color:#006633;}
-small{font-size:10px;}
-span.companyName{font-weight:normal;font-style:italic;}
-hr{border:0;border-top:1px solid #edf0f2;height:0;margin:0 0 22px 0;}
-li{margin:0 0 0 15px;list-style-type:disc;}
 a.docIcon{line-height:22px;text-decoration:none;}
 a.docIcon img{vertical-align:bottom;margin:0 5px 0 0;}
 div#waitwhileloading{width:100%;height:100%;display:block;background:#000;opacity:0.6;filter:alpha(opacity=60);position:fixed;left:0;top:0;z-index:1234567890;}
 div#spinnerHolder{position:fixed;top:50%;left:50%;}
 #topHolder{width:100%;height:90px;background:#5a5859;line-height:18px;text-align:center;position:fixed;top:0;left:0;}
-#contentHolder{width:100%;min-height:500px;text-align:center;position:relative;top:50px;margin-top:22px;left:0;padding:0;}
+#contentHolder{width:100%;min-height:500px;position:relative;top:50px;margin-top:22px;left:0;padding:0;}
 #footer{height:40px;width:720px;line-height:40px;margin:auto;}
-div.content{width:980px;min-height:500px;margin:0 auto 0 auto;margin-top:22px;text-align:left;}
 div.content div.wideColumn{width:68%;min-height:460px;float:left;background:#fff;padding:0 2.5%;margin:0 1.25% 0 0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;color:none;border:1px solid #c3c8cd;-webkit-border-radius:2px;-webkit-background-clip:padding-box;-moz-border-radius:2px;-moz-background-clip:padding;border-radius:2px;background-clip:padding-box;}
 div.content div.wideColumn div.mainColumn{width:68%;min-height:460px;float:right;padding:0 0 22px 2.5%;border-left:1px solid #c3c8cd;margin-top:22px;}
 div.content div.smallColumn{width:25%;float:left;}
@@ -70,13 +41,6 @@ div.subMenu a:hover{color:inherit;text-decoration:underline;}
 .subMenu .magnetsHolder a.gotoStore:active{text-decoration:underline;color:#666;}
 .subMenu .magnetsHolder a.gotoStore:visited{text-decoration:none;color:#666;}
 .subMenu .magnetsHolder a.gotoStore:hover{text-decoration:underline;color:#666;}
-.listSmall h3{background:#4b5055;color:#c3c8cd;line-height:11px;font-size:13px;margin:11px 0 0 0;-webkit-border-radius:2px 2px 0 0;-webkit-background-clip:padding-box;-moz-border-radius:2px 2px 0 0;-moz-background-clip:padding;border-radius:2px 2px 0 0;background-clip:padding-box;}.listSmall h3 a{color:#c3c8cd;}.listSmall h3 a i{font-size:105%;opacity:0.5;filter:alpha(opacity=50);margin-top:-1px;}
-.listSmall h3 a:hover{color:#edf0f2;}.listSmall h3 a:hover i{opacity:1;filter:alpha(opacity=100);}
-.listSmall .itemHolder{padding:14.3px;margin:0 0 11px 0;background:#fff;-webkit-border-radius:0 0 2px 2px;-webkit-background-clip:padding-box;-moz-border-radius:0 0 2px 2px;-moz-background-clip:padding;border-radius:0 0 2px 2px;background-clip:padding-box;}
-div.data{width:80%;display:block;float:left;margin:0 0 11px 11px;}
-div.data i{color:#64696e;font-size:11.375px;}
-span.icon{width:26px;height:26px;background:#cc3c3c;display:block;float:left;}
-span.defaulticon{background-color:#cc3c3c;}
 div.itemList{margin:0 0 24px 0;background:#fff;}
 div.itemList .header h1{border:0px;line-height:22px;padding:0 0 20px 0;margin:0;}
 div.itemList div.item{border-top:1px solid #c3c8cd;padding:10px 0;}
@@ -116,7 +80,7 @@ table.messageList tbody td.option{text-align:center;}
 table.messageList tbody td.date{width:100px;color:#999;}
 table.messageList tbody td.bijlagen{width:120px;}
 table.messageList tbody td a.deleteButton{width:16px;height:16px;display:block;background:#000;}
-table.messageList tbody span.date{color:#999;text-transform:lowercase;}
+table.messageList tbody span.date{color:#4b5055;text-transform:lowercase;}
 table.messageList tbody td.statusmessage{width:25px;}
 table.messageList tbody td.deletemessage{width:25px;}
 .wallExcerpt a{display:block;}
@@ -183,10 +147,9 @@ ul.tabs li a:hover{color:#000;text-decoration:none;}
 ul.tabs li:hover{background:#c5e19f;}
 ul.tabs li.active a{color:#fff;}
 ul.tabs li.active:hover{background:#8dc63f;}
-div.profileInfoShort{width:100%;height:auto;margin:0;padding:0;display:block;border-bottom:1px solid #c3c8cd;overflow:auto;}
+div.profileInfoShort{width:100%;height:auto;margin:0;padding:0;display:block;overflow:auto;}
 div.profileInfoShort a:link{padding:0 0 5px 0;margin:0;}
-div.profileInfoShort img{float:left;margin:0 15px 15px 0;}
-div.profileInfoShort b{font-weight:500;}
+div.profileInfoShort img{float:left;margin:0 15px 0 0;}
 .quicklinks{margin:15px 20px 0 0;padding:0 0 15px 0;}
 .quicklinks li{margin:0 0 5px 0;list-style-type:none;}
 .quicklinks a:link{font-weight:500;text-decoration:none;}
