@@ -489,7 +489,7 @@ span.icon{width:26px;height:26px;background:#cc3c3c;display:block;float:left;}
 .defaulticon.werkstage20{width:20px;height:20px;background-position:-282px -4270px;}
 .smallColumn hr{margin:0 0 11px;}
 #main_container{margin-top:72px;}
-#main_content{background:white;border:1px solid #c3c8cd;-webkit-border-radius:2px;-webkit-background-clip:padding-box;-moz-border-radius:2px;-moz-background-clip:padding;border-radius:2px;background-clip:padding-box;}#main_content #left_menu{padding:22px 0 22px 22px;}
+#main_content{background:white;border:1px solid #c3c8cd;-webkit-border-radius:2px;-webkit-background-clip:padding-box;-moz-border-radius:2px;-moz-background-clip:padding;border-radius:2px;background-clip:padding-box;}#main_content #left_menu{padding:22px 0 22px 22px;}#main_content #left_menu .counter{width:20px;height:20px;margin:1px;line-height:20px;}
 #main_content #center_content{padding:22px;border-left:1px solid #c3c8cd;}
 .listSmall h3{background:#4b5055;color:#c3c8cd;line-height:33px;font-size:13px;margin:22px 0 0 0;padding:0 11px;-webkit-border-radius:2px 2px 0 0;-webkit-background-clip:padding-box;-moz-border-radius:2px 2px 0 0;-moz-background-clip:padding;border-radius:2px 2px 0 0;background-clip:padding-box;}.listSmall h3:first-child{margin-top:0;}
 .listSmall h3 a{color:#c3c8cd;}.listSmall h3 a i{font-size:105%;opacity:0.5;filter:alpha(opacity=50);line-height:33px;}

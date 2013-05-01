@@ -95,10 +95,6 @@ table.messageList tbody td.ipStatus{width:250px;text-align:center;}
 table.messageList tbody td.ipStatus a.status{padding:5px;display:block;float:right;background:#cc3c3c;color:#fff;margin:0 0 0 5px;text-decoration:none;}
 table.messageList tbody td.ipStatus a.accepted{background:#529214;}
 table.messageList tbody td.ipStatus a.declined{background:#d12f19;}
-div.applications h2{padding:5px;background:#eee;}
-div.applications h3{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;color:none;cursor:pointer;text-transform:capitalize;}
-div.applications .listing{margin:0 0 0 20px;}
-div.applications .listing a{display:block;}
 div.magnetFilter{borderz:1px solid #aaa;margin:0;padding:12px 20px;text-align:left;width:160px;background:#eee;}
 .slider{background:#ccc;height:3px;position:relative;cursor:pointer;border:1px solid #333;width:155px;float:left;clear:right;margin:10px 0;border-radius:2px;}
 .handle{background:#fff;height:15px;width:10px;top:-7px;position:absolute;display:block;margin-top:1px;border:1px solid #000;cursor:pointer;border-radius:2px 2px 5px 5px;}

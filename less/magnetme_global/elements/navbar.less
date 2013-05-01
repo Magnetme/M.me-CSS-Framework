@@ -236,24 +236,16 @@
             &:hover, &.notification {
               color: @magnetme_grey_4;
             }
-
-            .counter {
-              position: absolute;
-              height: @baseLineHeight/2;
-              width: @baseLineHeight/2;
-              left: @baseLineHeight;
-              top: @baseLineHeight/2;
-              padding: 1px;
-              line-height: @baseLineHeight/2;
-              background: @magnetme_red;
-
-              font-weight: 600;
-              text-align: center;
-              font-size: 75%;
-              text-shadow: none;
-              color: white;
-              .border-radius(2px);
-              .box-shadow(1px 1px 0 rgba(0,0,0,.25));
+            
+            .counter{
+	            position: absolute;
+	            
+				left: @baseLineHeight;
+				top: @baseLineHeight/2;
+				padding: 1px;
+				line-height: @baseLineHeight/2;
+				
+				  .box-shadow(1px 1px 0 rgba(0,0,0,.25));
             }
           }
         }
