@@ -1,39 +1,71 @@
   /* //Navbar login form (Jules)*/
+  .ui-helper-hidden-accessible {
+  	display : none;
+	}
   #searchResult {
     color: @navbarText;
     text-align: left;
     position: absolute;
     margin: 0px;
+    
+    
     ul {
       list-style-type: none;
       padding: 0px;
       width: 100% !important;
-      .box-shadow(inset 0 -1px 0 lighten(@navbarBackground,5%));
       background-color: @navbarBackground;
+      .border-radius(0 0 2px 2px);
     }
     li {
       margin: 0px;
-      padding: @navbarAutocompletePadding;
+      padding:@navbarAutocompletePadding;
       list-style-type: none;
       display: block;
-    }
-    li.hover {
-      background-color: @magnetme_red;
+      cursor:pointer;
+      border-bottom:1px solid @magnetme_grey_1;
+      	&:last-child{
+      	border-bottom:none;}
+
+	    &:hover {
+	      background-color: @magnetme_red;
+	      color:@magnetme_grey_4;
+	      border-bottom:1px solid @magnetme_grey;
+	      a{
+		      color:@magnetme_grey_4;
+	      }
+	    }
     }
     .ui-autocomplete-category, .ui-autocomplete-category:hover {
       background-color: @navbarAutocompleteCaptionBackground;
+      color: @magnetme_grey_4;
+      cursor:default;
     }
-  ;
+    
+    .lookAll{
+	    /* padding:0; */
+	    a{
+		    text-decoration: none;
+		    
+		    &:hover{
+		   		text-decoration: none;
+		   		}
+	    }
+    }
+
     a {
       display: block;
       width: 100%;
+      
+      &:hover{
+      color:white;}
     }
     img {
       display: block;
       float: left;
-      width: @navbarAutocompleteRowHeight;
-      height: @navbarAutocompleteRowHeight;
+      width: @navbarAutocompleteRowHeight - @navbarAutocompletePadding;
+      height: @navbarAutocompleteRowHeight - @navbarAutocompletePadding;
       margin: 0px @navbarAutocompletePadding 0px 0px;
+      line-height: @navbarAutocompleteRowHeight;
     }
     p {
       display: block;
@@ -52,12 +84,21 @@
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
+      
+      &.caption{
+	      font-weight:500;
+      }
     }
     i {
       color: @green;
       line-height: @navbarAutocompleteRowHeight;
       display: block;
       float: right;
+      margin-right:@baseLineHeight/2;
+      text-decoration: none;
+      
+      &:hover{
+      text-decoration: none;}
     }
   }
   .navbar {
@@ -65,10 +106,15 @@
 
     &.logged_out {
 
+	  @media (min-width: 768px) {
       .navbar-inner {
         padding: 15px 0 20px;
-
+        }
+      }
+    
+      .navbar-inner {
         #brand {
+        	margin-left:@baseLineHeight - 5px; /* (5px is padding) */
           img {
             @logoHeight: 44px;
             margin: (@navbarHeight - @logoHeight)/2 0;
@@ -117,12 +163,17 @@
             position: relative;
           }
         }
-
-        .btn-facebook {
-          padding-left: 15%;
+        
+        @media (min-width: 767px) {
+	        .btn-facebook {
+	        	padding-left: 15%;
+	        }
+        }
+        .btn-facebook {  
           .icon_wrapper {
-            width: 30px;
-            font-size: 16px;
+            width: 15%;
+            max-width:30px;
+            font-size: 150%;
             i {
               line-height: 32px;
             }

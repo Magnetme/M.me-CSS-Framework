@@ -1,5 +1,5 @@
-@import url('../../boostrap/variables.less');
-@import url('../../boostrap/mixins.less');
+@import url('../../bootstrap/variables.less');
+@import url('../../bootstrap/mixins.less');
 @import url('../../magnetme_global/lesshat.less');
 @import url('magnetme_restyle_elements.less');
 
@@ -11,7 +11,7 @@ div.dev{width:100px; padding:5px; position:absolute; top:2px; left:2px; z-index:
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
     a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,  
     small, strike, strong, sub, sup, tt, var,  b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,  
-    table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: top; background: transparent;}  
+    table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; background: transparent;}  
 
 html{height:100%; width:100%;}
 body {width:100%; line-height:@baseLineHeight/1.25; background:@magnetme_bg_color; text-align:center;}
@@ -123,7 +123,34 @@ div.subMenu a:hover{color:inherit; text-decoration:underline;}
 
 
 
-.listSmall h3 {background:@magnetme_grey_1; color:#fff; line-height:@whitespacePadding/2; font-size:@baseFontSize; margin:@whitespacePadding/2 0 0 0; .border-radius(2px 2px 0 0);}
+.listSmall h3 {
+	background:@magnetme_grey_1; 
+	color:@magnetme_grey_3; 
+	line-height:@whitespacePadding/2; 
+	font-size:@baseFontSize; 
+	margin:@whitespacePadding/2 0 0 0; 
+	.border-radius(2px 2px 0 0);
+	
+	a{
+		color:@magnetme_grey_3; 	
+			
+		i{
+			font-size:105%;
+			.opacity(50);
+			margin-top:-1px;
+		}		
+		
+		&:hover{
+				color:@magnetme_grey_4;
+				
+				i{
+					.opacity(100);
+				}	
+		}
+	}
+	
+
+}
 .listSmall .itemHolder {padding:@baseLineHeight*0.65; margin:0 0 @baseLineHeight/2 0; background:#fff; .border-radius(0 0 2px 2px);}
 
 div.data{width:80%; display:block; float:left; margin:0 0 @whitespacePadding/2 @whitespacePadding/2; }
