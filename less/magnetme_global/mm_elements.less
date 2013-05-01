@@ -449,12 +449,17 @@ fieldset {
 	padding: 0px;
 	margin: 0px;
 	}
-	z-index: 99999;
+	div&.top {
+    .popover;
+    height:auto;
+	z-index: inherit;
+	}
+	z-index: @zindexModalBackdrop+1;
 }
 
 .tour-backdrop {
   position: absolute;
-  z-index: 1009;
+  z-index: @zindexTourBackdrop;
   background: #000;
   opacity: 0.4;
   top: 0;
