@@ -22,7 +22,7 @@ div.subMenuColumn{width:26.5%;float:left;margin:22px 2.5% 0 0;}
 .date{text-transform:lowercase;}
 div.feedback{width:30px;height:80px;display:block;position:fixed;left:0;top:30%;z-index:1000;}
 div.feedback a{width:30px;height:80px;display:block;}
-.statusHolder{background:rgba(242, 206, 24, 0.15);padding:22px;margin-left:-22px;margin-right:-22px;}
+.statusHolder{background:rgba(242, 206, 24, 0.15);padding:22px;margin-left:-22px;margin-right:-22px;margin-top:-22px;}
 div.update{width:100%;padding:10px;background:#fff6bf;position:fixed;top:0;left:0;z-index:1001;text-align:center;font-size:16px;font-weight:500;border:#ffd324;color:#817134;}
 div.error{width:100%;padding:10px;background:#fbe3e4;position:fixed;top:0;left:0;z-index:1001;text-align:center;font-size:16px;font-weight:500;border:#fbe3e4;color:#d12f19;}
 .dontshow{display:none;}
@@ -49,7 +49,7 @@ div.itemList div.item div.data{width:400px;}
 table.dataList{width:100%;}
 table.dataList thead th{height:22px;text-align:left;padding:10px 0 0 0;}
 table.dataList thead th.option{width:50px;}
-table.dataList thead th.caption{color:#cc3c3c;font-size:16.25px;font-weight:500;line-height:24px;margin:0 0 20px 0;padding:0 0 5px 0;border-bottom:1px solid #c3c8cd;}
+table.dataList thead th.caption{color:#cc3c3c;font-size:17.55px;font-weight:500;line-height:24px;margin:0 0 20px 0;padding:0 0 5px 0;border-bottom:1px solid #c3c8cd;}
 table.dataList thead th.addRecord{border-bottom:1px solid #c3c8cd;padding:0;text-align:center;}
 table.dataList thead th.addRecord a{display:block;}
 table.dataList thead th.addRecord a:link{padding:5px;color:#fff;}

@@ -103,9 +103,9 @@
   }
   .navbar {
     color: @magnetme_grey_2;
+    
 
     &.logged_out {
-
 	  @media (min-width: 768px) {
       .navbar-inner {
         padding: 15px 0 20px;
@@ -164,7 +164,7 @@
           }
         }
         
-        @media (min-width: 767px) {
+        @media (min-width: 768px) {
 	        .btn-facebook {
 	        	padding-left: 15%;
 	        }
@@ -219,10 +219,10 @@
           }
 
           a {
+
             i {
               font-size: 125%;
               vertical-align: middle;
-
             }
           }
         }
@@ -232,6 +232,8 @@
           a {
             color: @magnetme_grey_3;
             position: relative;
+          	padding-left:10px;
+          	padding-right:10px;
 
             &:hover, &.notification {
               color: @magnetme_grey_4;
@@ -240,12 +242,11 @@
             .counter{
 	            position: absolute;
 	            
-				left: @baseLineHeight;
+				left: @baseLineHeight+2;
 				top: @baseLineHeight/2;
 				padding: 1px;
-				line-height: @baseLineHeight/2;
-				
-				  .box-shadow(1px 1px 0 rgba(0,0,0,.25));
+				line-height: @baseLineHeight/2;				
+ 			    .box-shadow(1px 1px 0 rgba(0,0,0,.25));
             }
           }
         }

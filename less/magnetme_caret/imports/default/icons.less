@@ -7,6 +7,8 @@ span.icon{width:26px; height:26px; background:@magnetme_red; display:block; floa
 
 .headericon{ background-color:transparent; width: 100px; height: 25px; display:block; float:left; background-image:url(@icon_map); background-position: -350px -210px; }
 
+
+/* OVERBODIG? - Menu balk is aangepast /Jules*/
 .headericon.headerMessages 												{ background-position: -350px -210px; }
 .headericon.headerMessages:hover, .headericon.headerMessages.active		{ background-position: -450px -210px; }
 .headericon.headerNetwork 												{ background-position: -350px -235px; width: 95px;}
@@ -21,6 +23,38 @@ span.icon{width:26px; height:26px; background:@magnetme_red; display:block; floa
 .headericon.headerAanbod:hover, .headericon.headerAanbod.active			{ background-position: -450px -360px; }
 .headericon.headerNetwork2 												{ background-position: -350px -385px; }
 .headericon.headerNetwork2:hover, .headericon.headerNetwork2.active		{ background-position: -450px -385px; }
+
+.navbar .nav#main a{
+	
+	.nav_icon{
+		background-image: url(@menu_icons_new);
+		background-repeat: no-repeat;
+		width:22px;
+		height:20px;
+		line-height: 22px;
+		vertical-align: middle;
+		display:inline-block;
+		margin-right:5px;
+
+	}
+	
+	&.messages .nav_icon{
+		background-position-x:0px;
+		background-position-y: -1px;
+	}
+	
+	&.networks .nav_icon{
+		background-position-x:0px;
+		background-position-y: -21px;
+	}
+	
+	&:hover{
+		.nav_icon{
+			background-position-x: -22px;
+		}
+	}
+}
+
 
 /** Default icons **/
 
@@ -519,3 +553,8 @@ span.icon{width:26px; height:26px; background:@magnetme_red; display:block; floa
 .defaulticon.werkstage26 	{ width:26px; height:26px; background-position: -236px -4270px;}
 .defaulticon.werkstage20i 	{ width:20px; height:20px; background-position: -262px -4270px;}
 .defaulticon.werkstage20 	{ width:20px; height:20px; background-position: -282px -4270px;}
+
+
+.well .defaulticon{
+	background-position-x:-302px !important;
+}

@@ -2,15 +2,23 @@
 @import url('../../bootstrap/mixins.less');
 @import url('../../magnetme_global/lesshat.less');
 
+@media (max-width: 767px) {
+
+	.padding_offset_container{
+		padding-left: @baseLineHeight - 1 !important;
+		padding-right: @baseLineHeight - 1 !important;
+		width:100%;
+		}
+		
+	#fp_wrapper, footer{
+		margin:-@baseLineHeight;
+		}
+	}
+
 
 #fp_wrapper{
 	width:100%;
-	
-	@media (max-width: 767px) {
-		margin:-@baseLineHeight;
-	}
 
-	
 	#red_accent{
 			position: relative;
 			border-bottom: 2px solid #cc3c3c;
@@ -27,12 +35,7 @@
 			}
 		}
 	
-	@media (max-width: 767px) {
-	.padding_offset_container{
-			padding:0 @baseLineHeight - 1;
-			width:100%;
-		}
-	}
+
 	
 	#fp_intro{
 		position: relative;
@@ -67,8 +70,7 @@
 	}
 
 	.curtain#introductie{
-		padding:@baseLineHeight 0;
-		-webkit-transition: all 0.5 ease-in-out;
+		padding:@baseLineHeight*2 0;
 		
 		.btn{
 			.box-shadow(0 1px 1px rgba(0,0,0,0.25));
@@ -109,15 +111,12 @@
 				}
 				
 				.error-message{
-					color:darken(@red,20%);
+					color:@white;
 					font-weight: 500;
 					display:block;
-					top:0;
 					margin:@baseLineHeight/2 0;
 					.opacity(0);
-					
-					vertical-align: middle;
-				}
+					}
 				
 				input{
 					height: 3.5em;
@@ -201,17 +200,14 @@
 	}
 	
 	#uitleg{
-		position: relative;
-		left:0;
-		bottom:0;
-		
+
 		.btn{
 			.box-shadow(0 1px 1px rgba(0,0,0,0.25));
 		}
 		
 		
 		&.grey{
-			background:@magnetme_grey;			
+			background:lighten(@magnetme_grey,0.5%);	
 				.container{
 					color:@grayLight;
 				}
@@ -234,21 +230,21 @@
 
 	
 		.container{
-			padding:0 0 @baseLineHeight*3;
+			padding:0 0 @baseLineHeight;
 			
 			position: relative;
 			
 			#usps{
-				margin:@baseLineHeight*3 0;	
+				margin:@baseLineHeight*2 0;	
 			
 				h1{
-					margin-bottom:@baseLineHeight;
+					margin-bottom:@baseLineHeight*2;
 				}	
 			
 				#usps_cols{
 					.usp{
-						margin-bottom:@baseLineHeight*2;
 						text-align: center;
+						margin-bottom:@baseLineHeight;
 						
 						img{
 							.opacity(75);
@@ -264,12 +260,11 @@
 			}
 		
 			#video{
-				margin:@baseLineHeight*2 0 ;
+				margin:@baseLineHeight*3 0 ;
 		}
 		
 			hr{
-			border-top:none;
-			border-bottom: 1px solid @grayDark;
+			border-bottom-color: @grayDark;
 		}
 		
 			#clients{
@@ -284,8 +279,13 @@
 					
 					.client-logo{
 						text-align: center;
+						.opacity(80);
+						.transition(0.2s, ease-out);
+						
+						&:hover{
+							.opacity(100);
+						}
 					}
-					
 				}
 			}
 		}
@@ -295,27 +295,33 @@
 @import url(mm_frontpage_registration.less);
 
 	footer.frontpage{
-		background:darken(@magnetme_grey,5%);
+		background:@magnetme_grey;
 		color:@grayLight;
-		padding:3em 0;
+		padding:@baseLineHeight*2 0;
 		position: relative;
-		/* min-width:940px; */
 		
-		.container>.row-fluid{
-			vertical-align: top;
+		border-top:2px solid @magnetme_red;
+		
+		#recruiter_button{
+			margin-top:-@baseLineHeight * 2 - 14;
+			
+			a{
+				margin:auto 5px;
+			}
+			
 		}
 		
-		.vertical_align{
-			display:inline-block;
-			position: relative;
-			vertical-align: middle;
-			
-			&.right{
-				text-align: right;
-				
-				a.btn{
-					margin-left:0.5em;
-				}
-			}
+		#footer_menu li{
+			line-height:32px;
+		}
+		
+		a {
+            color: @magnetme_grey_2;
+            position: relative;
+
+            &:hover, &.notification {
+              color: @magnetme_grey_3;
+            }
 		}
 	}
+		
