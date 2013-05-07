@@ -22,12 +22,11 @@ div.subMenuColumn{width:26.5%;float:left;margin:22px 2.5% 0 0;}
 .date{text-transform:lowercase;}
 div.feedback{width:30px;height:80px;display:block;position:fixed;left:0;top:30%;z-index:1000;}
 div.feedback a{width:30px;height:80px;display:block;}
-.statusHolder{background:rgba(242, 206, 24, 0.15);padding:22px;margin-left:-22px;margin-right:-22px;}
+.statusHolder{background:rgba(242, 206, 24, 0.15);padding:22px;margin-left:-22px;margin-right:-22px;margin-top:-22px;}
 div.update{width:100%;padding:10px;background:#fff6bf;position:fixed;top:0;left:0;z-index:1001;text-align:center;font-size:16px;font-weight:500;border:#ffd324;color:#817134;}
 div.error{width:100%;padding:10px;background:#fbe3e4;position:fixed;top:0;left:0;z-index:1001;text-align:center;font-size:16px;font-weight:500;border:#fbe3e4;color:#d12f19;}
 .dontshow{display:none;}
 div.top{width:960px;height:90px;margin:auto;text-align:left;position:relative;top:0;left:0;}
-div.subMenu{width:100%;margin:0 0 22px 0;text-align:left;}
 div.subMenu a{display:block;padding:0 0 0 35px;line-height:26px;font-weight:500;margin:11px 0 11px 0;position:relative;top:0;left:0;}
 div.subMenu a:first-child{border:0;}
 div.subMenu a:link{color:#292e33;text-decoration:none;}
@@ -49,7 +48,7 @@ div.itemList div.item div.data{width:400px;}
 table.dataList{width:100%;}
 table.dataList thead th{height:22px;text-align:left;padding:10px 0 0 0;}
 table.dataList thead th.option{width:50px;}
-table.dataList thead th.caption{color:#cc3c3c;font-size:16.25px;font-weight:500;line-height:24px;margin:0 0 20px 0;padding:0 0 5px 0;border-bottom:1px solid #c3c8cd;}
+table.dataList thead th.caption{color:#cc3c3c;font-size:17.55px;font-weight:500;line-height:24px;margin:0 0 20px 0;padding:0 0 5px 0;border-bottom:1px solid #c3c8cd;}
 table.dataList thead th.addRecord{border-bottom:1px solid #c3c8cd;padding:0;text-align:center;}
 table.dataList thead th.addRecord a{display:block;}
 table.dataList thead th.addRecord a:link{padding:5px;color:#fff;}
@@ -80,7 +79,7 @@ table.messageList tbody td.option{text-align:center;}
 table.messageList tbody td.date{width:100px;color:#999;}
 table.messageList tbody td.bijlagen{width:120px;}
 table.messageList tbody td a.deleteButton{width:16px;height:16px;display:block;background:#000;}
-table.messageList tbody span.date{color:#4b5055;text-transform:lowercase;}
+table.messageList tbody span.date{text-transform:lowercase;}
 table.messageList tbody td.statusmessage{width:25px;}
 table.messageList tbody td.deletemessage{width:25px;}
 .wallExcerpt a{display:block;}
@@ -182,10 +181,6 @@ fieldset.cv input,select{float:left;display:block;margin:0 5px 5px 0;padding:5px
 fieldset.cv br{clear:both;}
 fieldset.cv .button{margin:10px 10px 0 0;cursor:pointer;padding:5px;text-decoration:underline;}
 fieldset.cv .button:hover{text-decoration:none;}
-input,textarea{padding:5px;color:#000;font-weight:normal;border:1px solid #ccc;background-color:#ffffff;resize:none;}
-select{padding:4px;}
-.button{border:0;background:#cc3c3c;color:#fff;cursor:pointer;padding:0 5px 0 5px;}
-.afterInput{float:left;margin:5px 5px 0 5px;}
 .formblank{border:0px;background-color:transparent;}
 .form35{width:35px;}
 .form50{width:50px;}

@@ -18,8 +18,8 @@
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  text-decoration: none;
-  background-color: @grayLighter;
+  text-decoration: underline;
+  /* background-color: @grayLighter; */ /* //Jules */
 }
 
 // Prevent IE8 from misplacing imgs
@@ -128,7 +128,7 @@
     border-color: @grayLighter @grayLighter #ddd;
   }
 }
-// Active state, and it's :hover/:focus to override normal :hover/:focus
+// Active state, and its :hover/:focus to override normal :hover/:focus
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
@@ -149,6 +149,7 @@
   padding-bottom: 8px;
   margin-top: 2px;
   margin-bottom: 2px;
+  .border-radius(2px);
 }
 
 // Active state
