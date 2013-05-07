@@ -177,9 +177,13 @@ dd {
 hr {
   margin: @baseLineHeight 0;
   border: 0;
-  border-bottom: 1px dashed @hrBorder;
+  border-bottom: 1px solid @hrBorder;
 }
 
+.well hr{
+	margin: @baseLineHeight/2 0;
+	border-bottom-color: @grayLight;
+}
 footer hr{
 	border-bottom-color: @grayDark;
 }

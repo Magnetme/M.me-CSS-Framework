@@ -5,9 +5,9 @@
 
 // Base class
 .well {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
+  min-height: @baseLineHeight;
+  padding: @baseLineHeight/2;
+  margin-bottom: @baseLineHeight;
   background-color: @wellBackground;
   border: 1px solid darken(@wellBackground, 7%);
   blockquote {
@@ -18,8 +18,8 @@
 
 // Sizes
 .well-large {
-  padding: 24px;
+  padding: @baseLineHeight;
 }
 .well-small {
-  padding: 9px;
+  padding: @baseLineHeight/2;
 }
