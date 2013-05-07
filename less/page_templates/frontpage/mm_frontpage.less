@@ -70,7 +70,7 @@
 	}
 
 	.curtain#introductie{
-		padding:@baseLineHeight*2 0;
+		padding:@baseLineHeight 0 @baseLineHeight*2;
 		
 		.btn{
 			.box-shadow(0 1px 1px rgba(0,0,0,0.25));
@@ -105,10 +105,20 @@
 					right:0;
 					top:0;
 					line-height: 3.5em;
-					color:@green;
-					text-align: center;
+					
 					.border-radius(2px);
+					text-align: center;
+					
+					.error{
+						color:@red;
+					}
+					
+					.correct{
+						color:@green;
+					}
 				}
+				
+				
 				
 				.error-message{
 					color:@white;
@@ -152,49 +162,50 @@
 				text-align: center;
 				width:100%;
 				margin:@baseLineHeight/2 0;
+				white-space:nowrap;
 
 				
 				.line{
-					width:97.5%;
+					width:32%;
 					position: absolute;
 					top:50%;
-					left:1.25%;
 					margin-top:-1px;
 					height:1px;
 					background:white;
 					z-index:0;
+					
+					&.left{
+						left:1.25%;
+					}
+					
+					&.right{
+						right:1.25%;
+					}
 				}
 				
 				.text{
-					background:@magnetme_red;
 					position: relative;
 					display:inline-block;
 					text-align: center;
-					padding:0 @baseLineHeight/2;
 					z-index:10;
+					white-space:nowrap;
+					width:35%;
 				}
 			}
 			
 			.problems{
-				.opacity(75);
-				margin:0.5em 0;
-				line-height: @baseLineHeight*2;
-				font-size:0.75em;
 				
-				&:hover{
-				.opacity(100);}
-				p{
-					a{
-						color:white;
-						font-weight: 500;
-					}
-					
-					i{
-						margin-right:0.25em;
-					}
-				}
-				
+				margin:@baseLineHeight 0;
 
+					a{
+					.opacity(75);
+					color:white;
+					font-weight: 500;
+					
+					&:hover{
+						.opacity(100);
+					}
+				}	
 			}
 		}
 	}
@@ -306,7 +317,8 @@
 			margin-top:-@baseLineHeight * 2 - 14;
 			
 			a{
-				margin:auto 5px;
+				margin:inherit 3px;
+				white-space:nowrap;
 			}
 			
 		}
