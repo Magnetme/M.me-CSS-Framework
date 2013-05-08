@@ -174,13 +174,6 @@ fieldset.vert br{clear:both;}
 fieldset.vert i{font-size:10px;}
 fieldset.vert .button{margin:10px 10px 0 0;cursor:pointer;padding:5px;text-decoration:underline;}
 fieldset.vert .button:hover{text-decoration:none;cursor:pointer;}
-fieldset.cv{margin:0;padding:0;border:0;}
-fieldset.cv label{float:left;width:280px;height:25px;color:#000;display:block;line-height:25px;margin:0 0 5px 0;padding:5px;}
-fieldset.cv label.smallLabel{width:160px;display:inline-block;}
-fieldset.cv input,select{float:left;display:block;margin:0 5px 5px 0;padding:5px;}
-fieldset.cv br{clear:both;}
-fieldset.cv .button{margin:10px 10px 0 0;cursor:pointer;padding:5px;text-decoration:underline;}
-fieldset.cv .button:hover{text-decoration:none;}
 .formblank{border:0px;background-color:transparent;}
 .form35{width:35px;}
 .form50{width:50px;}
