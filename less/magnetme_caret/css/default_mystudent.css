@@ -10,7 +10,7 @@ div#waitwhileloading{width:100%;height:100%;display:block;background:#000;opacit
 div#spinnerHolder{position:fixed;top:50%;left:50%;}
 #topHolder{width:100%;height:90px;background:#5a5859;line-height:18px;text-align:center;position:fixed;top:0;left:0;}
 #contentHolder{width:100%;min-height:500px;position:relative;top:50px;margin-top:22px;left:0;padding:0;}
-#footer{height:40px;width:720px;line-height:40px;margin:auto;}
+#footer{height:44px;line-height:44px;}
 div.content div.wideColumn{width:68%;min-height:460px;float:left;background:#fff;padding:0 2.5%;margin:0 1.25% 0 0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;color:none;border:1px solid #c3c8cd;-webkit-border-radius:2px;-webkit-background-clip:padding-box;-moz-border-radius:2px;-moz-background-clip:padding;border-radius:2px;background-clip:padding-box;}
 div.content div.wideColumn div.mainColumn{width:68%;min-height:460px;float:right;padding:0 0 22px 2.5%;border-left:1px solid #c3c8cd;margin-top:22px;}
 div.content div.smallColumn{width:25%;float:left;}
@@ -27,7 +27,7 @@ div.update{width:100%;padding:10px;background:#fff6bf;position:fixed;top:0;left:
 div.error{width:100%;padding:10px;background:#fbe3e4;position:fixed;top:0;left:0;z-index:1001;text-align:center;font-size:16px;font-weight:500;border:#fbe3e4;color:#d12f19;}
 .dontshow{display:none;}
 div.top{width:960px;height:90px;margin:auto;text-align:left;position:relative;top:0;left:0;}
-div.subMenu a{display:block;padding:0 0 0 35px;line-height:26px;font-weight:500;margin:11px 0 11px 0;position:relative;top:0;left:0;}
+div.subMenu a{display:block;padding:0 0 0 35px;line-height:26px;font-weight:400;margin:11px 0 11px 0;position:relative;top:0;left:0;}
 div.subMenu a:first-child{border:0;}
 div.subMenu a:link{color:#292e33;text-decoration:none;}
 div.subMenu a:active{color:inherit;}
@@ -94,7 +94,7 @@ table.messageList tbody td.ipStatus{width:250px;text-align:center;}
 table.messageList tbody td.ipStatus a.status{padding:5px;display:block;float:right;background:#cc3c3c;color:#fff;margin:0 0 0 5px;text-decoration:none;}
 table.messageList tbody td.ipStatus a.accepted{background:#529214;}
 table.messageList tbody td.ipStatus a.declined{background:#d12f19;}
-div.magnetFilter{borderz:1px solid #aaa;margin:0;padding:12px 20px;text-align:left;width:160px;background:#eee;}
+div.magnetFilter{padding:11px;display:block;background:#edf0f2;}
 .slider{background:#ccc;height:3px;position:relative;cursor:pointer;border:1px solid #333;width:155px;float:left;clear:right;margin:10px 0;border-radius:2px;}
 .handle{background:#fff;height:15px;width:10px;top:-7px;position:absolute;display:block;margin-top:1px;border:1px solid #000;cursor:pointer;border-radius:2px 2px 5px 5px;}
 .range{border:0;background:transparent;margin:auto;padding:0;text-align:center;width:80px;}
@@ -147,10 +147,10 @@ div.profileInfoShort a:link{padding:0 0 5px 0;margin:0;}
 div.profileInfoShort img{float:left;margin:0 15px 0 0;}
 .quicklinks{margin:15px 20px 0 0;padding:0 0 15px 0;}
 .quicklinks li{margin:0 0 5px 0;list-style-type:none;}
-.quicklinks a:link{font-weight:500;text-decoration:none;}
-.quicklinks a:active{font-weight:500;text-decoration:none;}
-.quicklinks a:visited{font-weight:500;text-decoration:none;}
-.quicklinks a:hover{font-weight:500;text-decoration:none;}
+.quicklinks a:link{font-weight:400;text-decoration:none;}
+.quicklinks a:active{text-decoration:none;}
+.quicklinks a:visited{text-decoration:none;}
+.quicklinks a:hover{text-decoration:none;}
 .profileInterestPool{overflow:auto;padding:15px 0 0 0;width:200px;}
 .profileInterestPool b{display:block;margin:0 0 10px 0;}
 .profileInterestPool a{width:50px;height:50px;overflow:hidden;float:left;margin:0 14px 15px 0;border:solid 1px #c3c8cd;}
@@ -227,7 +227,7 @@ div.subMenu a.account_orientatieinteresses{background:url('${image-url:icon_acco
 div.subMenu a.account_preview{background:url('${image-url:icon-preview}') no-repeat;}
 div.subMenu a.magnetstore_store{background:url('${image-url:icon_magnetstore_store}') no-repeat;}
 div.subMenu a.magnetstore_history{background:url('${image-url:icon_magnetstore_history}') no-repeat;}
-div.subMenu a.magnetstore_earn-magnets{background:url('${image-url:icon_magnetstore_earn}') no-repeat;}
+div.subMenu a.magnetstore_earn-magnets{background:url('${image-url:icon_magnetstore_earn-magnets}') no-repeat;}
 div.subMenu a.magnetstore_specifications{background:url('${image-url:icon_magnetstore_specifications}') no-repeat;}
 div.subMenu a.magnetstore_hoe-werkt-het{background:url('${image-url:icon_magnetstore_hoewerkthet}') no-repeat;}
 div.subMenu a.network_pending{background:url('${image-url:icon_network_pending}') no-repeat;}
