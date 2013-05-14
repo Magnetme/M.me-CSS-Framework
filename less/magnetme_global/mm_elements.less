@@ -463,18 +463,27 @@ fieldset {
 
 //Quicktour classes (Stijn)
 .tour{
-    font-size: 11px;
+    font-size: 13px;
     color: @magnetme_grey;
-    a:link{
-	color: @magnetme_red !important;
-	display:inline;
-	padding: 0px;
-	margin: 0px;
-	}
 	div&.top {
     .popover;
     height:auto;
 	z-index: @zindexModalBackdrop+1;
+	}
+
+	a.next, a.prev,a.end{
+	.btn();	
+	.btn-inverse();
+	margin: 10px 0px 10px 0px !important;
+	}
+	a.next, a.end{
+	background-color:@magnetme_red_1 !important;
+	}
+	a:hover.next,a:hover.end{
+	background-color:@magnetme_red !important;
+	}
+	.end {
+	display: none !important;
 	}
 	z-index: @zindexModalBackdrop+1;
 }
@@ -492,6 +501,7 @@ fieldset {
 .tour-step-backdrop {
   position: relative;
   z-index: 1011;
+
 }
 
 .tour-step-background {
@@ -501,7 +511,4 @@ fieldset {
   border-radius: 6px;
 }
 
-.tour{
-  font-size: 10px;
-  color: @magnetme_grey;
-}
+
