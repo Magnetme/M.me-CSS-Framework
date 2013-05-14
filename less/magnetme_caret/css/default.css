@@ -24,7 +24,6 @@ a.btn:visited{color:inherit;}
 a.btn:hover{color:inherit;text-decoration:none !important;}
 caption{color:#00a550;}
 hr{border:0;border-top:1px solid #edf0f2;height:0;margin:0 0 22px 0;}
-li{margin:0 0 0 22px;list-style-type:disc;}
 .floatLeft{float:left;}
 .floatRight{float:right;}
 .leftBottomCorner{position:absolute;left:20px;bottom:20px;}
@@ -502,3 +501,4 @@ span.icon{width:26px;height:26px;background:#cc3c3c;display:block;float:left;}
 .listSmall .itemHolder{padding:14.3px;margin:0 0 11px 0;background:#fff;-webkit-border-radius:0 0 2px 2px;-webkit-background-clip:padding-box;-moz-border-radius:0 0 2px 2px;-moz-background-clip:padding;border-radius:0 0 2px 2px;background-clip:padding-box;}.listSmall .itemHolder .data{width:80%;display:block;float:left;margin:0 0 11px 11px;}
 .listSmall .itemHolder hr{margin:11px 0;}
 .item a.companyIcon{display:block;width:66px;height:66px;float:left;border:1px solid #c3c8cd;}
+.message a{font-weight:inherit;color:inherit;}.message a:hover{color:#cc3c3c;}
