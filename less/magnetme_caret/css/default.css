@@ -6,7 +6,6 @@
 html{height:100%;width:100%;}
 body{width:100%;line-height:17.6px;background:#f7f7f7;}
 body,td,input,textarea{font-family:Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;color:#292e33;}
-ol,ul{list-style:none;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 :focus{outline:0;}
@@ -498,7 +497,7 @@ span.icon{width:26px;height:26px;background:#cc3c3c;display:block;float:left;}
 .listSmall h3{background:#4b5055;color:#c3c8cd;line-height:33px;font-size:13px;margin:22px 0 0 0;padding:0 11px;-webkit-border-radius:2px 2px 0 0;-webkit-background-clip:padding-box;-moz-border-radius:2px 2px 0 0;-moz-background-clip:padding;border-radius:2px 2px 0 0;background-clip:padding-box;}.listSmall h3:first-child{margin-top:0;}
 .listSmall h3 a{color:#c3c8cd;}.listSmall h3 a i{font-size:105%;opacity:0.5;filter:alpha(opacity=50);line-height:33px;}
 .listSmall h3 a:hover{color:#edf0f2;}.listSmall h3 a:hover i{opacity:1;filter:alpha(opacity=100);}
-.listSmall .itemHolder{padding:14.3px;margin:0 0 11px 0;background:#fff;-webkit-border-radius:0 0 2px 2px;-webkit-background-clip:padding-box;-moz-border-radius:0 0 2px 2px;-moz-background-clip:padding;border-radius:0 0 2px 2px;background-clip:padding-box;}.listSmall .itemHolder .data{width:80%;display:block;float:left;margin:0 0 11px 11px;}
+.listSmall .itemHolder{padding:14.3px;margin:0 0 11px 0;background:#fff;-webkit-border-radius:0 0 2px 2px;-webkit-background-clip:padding-box;-moz-border-radius:0 0 2px 2px;-moz-background-clip:padding;border-radius:0 0 2px 2px;background-clip:padding-box;}.listSmall .itemHolder .data{width:75%;display:block;float:left;margin:0 0 11px 11px;}
 .listSmall .itemHolder hr{margin:11px 0;}
 .item a.companyIcon{display:block;width:66px;height:66px;float:left;border:1px solid #c3c8cd;}
 .message a{font-weight:inherit;color:inherit;}.message a:hover{color:#cc3c3c;}
