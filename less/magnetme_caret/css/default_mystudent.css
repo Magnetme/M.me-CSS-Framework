@@ -10,7 +10,8 @@ div#waitwhileloading{width:100%;height:100%;display:block;background:#000;opacit
 div#spinnerHolder{position:fixed;top:50%;left:50%;}
 #topHolder{width:100%;height:90px;background:#5a5859;line-height:18px;text-align:center;position:fixed;top:0;left:0;}
 #contentHolder{width:100%;min-height:500px;position:relative;top:50px;margin-top:22px;left:0;padding:0;}
-#footer{height:44px;line-height:44px;}
+#footer{line-height:inherit;padding:11px 0;}#footer hr{margin:11px 0;}
+#footer .nav{margin-bottom:0;}
 div.content div.wideColumn{width:68%;min-height:460px;float:left;background:#fff;padding:0 2.5%;margin:0 1.25% 0 0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;color:none;border:1px solid #c3c8cd;-webkit-border-radius:2px;-webkit-background-clip:padding-box;-moz-border-radius:2px;-moz-background-clip:padding;border-radius:2px;background-clip:padding-box;}
 div.content div.wideColumn div.mainColumn{width:68%;min-height:460px;float:right;padding:0 0 22px 2.5%;border-left:1px solid #c3c8cd;margin-top:22px;}
 div.content div.smallColumn{width:25%;float:left;}
@@ -27,7 +28,7 @@ div.update{width:100%;padding:10px;background:#fff6bf;position:fixed;top:0;left:
 div.error{width:100%;padding:10px;background:#fbe3e4;position:fixed;top:0;left:0;z-index:1001;text-align:center;font-size:16px;font-weight:500;border:#fbe3e4;color:#d12f19;}
 .dontshow{display:none;}
 div.top{width:960px;height:90px;margin:auto;text-align:left;position:relative;top:0;left:0;}
-div.subMenu a{display:block;padding:0 0 0 35px;line-height:26px;font-weight:400;margin:11px 0 11px 0;position:relative;top:0;left:0;}
+div.subMenu a{display:block;padding:0 11px 0 35px;line-height:26px;font-weight:400;margin:11px 0 11px 0;position:relative;top:0;left:0;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
 div.subMenu a:first-child{border:0;}
 div.subMenu a:link{color:#292e33;text-decoration:none;}
 div.subMenu a:active{color:inherit;}
@@ -144,7 +145,7 @@ ul.tabs li.active a{color:#fff;}
 ul.tabs li.active:hover{background:#8dc63f;}
 div.profileInfoShort{width:100%;height:auto;margin:0;padding:0;display:block;overflow:auto;}
 div.profileInfoShort a:link{padding:0 0 5px 0;margin:0;}
-div.profileInfoShort img{float:left;margin:0 15px 0 0;}
+div.profileInfoShort .span9 div{margin-left:11px;}
 .quicklinks{margin:15px 20px 0 0;padding:0 0 15px 0;}
 .quicklinks li{margin:0 0 5px 0;list-style-type:none;}
 .quicklinks a:link{font-weight:400;text-decoration:none;}

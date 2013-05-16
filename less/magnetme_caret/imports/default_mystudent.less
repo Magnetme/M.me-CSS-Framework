@@ -20,7 +20,17 @@ div#spinnerHolder{position:fixed; top:50%; left:50%;}
 
 #topHolder{width:100%; height:90px; background:#5a5859; line-height:18px; text-align:center; position:fixed; top:0; left:0;}
 #contentHolder{width:100%; min-height:500px; position:relative; top:50px; margin-top:@whitespacePadding; left:0; padding:0;}
-#footer{height:@baseLineHeight*2; line-height:@baseLineHeight*2;}
+#footer{
+	line-height:inherit;
+	padding:@whitespacePadding/2 0;
+	hr{
+		margin:@whitespacePadding/2 0;
+	}
+	
+	.nav{
+		margin-bottom:0;
+	}
+}
 
 /* 2 losse vlakken creeren */
 div.content div.wideColumn{width:68%; min-height:460px; float:left; background:#fff; padding:0 @whitespacePadding_relative; margin:0 @whitespacePadding_relative/2 0 0; .box-shadow(none); border:@border_box; .border-radius(2px);}
@@ -34,6 +44,7 @@ div.content div.contentWide div.wideColumn{padding:@whitespacePadding 0 @whitesp
 div.content div.contentWide div.smallColumn{padding:0;}
 
 div.subMenuColumn {width:26.5%; float:left; margin:@whitespacePadding @whitespacePadding_relative 0 0;}
+
 
 /* LOSSE ELEMENTEN */
 .clearfix{height:0px; clear:both; float:none;}
@@ -59,7 +70,7 @@ div.error{width:100%; padding:10px; background:#fbe3e4; position:fixed; top:0; l
 div.top{width:960px; height:90px; margin:auto; text-align:left; position:relative; top:0; left:0; }
 
 /* SUBMENU */
-div.subMenu a{display:block; padding:0 0 0 35px; line-height:@baseLineHeight+4; font-weight:400; margin:@whitespacePadding/2 0 @whitespacePadding/2 0; position:relative; top:0; left:0;}
+div.subMenu a{display:block; padding:0 11px 0 35px; line-height:@baseLineHeight+4; font-weight:400; margin:@whitespacePadding/2 0 @whitespacePadding/2 0; position:relative; top:0; left:0; text-overflow: ellipsis; white-space: nowrap; overflow:hidden;}
 div.subMenu a:first-child{border:0;}
 div.subMenu a:link{color:@textColor; text-decoration:none;}
 div.subMenu a:active{color:inherit;}
@@ -218,8 +229,11 @@ ul.tabs li.active:hover {background:#8dc63f;}
 /* PROFILE SHORT */
 div.profileInfoShort {width:100%; height:auto; margin:0; padding:0; display:block; overflow:auto; }
 div.profileInfoShort a:link{padding:0 0 5px 0; margin:0;}
-div.profileInfoShort img {float:left; margin:0 15px 0 0; }
-
+div.profileInfoShort{
+	.span9 div{
+		margin-left:11px;
+	}
+}
 /* PROFILE SUBMENU QUICKLINKS */
 .quicklinks{margin:15px 20px 0 0; padding:0 0 15px 0; }
 .quicklinks li {margin:0 0 5px 0; list-style-type:none;}
