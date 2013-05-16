@@ -468,7 +468,7 @@ fieldset {
 	div&.top {
     .popover;
     height:auto;
-	z-index: @zindexModalBackdrop+1;
+	z-index: @zindexPopover;
 	}
 
 	a.next, a.prev,a.end{
@@ -482,10 +482,14 @@ fieldset {
 	a:hover.next,a:hover.end{
 	background-color:@magnetme_red !important;
 	}
-	.end {
-	display: none !important;
+	p a.end {
+	display: none;
 	}
-	z-index: @zindexModalBackdrop+1;
+	z-index: @zindexPopover;
+
+	form{
+	margin:0;
+	}
 }
 
 .tour-backdrop {
@@ -511,4 +515,6 @@ fieldset {
   border-radius: 6px;
 }
 
-
+.tourError {
+  display:none;
+}
