@@ -40,6 +40,10 @@
 	#fp_intro{
 		position: relative;
 		z-index:2;
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: 75% 15%;
+		
 		
 		.btn{
 			.box-shadow(0 1px 1px rgba(0,0,0,0.25));
@@ -47,7 +51,8 @@
 
 		
 		&.red{
-			background:@red url(@frontpage_red_image) no-repeat center center;
+			background-color: @red;
+			background-image: url(@frontpage_red_image) ;
 			
 			.curtain#introductie{
 				color:white;
@@ -55,7 +60,8 @@
 		}
 		
 		&.grey{
-			background:@magnetme_grey url(@frontpage_grey_image) no-repeat center 25%;
+			background-color: @magnetme_grey;
+			background-image: url(@frontpage_grey_image);
 
 			.curtain#introductie{
 				color:@grayLight;
@@ -70,7 +76,7 @@
 	}
 
 	.curtain#introductie{
-		padding:@baseLineHeight 0 @baseLineHeight*2;
+		padding-bottom: @baseLineHeight*2;
 		
 		.btn{
 			.box-shadow(0 1px 1px rgba(0,0,0,0.25));
