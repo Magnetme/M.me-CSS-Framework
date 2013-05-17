@@ -12,7 +12,7 @@
 #fancybox-outer{position:relative;width:100%;height:100%;background:#FFF;border:none;}
 #fancybox-inner{position:absolute;top:0;left:0;width:1px;height:1px;padding:0;margin:0;outline:none;overflow:hidden;}
 #fancybox-hide-sel-frame{position:absolute;top:0;left:0;width:100%;height:100%;background:transparent;}
-#fancybox-close{position:absolute;top:-15px;right:-15px;width:30px;height:30px;background-image:url('${image-url:fancybox}');background-position:-40px 0px;cursor:pointer;z-index:1103;display:none;}
+#fancybox-close{position:absolute;top:5px;right:5px;width:30px;height:30px;background-image:url('${image-url:fancybox}');background-position:-40px 0px;cursor:pointer;z-index:1103;display:none;}
 #fancybox_error{color:#cc3c3c;padding:7px;margin:0;}
 #fancybox-content{height:auto;width:auto;padding:0;margin:0;}
 #fancybox-img{width:100%;height:100%;padding:0;margin:0;border:none;outline:none;line-height:0;vertical-align:top;-ms-interpolation-mode:bicubic;}
