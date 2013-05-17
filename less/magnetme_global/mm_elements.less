@@ -399,10 +399,10 @@ fieldset {
   }
 }
 
-//Quicktour classes (Stijn)
+//Quicktour classes (Stijn fixed tbv caret)
 .tour{
-    font-size: 13px;
-    color: @magnetme_grey;
+    font-size: 13px !important;
+    color: @magnetme_grey !important;
 	div&.top {
     .popover;
     height:auto;
@@ -412,7 +412,7 @@ fieldset {
 	a.next, a.prev,a.end{
 	.btn();	
 	.btn-inverse();
-	margin: 10px 0px 10px 0px !important;
+	margin: 10px 0px -8px 0px !important;
 	}
 	a.next, a.end{
 	background-color:@magnetme_red_1 !important;
@@ -420,6 +420,7 @@ fieldset {
 	a:hover.next,a:hover.end{
 	background-color:@magnetme_red !important;
 	}
+
 	p a.end {
 	display: none;
 	}
@@ -429,6 +430,24 @@ fieldset {
 	margin:0;
 	}
 }
+
+.listSmall .popover-title{
+	.popover-title() !important;
+	.tour() !important;
+}
+
+.btn-inverse.statusQuicktour{
+	background-color:@magnetme_red_1 !important;
+	text-color: white !important;
+	align
+	margin-left: 295px;
+	}
+	
+.btn-inverse:hover.statusQuicktour{
+	background-color:@magnetme_red !important;
+	text-color: white !important;
+	margin-left: 295px;
+	}	
 
 .tour-backdrop {
   position: absolute;
@@ -456,3 +475,4 @@ fieldset {
 .tourError {
   display:none;
 }
+
