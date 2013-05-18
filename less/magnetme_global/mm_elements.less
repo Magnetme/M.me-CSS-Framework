@@ -85,8 +85,8 @@ form.no-margin{
 
   /* Navbar alerts (Jules) */
 .container#alerts {
-  position: relative;
-  z-index: -1;
+  position: absolute;
+  z-index: 5;
 
   .alert {
     position: relative;
@@ -388,6 +388,10 @@ fieldset {
   background-position: -180px 0;
 }
 
+.placeholder{
+	color:#aaa;
+}
+
   /* Retina support */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   .icheckbox_minimal-grey,
@@ -401,35 +405,57 @@ fieldset {
 
 //Quicktour classes (Stijn fixed tbv caret)
 .tour{
-    font-size: 13px !important;
+    font-size: @baseFontSize;
     color: @magnetme_grey !important;
-	div&.top {
-    .popover;
-    height:auto;
-	z-index: @zindexPopover;
-	}
+    font-weight: normal;
 
-	a.next, a.prev,a.end{
-	.btn();	
-	.btn-inverse();
-	margin: 10px 0px -8px 0px !important;
+		div&.top {
+	    	.popover;
+	    	height:auto;
+	    	z-index: @zindexPopover;
+		}
+
+	a.next, a.prev, a.end{
+		font-size: @baseFontSize;
+		text-transform: inherit;
+		padding:0;
+
 	}
-	a.next, a.end{
-	background-color:@magnetme_red_1 !important;
-	}
-	a:hover.next,a:hover.end{
-	background-color:@magnetme_red !important;
+	
+	a.prev{
+		color:@red !important;
 	}
 
 	p a.end {
 	display: none;
 	}
 	z-index: @zindexPopover;
-
-	form{
-	margin:0;
+	
+	hr {
+		margin: @baseLineHeight 0 @baseLineHeight/2;
 	}
 }
+
+.tour.bottom{
+	margin-top:@baseLineHeight;
+}
+
+.tour.left{
+	margin-left:-@baseLineHeight;
+}
+
+.tour.top{
+	margin-bottom:@baseLineHeight;
+}
+
+.tour.right{
+	margin-left:@baseLineHeight;
+}
+
+.popover-content a.btn{
+	padding: 4px 12px;
+	line-height: @baseLineHeight;
+	}
 
 .listSmall .popover-title{
 	.popover-title() !important;
@@ -437,23 +463,18 @@ fieldset {
 }
 
 .btn-inverse.statusQuicktour{
-	background-color:@magnetme_red_1 !important;
 	text-color: white !important;
-	align
-	margin-left: 295px;
 	}
 	
 .btn-inverse:hover.statusQuicktour{
-	background-color:@magnetme_red !important;
 	text-color: white !important;
-	margin-left: 295px;
 	}	
 
 .tour-backdrop {
   position: absolute;
   z-index: @zindexTourBackdrop;
   background: #000;
-  opacity: 0.4;
+  .opacity(40);
   top: 0;
   left: 0;
   width: 100%;
@@ -469,7 +490,11 @@ fieldset {
   position: absolute;
   z-index: 1010;
   background: #fff;
-  border-radius: 6px;
+  .border-radius(2px);
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  .box-shadow(0 2px 0 @magnetme_grey_2);
+
 }
 
 .tourError {

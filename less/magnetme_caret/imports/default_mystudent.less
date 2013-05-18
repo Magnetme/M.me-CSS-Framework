@@ -7,6 +7,9 @@
 .fixIt{padding:10px; border:solid 1px @magnetme_red; display:none;}
 div.dev{width:100px; padding:5px; position:absolute; top:2px; left:2px; z-index:1000; border:1px dashed #000; text-align:left; font-size:10px;}
 
+@media (min-width: 1280px) {
+	div.content{width:1170px !important;}
+}
 
 
 /* Docicon */
@@ -15,7 +18,7 @@ a.docIcon img{vertical-align:bottom; margin:0 5px 0 0;}
 
 
 /* HOLDERS */
-div#waitwhileloading{width:100%; height:100%; display:block; background:#000; opacity:0.6; filter:alpha(opacity=60); position:fixed; left:0; top:0; z-index:1234567890;}
+div#waitwhileloading{width:100%; height:100%; display:block; background:@magnetme_grey; .opacity(60); filter:alpha(opacity=60); position:fixed; left:0; top:0; z-index:1234567890;}
 div#spinnerHolder{position:fixed; top:50%; left:50%;}
 
 #topHolder{width:100%; height:90px; background:#5a5859; line-height:18px; text-align:center; position:fixed; top:0; left:0;}
@@ -137,13 +140,18 @@ table.messageList thead th{height:30px; text-align:left; padding:0 0 0 5px; vert
 table.messageList thead th.option{width:50px; padding:0 5px 0 5px; text-align:center;}
 table.messageList thead tr.header th{font-weight:500; background:#eee; border:solid 1px @magnetme_grey_3;}
 
-table.messageList tbody td{vertical-align:middle; padding:@whitespacePadding 0; border-top:@border_box_light; line-height:@baseLineHeight;}
+table.messageList tbody td{vertical-align:middle; padding:@whitespacePadding 0; border-top:@border_box_light; line-height:@baseLineHeight;
+	
+}
+
+table.messageList .wallBody{margin:@baseLineHeight/4 0;}
+	
 table.messageList tbody td a.companyIcon{width:50px; height:50px; display:block; overflow:hidden; border:1px solid @magnetme_grey_4;}
 table.messageList tbody td.icon {width:60px; vertical-align:top;}
 table.messageList tbody td.option {text-align:center;}
 table.messageList tbody td.date {width:100px; color:#999;}
 table.messageList tbody td.bijlagen{width:120px;}
-table.messageList tbody td a.deleteButton{width:16px; height:16px; display:block; background:#000;}
+table.messageList tbody td a.deleteButton{width:16px; height:16px; display:block; background:@magnetme_grey;}
 table.messageList tbody span.date {text-transform:lowercase;}
 table.messageList tbody td.statusmessage{width:25px;}
 table.messageList tbody td.deletemessage{width:25px;}
@@ -157,7 +165,7 @@ table.messageList tbody td.deletemessage{width:25px;}
 .paginator a:link{background:@magnetme_red; color:#fff;}
 .paginator a:hover{color:#fff; background:@magnetme_red;}
 .paginator a.active{color:#fff; background:@magnetme_red;}
-.paginator a.inactive{color:#000; background:#fff;}
+.paginator a.inactive{color:@magnetme_grey; background:#fff;}
 .paginator a.inactive:hover{color:#fff; background:@magnetme_red;}
 
 /* MESSAGELIST NETWORK */
@@ -265,7 +273,7 @@ fieldset.horizontal .button{margin:10px 10px 0 0; cursor:pointer; padding:5px; t
 fieldset.horizontal .button:hover{text-decoration:none;}
 
 fieldset.vert{margin:0; padding:0; border:0;}
-fieldset.vert label {width:300px; height:25px; color:#000; display:block; line-height:25px; font-weight:500;}
+fieldset.vert label {width:300px; height:25px; display:block; line-height:25px;}
 fieldset.vert input, select{display:inline-block;}
 fieldset.vert br{clear:both;}
 fieldset.vert i{font-size:10px;}

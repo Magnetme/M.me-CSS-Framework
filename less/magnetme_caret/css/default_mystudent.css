@@ -4,9 +4,9 @@
 .input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 .fixIt{padding:10px;border:solid 1px #cc3c3c;display:none;}
 div.dev{width:100px;padding:5px;position:absolute;top:2px;left:2px;z-index:1000;border:1px dashed #000;text-align:left;font-size:10px;}
-a.docIcon{line-height:22px;text-decoration:none;}
+@media (min-width:1280px){div.content{width:1170px !important;}}a.docIcon{line-height:22px;text-decoration:none;}
 a.docIcon img{vertical-align:bottom;margin:0 5px 0 0;}
-div#waitwhileloading{width:100%;height:100%;display:block;background:#000;opacity:0.6;filter:alpha(opacity=60);position:fixed;left:0;top:0;z-index:1234567890;}
+div#waitwhileloading{width:100%;height:100%;display:block;background:#292e33;opacity:0.6;filter:alpha(opacity=60);position:fixed;left:0;top:0;z-index:1234567890;}
 div#spinnerHolder{position:fixed;top:50%;left:50%;}
 #topHolder{width:100%;height:90px;background:#5a5859;line-height:18px;text-align:center;position:fixed;top:0;left:0;}
 #contentHolder{width:100%;min-height:500px;position:relative;top:50px;margin-top:22px;left:0;padding:0;}
@@ -74,12 +74,13 @@ table.messageList thead th{height:30px;text-align:left;padding:0 0 0 5px;vertica
 table.messageList thead th.option{width:50px;padding:0 5px 0 5px;text-align:center;}
 table.messageList thead tr.header th{font-weight:500;background:#eee;border:solid 1px #c3c8cd;}
 table.messageList tbody td{vertical-align:middle;padding:22px 0;border-top:1px solid #edf0f2;line-height:22px;}
+table.messageList .wallBody{margin:5.5px 0;}
 table.messageList tbody td a.companyIcon{width:50px;height:50px;display:block;overflow:hidden;border:1px solid #edf0f2;}
 table.messageList tbody td.icon{width:60px;vertical-align:top;}
 table.messageList tbody td.option{text-align:center;}
 table.messageList tbody td.date{width:100px;color:#999;}
 table.messageList tbody td.bijlagen{width:120px;}
-table.messageList tbody td a.deleteButton{width:16px;height:16px;display:block;background:#000;}
+table.messageList tbody td a.deleteButton{width:16px;height:16px;display:block;background:#292e33;}
 table.messageList tbody span.date{text-transform:lowercase;}
 table.messageList tbody td.statusmessage{width:25px;}
 table.messageList tbody td.deletemessage{width:25px;}
@@ -89,7 +90,7 @@ table.messageList tbody td.deletemessage{width:25px;}
 .paginator a:link{background:#cc3c3c;color:#fff;}
 .paginator a:hover{color:#fff;background:#cc3c3c;}
 .paginator a.active{color:#fff;background:#cc3c3c;}
-.paginator a.inactive{color:#000;background:#fff;}
+.paginator a.inactive{color:#292e33;background:#fff;}
 .paginator a.inactive:hover{color:#fff;background:#cc3c3c;}
 table.messageList tbody td.ipStatus{width:250px;text-align:center;}
 table.messageList tbody td.ipStatus a.status{padding:5px;display:block;float:right;background:#cc3c3c;color:#fff;margin:0 0 0 5px;text-decoration:none;}
@@ -169,7 +170,7 @@ fieldset.horizontal br{clear:both;}
 fieldset.horizontal .button{margin:10px 10px 0 0;cursor:pointer;padding:5px;text-decoration:underline;}
 fieldset.horizontal .button:hover{text-decoration:none;}
 fieldset.vert{margin:0;padding:0;border:0;}
-fieldset.vert label{width:300px;height:25px;color:#000;display:block;line-height:25px;font-weight:500;}
+fieldset.vert label{width:300px;height:25px;display:block;line-height:25px;}
 fieldset.vert input,select{display:inline-block;}
 fieldset.vert br{clear:both;}
 fieldset.vert i{font-size:10px;}
