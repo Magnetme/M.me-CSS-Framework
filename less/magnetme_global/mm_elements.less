@@ -8,7 +8,7 @@
 
 .counter {
   height: @baseLineHeight/2;
-  width: @baseLineHeight/2;
+  min-width: @baseLineHeight/2;
   background: @magnetme_red;
 
   font-weight: 600;
@@ -17,6 +17,10 @@
   text-shadow: none;
   color: white;
   .border-radius(2px);
+  
+  &:empty{
+  	display:none;
+  }
 }
 
 input:invalid {
@@ -404,6 +408,11 @@ fieldset {
 }
 
 //Quicktour classes (Stijn fixed tbv caret)
+
+.popover.tour{
+    .box-shadow(0 0 66px #64696e);
+}
+
 .tour{
     font-size: @baseFontSize;
     color: @magnetme_grey !important;
@@ -473,10 +482,10 @@ fieldset {
 	}	
 
 .tour-backdrop {
-  position: absolute;
+  position: fixed;
   z-index: @zindexTourBackdrop;
-  background: #000;
-  .opacity(40);
+  background: #4b5055;
+  .opacity(70);
   top: 0;
   left: 0;
   width: 100%;
