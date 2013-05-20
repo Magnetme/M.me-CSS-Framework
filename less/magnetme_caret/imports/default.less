@@ -150,6 +150,38 @@ hr{border:0; border-top:@border_box_light; height:0; margin:0 0 @whitespacePaddi
 	}
 }
 
+a.companyIcon{
+	border:@border_box_light;
+	
+	&:hover{
+		border-color:@magnetme_red;
+	}
+}
+
+.feedback{
+	width:30px; 
+	height:80px; 
+	display:block; 
+	position:absolute; 
+	left:-3px; 
+	bottom:5%!important; 
+	z-index:990;
+	.opacity(85);
+	.transition(all 0.1s ease-in-out);
+	
+	a{
+		width:30px;
+		height:80px;
+		display:block;
+	}
+	
+	&:hover{
+		.opacity(100);
+		left:0px; 
+		
+	}
+}
+    
 @import url('default/evenementen.less');
 	
 @import url('default/berichten.less');	

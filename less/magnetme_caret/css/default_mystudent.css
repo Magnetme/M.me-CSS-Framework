@@ -21,9 +21,11 @@ div.content div.contentWide div.smallColumn{padding:0;}
 div.subMenuColumn{width:26.5%;float:left;margin:22px 2.5% 0 0;}
 .clearfix{height:0px;clear:both;float:none;}
 .date{text-transform:lowercase;}
-div.feedback{width:30px;height:80px;display:block;position:fixed;left:0;top:30%;z-index:1000;}
-div.feedback a{width:30px;height:80px;display:block;}
-.statusHolder{background:rgba(242, 206, 24, 0.15);padding:22px;margin-left:-22px;margin-right:-22px;margin-top:-22px;}
+.statusHolder{background-color:#fdf6f6;padding:11px 7.8% 11px 22px;margin-left:-22px;margin-top:-23px;margin-bottom:14.666666666666666px;border-top:1px solid white;-webkit-transition:all 0.1s ease-in-out;-moz-transition:all 0.1s ease-in-out;-o-transition:all 0.1s ease-in-out;-ms-transition:all 0.1s ease-in-out;transition:all 0.1s ease-in-out;position:relative;}.statusHolder:hover{background-color:#fbeeee;}.statusHolder:hover:before{width:5px;left:-5px;}
+.statusHolder hr{margin:11px 0;border-color:#f1c9c9;}
+.statusHolder p#mijnStatus{font-size:15px;}
+.statusHolder p{margin:0 inherit;}
+.statusHolder:before{content:'';width:1px;height:100%;position:absolute;left:-1px;top:0;background:#cc3c3c;-webkit-transition:all 0.1s ease-in-out;-moz-transition:all 0.1s ease-in-out;-o-transition:all 0.1s ease-in-out;-ms-transition:all 0.1s ease-in-out;transition:all 0.1s ease-in-out;}
 div.update{width:100%;padding:10px;background:#fff6bf;position:fixed;top:0;left:0;z-index:1001;text-align:center;font-size:16px;font-weight:500;border:#ffd324;color:#817134;}
 div.error{width:100%;padding:10px;background:#fbe3e4;position:fixed;top:0;left:0;z-index:1001;text-align:center;font-size:16px;font-weight:500;border:#fbe3e4;color:#d12f19;}
 .dontshow{display:none;}
@@ -74,8 +76,8 @@ table.messageList thead th{height:30px;text-align:left;padding:0 0 0 5px;vertica
 table.messageList thead th.option{width:50px;padding:0 5px 0 5px;text-align:center;}
 table.messageList thead tr.header th{font-weight:500;background:#eee;border:solid 1px #c3c8cd;}
 table.messageList tbody td{vertical-align:middle;padding:22px 0;border-top:1px solid #edf0f2;line-height:22px;}
+a.companyIcon{border:1px solid #edf0f2;width:42px;padding:3px;height:42px;display:inline-block;-webkit-transition:all 0.1s ease-in-out;-moz-transition:all 0.1s ease-in-out;-o-transition:all 0.1s ease-in-out;-ms-transition:all 0.1s ease-in-out;transition:all 0.1s ease-in-out;}a.companyIcon:hover{border-color:#cc3c3c;}
 table.messageList .wallBody{margin:5.5px 0;}
-table.messageList tbody td a.companyIcon{width:50px;height:50px;display:block;overflow:hidden;border:1px solid #edf0f2;}
 table.messageList tbody td.icon{width:60px;vertical-align:top;}
 table.messageList tbody td.option{text-align:center;}
 table.messageList tbody td.date{width:100px;color:#999;}

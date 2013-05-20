@@ -52,16 +52,51 @@ div.subMenuColumn {width:26.5%; float:left; margin:@whitespacePadding @whitespac
 /* LOSSE ELEMENTEN */
 .clearfix{height:0px; clear:both; float:none;}
 .date{text-transform:lowercase;}
-div.feedback{width:30px; height:80px; display:block; position:fixed; left:0; top:30%; z-index:1000;}
-div.feedback a{width:30px; height:80px; display:block;}
 
 /* STATUS */
 .statusHolder{
-	background: rgba(242,206,24,0.15);
-	padding: @baseLineHeight;
+	background-color:lighten(@magnetme_red,46%);
+	padding: @baseLineHeight/2 7.8% @baseLineHeight/2 @baseLineHeight;
 	margin-left: -@baseLineHeight;
-	margin-right: -@baseLineHeight;
-	margin-top:-@baseLineHeight;
+	margin-top:-@baseLineHeight - 1;
+	margin-bottom:@baseLineHeight/1.5;
+	border-top:1px solid white;
+	.transition(all 0.1s ease-in-out);
+	position: relative;
+	
+		&:hover{
+			background-color:lighten(@magnetme_red,44%);
+
+			
+			&:before{
+				width:5px;
+				left:-5px;
+			}
+		}
+	
+	hr{
+		margin:@baseLineHeight/2 0;
+		border-color:lighten(@magnetme_red,35%);
+	}
+	
+	p#mijnStatus{
+		font-size:15px;
+	}
+	
+	p{
+		margin:0 inherit;
+	}
+	
+	&:before{
+		content:'';
+		width:1px;
+		height:100%;
+		position: absolute;
+		left:-1px;
+		top:0;
+		background: @magnetme_red;
+		.transition(all 0.1s ease-in-out);
+	}
 }
 
 /* MELDINGEN */
@@ -144,9 +179,21 @@ table.messageList tbody td{vertical-align:middle; padding:@whitespacePadding 0; 
 	
 }
 
-table.messageList .wallBody{margin:@baseLineHeight/4 0;}
+a.companyIcon{
+	border:@border_box_light;
+	width:42px;
+	padding:3px;
+	height:42px;
+	display:inline-block;
+	.transition(all 0.1s ease-in-out);
 	
-table.messageList tbody td a.companyIcon{width:50px; height:50px; display:block; overflow:hidden; border:1px solid @magnetme_grey_4;}
+	
+	&:hover{
+		border-color:@magnetme_red;
+	}
+}
+
+table.messageList .wallBody{margin:@baseLineHeight/4 0;}
 table.messageList tbody td.icon {width:60px; vertical-align:top;}
 table.messageList tbody td.option {text-align:center;}
 table.messageList tbody td.date {width:100px; color:#999;}

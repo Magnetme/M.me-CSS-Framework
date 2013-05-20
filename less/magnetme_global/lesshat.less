@@ -2198,3 +2198,12 @@
   }
 
     //  element{ .gradient(~"linear-gradient(to right, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%)"); }
+    
+.background_gradient(@from:#000, @to:#EEE)
+{
+	background: @from;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));
+	background-image: -moz-linear-gradient(top, @from, @to);
+	filter: formatstring("progid:DXImageTransform.Microsoft.gradient(startColorstr='{0}', endColorstr='{1}')", @from, @to); /* IE6,IE7 */
+	-ms-filter: formatstring("\"progid:DXImageTransform.Microsoft.gradient(startColorStr='{0}', EndColorStr='{1}')\"", @from, @to); /* IE8 */
+}
