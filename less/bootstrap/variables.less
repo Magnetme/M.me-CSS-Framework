@@ -4,10 +4,10 @@
 
 .caretFont(@fontFamily, @fontFile) {
 	font-family: @fontFamily;
-  src: url('/site/fonts/@{fontFile}.eot?v=3.0.1');
-  src: url('/site/fonts/@{fontFile}.eot?#iefix&v=3.0.1') format('embedded-opentype'),
-    url('/site/fonts/@{fontFile}.woff?v=3.0.1') format('woff'),
-    url('/site/fonts/@{fontFile}.ttf?v=3.0.1') format('truetype');
+  src: url('&{SERVER}/site/fonts/@{fontFile}.eot?v=3.0.1');
+  src: url('&{SERVER}/site/fonts/@{fontFile}.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+    url('&{SERVER}/site/fonts/@{fontFile}.woff?v=3.0.1') format('woff'),
+    url('&{SERVER}/site/fonts/@{fontFile}.ttf?v=3.0.1') format('truetype');
 }
 
 //
