@@ -76,7 +76,7 @@ table.messageList thead th{height:30px;text-align:left;padding:0 0 0 5px;vertica
 table.messageList thead th.option{width:50px;padding:0 5px 0 5px;text-align:center;}
 table.messageList thead tr.header th{font-weight:500;background:#eee;border:solid 1px #c3c8cd;}
 table.messageList tbody td{vertical-align:middle;padding:22px 0;border-top:1px solid #edf0f2;line-height:22px;}
-a.companyIcon{border:1px solid #edf0f2;width:42px;padding:2px;height:42px;display:inline-block;-webkit-transition:all 0.1s ease-in-out;-moz-transition:all 0.1s ease-in-out;-o-transition:all 0.1s ease-in-out;-ms-transition:all 0.1s ease-in-out;transition:all 0.1s ease-in-out;}a.companyIcon:hover{border-color:#cc3c3c;}
+a.companyIcon{border:1px solid #edf0f2;width:42px;padding:2px;height:42px;display:inline-block;-webkit-transition:all 0.1s ease-in-out;-moz-transition:all 0.1s ease-in-out;-o-transition:all 0.1s ease-in-out;-ms-transition:all 0.1s ease-in-out;transition:all 0.1s ease-in-out;}a.companyIcon:hover{border-color:1px solid #c3c8cd;}
 table.messageList .wallBody{margin:5.5px 0;}
 table.messageList tbody td.icon{width:60px;vertical-align:top;}
 table.messageList tbody td.option{text-align:center;}
@@ -105,13 +105,13 @@ div.magnetFilter{padding:11px;display:block;background:#edf0f2;}
 .minMax{width:35px;font-weight:500;}
 table.dataList td.productSummary{padding:10px 0 20px 0;vertical-align:top;}
 table.dataList td.productSummary a{width:210px;height:140px;display:block;text-align:center;}
-table.dataList td.productSummary a:link{border:4px solid #aaa;}
-table.dataList td.productSummary a:active{border:4px solid #aaa;}
-table.dataList td.productSummary a:visited{border:4px solid #aaa;}
+table.dataList td.productSummary a:link{border:4px solid #4b5055;}
+table.dataList td.productSummary a:active{border:4px solid #4b5055;}
+table.dataList td.productSummary a:visited{border:4px solid #4b5055;}
 table.dataList td.productSummary a:hover{border:4px solid #8dc63f;}
-table.dataList td.productSummary a.smallimage:link{width:65px;height:45px;display:block;border:4px solid #aaa;text-align:center;float:left;margin:0 2px 0 0;}
-table.dataList td.productSummary a.smallimage:active{border:4px solid #aaa;}
-table.dataList td.productSummary a.smallimage:visited{border:4px solid #aaa;}
+table.dataList td.productSummary a.smallimage:link{width:65px;height:45px;display:block;border:4px solid #4b5055;text-align:center;float:left;margin:0 2px 0 0;}
+table.dataList td.productSummary a.smallimage:active{border:4px solid #4b5055;}
+table.dataList td.productSummary a.smallimage:visited{border:4px solid #4b5055;}
 table.dataList td.productSummary a.smallimage:hover{border:4px solid #8dc63f;}
 table.dataList td.productSummary a.sponsorLink{border:0;height:auto;width:auto;text-align:left;}
 table.dataList td.productSummary a.meerinfo{border:0;height:auto;width:auto;float:right;}
@@ -155,9 +155,6 @@ div.profileInfoShort .span9 div{margin-left:11px;}
 .quicklinks a:active{text-decoration:none;}
 .quicklinks a:visited{text-decoration:none;}
 .quicklinks a:hover{text-decoration:none;}
-.profileInterestPool{overflow:auto;padding:15px 0 0 0;width:200px;}
-.profileInterestPool b{display:block;margin:0 0 10px 0;}
-.profileInterestPool a{width:50px;height:50px;overflow:hidden;float:left;margin:0 14px 15px 0;border:solid 1px #c3c8cd;}
 div.itemHolder{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;color:none;border:1px solid #c3c8cd;border-top:none;}
 div.itemHolder a.itemButton{clear:both;background:#8dc63f;color:#fff;height:20px;line-height:20px;overflow:hidden;padding:0 8px 0 8px;display:inline-block;}
 div.itemHolder a.itemButton:link{color:#fff;text-decoration:none;}
