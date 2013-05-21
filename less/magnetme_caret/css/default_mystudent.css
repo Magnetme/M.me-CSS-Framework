@@ -76,7 +76,7 @@ table.messageList thead th{height:30px;text-align:left;padding:0 0 0 5px;vertica
 table.messageList thead th.option{width:50px;padding:0 5px 0 5px;text-align:center;}
 table.messageList thead tr.header th{font-weight:500;background:#eee;border:solid 1px #c3c8cd;}
 table.messageList tbody td{vertical-align:middle;padding:22px 0;border-top:1px solid #edf0f2;line-height:22px;}
-a.companyIcon{border:1px solid #edf0f2;width:42px;padding:2px;height:42px;display:inline-block;-webkit-transition:all 0.1s ease-in-out;-moz-transition:all 0.1s ease-in-out;-o-transition:all 0.1s ease-in-out;-ms-transition:all 0.1s ease-in-out;transition:all 0.1s ease-in-out;}a.companyIcon:hover{border-color:1px solid #c3c8cd;}
+a.companyIcon{border:1px solid #edf0f2;width:42px;padding:2px;height:42px;display:inline-block;-webkit-transition:all 0.1s ease-in-out;-moz-transition:all 0.1s ease-in-out;-o-transition:all 0.1s ease-in-out;-ms-transition:all 0.1s ease-in-out;transition:all 0.1s ease-in-out;}a.companyIcon:hover{border:1px solid #c3c8cd !important;}
 table.messageList .wallBody{margin:5.5px 0;}
 table.messageList tbody td.icon{width:60px;vertical-align:top;}
 table.messageList tbody td.option{text-align:center;}
