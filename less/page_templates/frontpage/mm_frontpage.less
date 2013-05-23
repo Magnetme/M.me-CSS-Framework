@@ -216,7 +216,8 @@
 			
 			.problems{
 				
-				margin:@baseLineHeight 0;
+				margin:-@baseLineHeight/2 0;
+				display:block;
 
 					a{
 					.opacity(75);
@@ -327,6 +328,7 @@
 						
 						&:hover{
 							.opacity(100);
+							.transform(scale(1.05));
 						}
 					}
 				}
@@ -386,7 +388,7 @@
 	
 		#scrollDown{
 			position: absolute;
-			right:0;
+			right:2.5%;
 			bottom:5%;
 			
 			a{
