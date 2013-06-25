@@ -133,7 +133,7 @@ div.accountOptions span.titleSpan{height:30px; margin:10px 0 0 0; line-height:30
 div.wideColumn{width:676px; min-height:350px; background:#fff; padding:20px; margin:0 0 50px 20px; float:left; position:relative; top:0; left:0; border:@border_box_light; .border-radius(2px); }
 div.mainColumn{width:457px; float:left; padding:0 0 0 20px ;  border-left:1px solid #ddd;}
 div.mainColumn p{margin:0 0 10px 0;}
-div.wideColumn div.block{ width:184px; min-height:215px; float:left; background:#fff; padding:10px 20px 20px 20px; margin:0 20px 0 0; position:relative; top:0; left:0; border:@border_box_light; .border-radius(2px); }
+div.wideColumn div.block{ width:184px; min-height:235px; float:left; background:#fff; padding:10px 20px 40px 20px; margin:0 20px 0 0; position:relative; top:0; left:0; border:@border_box_light; .border-radius(2px); }
 div.wideColumn div.block h2{margin:0 0 20px 0;}
 div.wideColumn div.block div.inputs{width:186px; position:absolute; bottom:20px; left:20px;}
 
@@ -168,7 +168,10 @@ table.dataList thead th.addRecord a:link{display:block; padding:5px; color:#fff;
 table.dataList thead th.addRecord a:active{display:block; padding:5px; color:#fff; background:#8DC63F;}
 table.dataList thead th.addRecord a:visited{display:block; padding:5px; color:#fff; background:#8DC63F;}
 table.dataList thead th.addRecord a:hover{display:block; padding:5px; color:#fff; text-decoration:none; background:#8DC63F;}
-table.dataList tbody td{height:30px; vertical-align:middle; border-bottom:solid 1px #dbdee0; padding:0 0 0 5px;}
+table.dataList tbody td{height:30px; vertical-align:top; border-bottom:solid 1px #dbdee0; padding:0 0 0 5px;}
+table.dataList tbody td img{
+	border:	@border_box_light;
+}
 table.dataList tbody td.isactive_t{background:url(@icon_active) no-repeat center left;}
 table.dataList tbody td.isactive_f{background:url(@icon_inactive) no-repeat center left;}
 table.dataList tbody td a.editButton{width:16px; height:16px; display:block; background:#000;}
