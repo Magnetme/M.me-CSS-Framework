@@ -28,6 +28,14 @@
 	}
 	}
 
+.navbar{
+	-webkit-animation-delay: 0.75s;
+	animation-delay:0.75s;
+}
+
+body{
+	.transition(opacity 0.5s ease-in-out);
+}
 
 #fp_wrapper{
 	width:100%;
@@ -57,10 +65,7 @@
 		z-index:2;
 		background-size:cover;
 		background-repeat: no-repeat;
-		background-position: 75% 15%;
-		.transition(height 0.1s 0.1s ease-in-out);
-
-		
+		background-position: 75% 15%;		
 		
 		.btn{
 			.box-shadow(0 1px 1px rgba(0,0,0,0.25));
@@ -109,6 +114,7 @@
 		.headline{
 			font-size: 4.25em;
 			font-weight: 500;
+			margin-bottom:0;
 		}
 		
 		.tagline{
